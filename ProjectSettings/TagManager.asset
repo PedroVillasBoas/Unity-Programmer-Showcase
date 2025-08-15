@@ -13,9 +13,9 @@ TagManager:
   - UI
   - World
   - Player
-  - Entities
-  - Interactables
-  - Light Sources
+  - Entity
+  - Interactable
+  - Light Source
   - VFX
   - 
   - 
