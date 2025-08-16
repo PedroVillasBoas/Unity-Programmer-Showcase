@@ -41,5 +41,26 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 210504703
+    locked: 0
+  - name: Props_Before_Ground
+    uniqueID: 3591949251
+    locked: 0
+  - name: Ground
+    uniqueID: 3864551879
+    locked: 0
+  - name: Props_After_Ground
+    uniqueID: 1154250001
+    locked: 0
+  - name: Entities
+    uniqueID: 3695907085
+    locked: 0
+  - name: Interactables
+    uniqueID: 114865065
+    locked: 0
+  - name: Foreground_FX
+    uniqueID: 2103603067
+    locked: 0
   m_RenderingLayers:
   - Default
