@@ -70,7 +70,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -136,10 +136,10 @@ TextureImporter:
       name: ICON_Keyboard_Movement_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 101
-        width: 20
-        height: 22
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,10 +158,10 @@ TextureImporter:
       name: ICON_Keyboard_Movement_1
       rect:
         serializedVersion: 2
-        x: 36
-        y: 101
-        width: 24
-        height: 24
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,10 +180,10 @@ TextureImporter:
       name: ICON_Keyboard_Movement_2
       rect:
         serializedVersion: 2
-        x: 71
-        y: 101
-        width: 20
-        height: 20
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +202,10 @@ TextureImporter:
       name: ICON_Keyboard_Movement_3
       rect:
         serializedVersion: 2
-        x: 6
-        y: 69
-        width: 20
-        height: 22
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,10 +224,10 @@ TextureImporter:
       name: ICON_Keyboard_Movement_4
       rect:
         serializedVersion: 2
-        x: 36
-        y: 69
-        width: 24
-        height: 24
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,10 +246,10 @@ TextureImporter:
       name: ICON_Keyboard_Movement_5
       rect:
         serializedVersion: 2
-        x: 71
-        y: 69
-        width: 20
-        height: 20
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +268,10 @@ TextureImporter:
       name: ICON_Keyboard_Movement_6
       rect:
         serializedVersion: 2
-        x: 6
-        y: 37
-        width: 20
-        height: 22
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +290,10 @@ TextureImporter:
       name: ICON_Keyboard_Movement_7
       rect:
         serializedVersion: 2
-        x: 36
-        y: 37
-        width: 24
-        height: 24
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,10 +312,10 @@ TextureImporter:
       name: ICON_Keyboard_Movement_8
       rect:
         serializedVersion: 2
-        x: 71
-        y: 37
-        width: 20
-        height: 20
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,10 +334,10 @@ TextureImporter:
       name: ICON_Keyboard_Movement_9
       rect:
         serializedVersion: 2
-        x: 6
-        y: 5
-        width: 20
-        height: 22
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -356,10 +356,10 @@ TextureImporter:
       name: ICON_Keyboard_Movement_10
       rect:
         serializedVersion: 2
-        x: 36
-        y: 5
-        width: 24
-        height: 24
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,10 +378,10 @@ TextureImporter:
       name: ICON_Keyboard_Movement_11
       rect:
         serializedVersion: 2
-        x: 71
-        y: 5
-        width: 20
-        height: 20
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,7 +400,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dfcf93f5767f4f245a82bf2286acc88b
     internalID: 0
     vertices: []
     indices: 
@@ -409,7 +409,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ICON_Keyboard_Movement_0: 7065397521726472258
+      ICON_Keyboard_Movement_1: -1415158881695801445
+      ICON_Keyboard_Movement_10: -3975899380799988239
+      ICON_Keyboard_Movement_11: 1261448935354999456
+      ICON_Keyboard_Movement_2: 8989936307088764073
+      ICON_Keyboard_Movement_3: 3721319549395773891
+      ICON_Keyboard_Movement_4: -3494446689846756776
+      ICON_Keyboard_Movement_5: -8104176211300310941
+      ICON_Keyboard_Movement_6: -2479845607142996639
+      ICON_Keyboard_Movement_7: 7999791614267605709
+      ICON_Keyboard_Movement_8: -6743536543057027999
+      ICON_Keyboard_Movement_9: 9010855405700120350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

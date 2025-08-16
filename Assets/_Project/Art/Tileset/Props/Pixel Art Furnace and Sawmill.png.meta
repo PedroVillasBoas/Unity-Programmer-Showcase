@@ -73,7 +73,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -87,7 +87,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -111,7 +111,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -139,10 +139,10 @@ TextureImporter:
       name: Pixel Art Furnace and Sawmill_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 63
-        width: 46
-        height: 65
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,10 +161,10 @@ TextureImporter:
       name: Pixel Art Furnace and Sawmill_1
       rect:
         serializedVersion: 2
-        x: 73
-        y: 63
-        width: 46
-        height: 65
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,10 +183,10 @@ TextureImporter:
       name: Pixel Art Furnace and Sawmill_2
       rect:
         serializedVersion: 2
-        x: 137
-        y: 63
-        width: 46
-        height: 65
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +205,10 @@ TextureImporter:
       name: Pixel Art Furnace and Sawmill_3
       rect:
         serializedVersion: 2
-        x: 201
-        y: 63
-        width: 46
-        height: 65
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +227,10 @@ TextureImporter:
       name: Pixel Art Furnace and Sawmill_4
       rect:
         serializedVersion: 2
-        x: 265
-        y: 63
-        width: 46
-        height: 61
+        x: 256
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,10 +249,10 @@ TextureImporter:
       name: Pixel Art Furnace and Sawmill_5
       rect:
         serializedVersion: 2
-        x: 281
-        y: 122
-        width: 6
-        height: 6
+        x: 320
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,10 +271,10 @@ TextureImporter:
       name: Pixel Art Furnace and Sawmill_6
       rect:
         serializedVersion: 2
-        x: 329
-        y: 63
-        width: 46
-        height: 65
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,10 +293,10 @@ TextureImporter:
       name: Pixel Art Furnace and Sawmill_7
       rect:
         serializedVersion: 2
-        x: 3
+        x: 64
         y: 0
-        width: 59
-        height: 55
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,10 +315,10 @@ TextureImporter:
       name: Pixel Art Furnace and Sawmill_8
       rect:
         serializedVersion: 2
-        x: 67
+        x: 128
         y: 0
-        width: 59
-        height: 55
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,10 +337,10 @@ TextureImporter:
       name: Pixel Art Furnace and Sawmill_9
       rect:
         serializedVersion: 2
-        x: 131
+        x: 192
         y: 0
-        width: 59
-        height: 55
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -359,10 +359,10 @@ TextureImporter:
       name: Pixel Art Furnace and Sawmill_10
       rect:
         serializedVersion: 2
-        x: 195
+        x: 256
         y: 0
-        width: 59
-        height: 55
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,10 +381,10 @@ TextureImporter:
       name: Pixel Art Furnace and Sawmill_11
       rect:
         serializedVersion: 2
-        x: 259
+        x: 320
         y: 0
-        width: 59
-        height: 55
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -399,33 +399,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Pixel Art Furnace and Sawmill_12
-      rect:
-        serializedVersion: 2
-        x: 323
-        y: 0
-        width: 59
-        height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3efc9f97176a7eca0800000000000000
-      internalID: -5987634173257855005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 02753cf6a781e3d4490bd8c2e1b26325
     internalID: 0
     vertices: []
     indices: 
@@ -434,7 +412,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pixel Art Furnace and Sawmill_0: 2872485219603667635
+      Pixel Art Furnace and Sawmill_1: -8300950071754738547
+      Pixel Art Furnace and Sawmill_10: -5902698002744979230
+      Pixel Art Furnace and Sawmill_11: 1140309623503846872
+      Pixel Art Furnace and Sawmill_2: 2058993859105967790
+      Pixel Art Furnace and Sawmill_3: -1700769039237307449
+      Pixel Art Furnace and Sawmill_4: -5173645061352500339
+      Pixel Art Furnace and Sawmill_5: -2054319413448100905
+      Pixel Art Furnace and Sawmill_6: 6344427276099028103
+      Pixel Art Furnace and Sawmill_7: 760763753405307729
+      Pixel Art Furnace and Sawmill_8: 7230286855050320180
+      Pixel Art Furnace and Sawmill_9: 5433167480692301568
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

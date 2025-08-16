@@ -106,7 +106,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -120,7 +120,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -144,7 +144,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -172,10 +172,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 33
-        width: 26
-        height: 28
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +194,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_1
       rect:
         serializedVersion: 2
-        x: 31
-        y: 33
-        width: 30
-        height: 30
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,10 +216,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_2
       rect:
         serializedVersion: 2
-        x: 65
-        y: 33
-        width: 26
-        height: 30
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,10 +238,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_3
       rect:
         serializedVersion: 2
-        x: 97
-        y: 33
-        width: 26
-        height: 28
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_4
       rect:
         serializedVersion: 2
-        x: 127
-        y: 33
-        width: 30
-        height: 30
+        x: 128
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,10 +282,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_5
       rect:
         serializedVersion: 2
-        x: 157
-        y: 33
-        width: 30
-        height: 28
+        x: 160
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -304,10 +304,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_6
       rect:
         serializedVersion: 2
-        x: 193
-        y: 33
-        width: 26
-        height: 28
+        x: 192
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,10 +326,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_7
       rect:
         serializedVersion: 2
-        x: 223
-        y: 33
-        width: 30
-        height: 30
+        x: 224
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,10 +348,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_8
       rect:
         serializedVersion: 2
-        x: 257
-        y: 33
-        width: 26
-        height: 26
+        x: 256
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,10 +370,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_9
       rect:
         serializedVersion: 2
-        x: 289
-        y: 33
-        width: 26
-        height: 28
+        x: 288
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -392,10 +392,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_10
       rect:
         serializedVersion: 2
-        x: 319
-        y: 33
-        width: 30
-        height: 30
+        x: 320
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -414,10 +414,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_11
       rect:
         serializedVersion: 2
-        x: 353
-        y: 33
-        width: 30
-        height: 28
+        x: 352
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,10 +436,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_12
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 26
-        height: 28
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,10 +458,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_13
       rect:
         serializedVersion: 2
-        x: 31
-        y: 1
-        width: 30
-        height: 30
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -480,10 +480,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_14
       rect:
         serializedVersion: 2
-        x: 65
-        y: 1
-        width: 26
-        height: 30
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -502,10 +502,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_15
       rect:
         serializedVersion: 2
-        x: 97
-        y: 1
-        width: 26
-        height: 28
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -524,10 +524,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_16
       rect:
         serializedVersion: 2
-        x: 127
-        y: 1
-        width: 30
-        height: 30
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -546,10 +546,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_17
       rect:
         serializedVersion: 2
-        x: 157
-        y: 1
-        width: 30
-        height: 28
+        x: 160
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -568,10 +568,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_18
       rect:
         serializedVersion: 2
-        x: 193
-        y: 1
-        width: 26
-        height: 28
+        x: 192
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -590,10 +590,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_19
       rect:
         serializedVersion: 2
-        x: 223
-        y: 1
-        width: 30
-        height: 30
+        x: 224
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -612,10 +612,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_20
       rect:
         serializedVersion: 2
-        x: 257
-        y: 1
-        width: 26
-        height: 26
+        x: 256
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -634,10 +634,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_21
       rect:
         serializedVersion: 2
-        x: 289
-        y: 1
-        width: 26
-        height: 28
+        x: 288
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -656,10 +656,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_22
       rect:
         serializedVersion: 2
-        x: 319
-        y: 1
-        width: 30
-        height: 30
+        x: 320
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -678,10 +678,10 @@ TextureImporter:
       name: ICON_Controller_AnalogStick_23
       rect:
         serializedVersion: 2
-        x: 353
-        y: 1
-        width: 30
-        height: 28
+        x: 352
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -700,7 +700,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 93f53480cd026b54ebd5c5f56fce8007
     internalID: 0
     vertices: []
     indices: 
@@ -709,7 +709,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ICON_Controller_AnalogStick_0: 6959215499711135024
+      ICON_Controller_AnalogStick_1: 7427712963656032156
+      ICON_Controller_AnalogStick_10: 372370302702348890
+      ICON_Controller_AnalogStick_11: -164975282331274365
+      ICON_Controller_AnalogStick_12: 1252261551677251309
+      ICON_Controller_AnalogStick_13: -1363211912239478305
+      ICON_Controller_AnalogStick_14: -5893422135724077905
+      ICON_Controller_AnalogStick_15: -5933085239264401773
+      ICON_Controller_AnalogStick_16: 7659218408895474093
+      ICON_Controller_AnalogStick_17: -8016406448284582745
+      ICON_Controller_AnalogStick_18: -6961777203397824835
+      ICON_Controller_AnalogStick_19: 7768216850080923013
+      ICON_Controller_AnalogStick_2: -5459957353611823002
+      ICON_Controller_AnalogStick_20: 5260138592835872916
+      ICON_Controller_AnalogStick_21: 5700986361231293012
+      ICON_Controller_AnalogStick_22: 8259727113707282770
+      ICON_Controller_AnalogStick_23: -8558868672001616650
+      ICON_Controller_AnalogStick_3: 4125781879723000271
+      ICON_Controller_AnalogStick_4: -815999474741391180
+      ICON_Controller_AnalogStick_5: 5582862752299043790
+      ICON_Controller_AnalogStick_6: 6589148916139848556
+      ICON_Controller_AnalogStick_7: -1933502045845869783
+      ICON_Controller_AnalogStick_8: 1201536258768374130
+      ICON_Controller_AnalogStick_9: 8269913003067003237
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

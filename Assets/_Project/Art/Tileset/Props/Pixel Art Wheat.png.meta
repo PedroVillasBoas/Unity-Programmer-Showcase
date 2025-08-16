@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,10 +121,10 @@ TextureImporter:
       name: Pixel Art Wheat_0
       rect:
         serializedVersion: 2
-        x: 11
+        x: 0
         y: 0
-        width: 42
-        height: 13
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,10 +143,10 @@ TextureImporter:
       name: Pixel Art Wheat_1
       rect:
         serializedVersion: 2
-        x: 72
+        x: 32
         y: 0
-        width: 14
-        height: 20
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,10 +165,10 @@ TextureImporter:
       name: Pixel Art Wheat_2
       rect:
         serializedVersion: 2
-        x: 101
+        x: 64
         y: 0
-        width: 18
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,9 +187,9 @@ TextureImporter:
       name: Pixel Art Wheat_3
       rect:
         serializedVersion: 2
-        x: 132
+        x: 96
         y: 0
-        width: 21
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -209,10 +209,10 @@ TextureImporter:
       name: Pixel Art Wheat_4
       rect:
         serializedVersion: 2
-        x: 164
+        x: 128
         y: 0
-        width: 25
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +231,10 @@ TextureImporter:
       name: Pixel Art Wheat_5
       rect:
         serializedVersion: 2
-        x: 197
+        x: 160
         y: 0
-        width: 22
-        height: 21
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,10 +253,10 @@ TextureImporter:
       name: Pixel Art Wheat_6
       rect:
         serializedVersion: 2
-        x: 225
+        x: 192
         y: 0
-        width: 14
-        height: 17
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,11 +271,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Pixel Art Wheat_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498add37859bc4b40b51e6352479fb31
+      internalID: -696640850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 36438bbeecc2db44787e94b74a3f2e23
     internalID: 0
     vertices: []
     indices: 
@@ -284,7 +306,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pixel Art Wheat_0: -375770188578173066
+      Pixel Art Wheat_1: 6296264439525423316
+      Pixel Art Wheat_2: -3952537320440707843
+      Pixel Art Wheat_3: 3875256455788035307
+      Pixel Art Wheat_4: 6783221210062335367
+      Pixel Art Wheat_5: 5318546233178663077
+      Pixel Art Wheat_6: -5168421114397698961
+      Pixel Art Wheat_7: -696640850
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
