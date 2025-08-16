@@ -22,6 +22,7 @@ MonoBehaviour:
     - 59f5d4dd6d238484db6a7c0529b54bf9
     - 12d812c8415035e42b25311583edf2c0
     - be0616d424e0ec34cb33cfef04684e63
+    - 43554a5b72126af409dcd9eb96b1a117
     values:
     - iconNameOrGuid: SceneAsset Icon
       colorIndex: 6
@@ -53,6 +54,10 @@ MonoBehaviour:
       isColorRecursive: 0
     - iconNameOrGuid: ScriptableObject Icon
       colorIndex: 10
+      isIconRecursive: 0
+      isColorRecursive: 0
+    - iconNameOrGuid: AnimationClip Icon
+      colorIndex: 0
       isIconRecursive: 0
       isColorRecursive: 0
   bookmarks: []
