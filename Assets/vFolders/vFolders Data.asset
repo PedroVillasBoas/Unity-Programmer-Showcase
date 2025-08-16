@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   folderDatas_byGuid:
     keys:
-    - 192f1800f4f7f1945a612ee62d12f211
     - 5109bd5e73bef714491cc9e4b1595941
     - b4b150c2165c8424fb4e287f3d767ff2
     - acdef7f016fc94749a5498344c8b5889
@@ -24,10 +23,6 @@ MonoBehaviour:
     - be0616d424e0ec34cb33cfef04684e63
     - 43554a5b72126af409dcd9eb96b1a117
     values:
-    - iconNameOrGuid: SceneAsset Icon
-      colorIndex: 6
-      isIconRecursive: 0
-      isColorRecursive: 0
     - iconNameOrGuid: cs Script Icon
       colorIndex: 7
       isIconRecursive: 0
@@ -41,11 +36,11 @@ MonoBehaviour:
       isIconRecursive: 0
       isColorRecursive: 0
     - iconNameOrGuid: Prefab Icon
-      colorIndex: 2
+      colorIndex: 0
       isIconRecursive: 0
       isColorRecursive: 0
     - iconNameOrGuid: AudioSource Icon
-      colorIndex: 4
+      colorIndex: 0
       isIconRecursive: 0
       isColorRecursive: 0
     - iconNameOrGuid: 
@@ -53,7 +48,7 @@ MonoBehaviour:
       isIconRecursive: 0
       isColorRecursive: 0
     - iconNameOrGuid: ScriptableObject Icon
-      colorIndex: 10
+      colorIndex: 8
       isIconRecursive: 0
       isColorRecursive: 0
     - iconNameOrGuid: AnimationClip Icon
