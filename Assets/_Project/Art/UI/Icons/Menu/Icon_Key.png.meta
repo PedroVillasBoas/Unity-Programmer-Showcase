@@ -3,8 +3,8 @@ guid: 42962ef9444500043b6c7ffbc79bd2a1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3983772678012734599
-    second: Icon_Key_0
+      213: -6187321658523290543
+    second: ICON_Key_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon_Key_0
+      name: ICON_Key_0
       rect:
         serializedVersion: 2
         x: 1
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 78c0bdac424394730800000000000000
-      internalID: 3983772678012734599
+      spriteID: 15473a0cbb7322aa0800000000000000
+      internalID: -6187321658523290543
       vertices: []
       indices: 
       edges: []

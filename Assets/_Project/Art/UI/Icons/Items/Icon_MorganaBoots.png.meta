@@ -3,8 +3,8 @@ guid: 66e277323bc120f42b02fe7e4fc04634
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6645063535360974707
-    second: Icon_MorganaBoots_0
+      213: -8861339826746425575
+    second: ICON_MorganaBoots_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon_MorganaBoots_0
+      name: ICON_MorganaBoots_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8068e0fbedf7c3a0800000000000000
-      internalID: -6645063535360974707
+      spriteID: 91ff1c08062360580800000000000000
+      internalID: -8861339826746425575
       vertices: []
       indices: 
       edges: []

@@ -3,8 +3,8 @@ guid: 2e375d530c27ec84296d020564247341
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8333125912657560223
-    second: Icon_Diamond_0
+      213: 8956838112505143868
+    second: ICON_Diamond_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon_Diamond_0
+      name: ICON_Diamond_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f928e84edd535a370800000000000000
-      internalID: 8333125912657560223
+      spriteID: c32ac86dec41d4c70800000000000000
+      internalID: 8956838112505143868
       vertices: []
       indices: 
       edges: []

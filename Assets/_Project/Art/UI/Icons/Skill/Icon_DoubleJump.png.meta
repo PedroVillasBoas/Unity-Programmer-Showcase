@@ -3,8 +3,8 @@ guid: 24d97b8eb5156a449b0683c36b6a5f31
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2881444509404077799
-    second: Icon_DoubleJump_0
+      213: -2306586108640473325
+    second: ICON_DoubleJump_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon_DoubleJump_0
+      name: ICON_DoubleJump_0
       rect:
         serializedVersion: 2
         x: 2
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ee9707c382fcf720800000000000000
-      internalID: 2881444509404077799
+      spriteID: 31f42aea72c5dffd0800000000000000
+      internalID: -2306586108640473325
       vertices: []
       indices: 
       edges: []

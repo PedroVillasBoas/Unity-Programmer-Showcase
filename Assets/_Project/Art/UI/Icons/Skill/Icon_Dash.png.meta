@@ -3,8 +3,8 @@ guid: 4033695bf1268c4429f94473e9368b49
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7874002059036508939
-    second: Icon_Dash_0
+      213: 5335333759455024589
+    second: ICON_Dash_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon_Dash_0
+      name: ICON_Dash_0
       rect:
         serializedVersion: 2
         x: 3
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b03c0998723164d60800000000000000
-      internalID: 7874002059036508939
+      spriteID: dc5577259c9ea0a40800000000000000
+      internalID: 5335333759455024589
       vertices: []
       indices: 
       edges: []

@@ -3,8 +3,8 @@ guid: ae9f34121cb686d41ac30e5047ee8071
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3994120270774206544
-    second: Icon_Coin_0
+      213: -6860153949402034061
+    second: ICON_Coin_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon_Coin_0
+      name: ICON_Coin_0
       rect:
         serializedVersion: 2
         x: 1
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0500fa97937fd6730800000000000000
-      internalID: 3994120270774206544
+      spriteID: 37016656456dbc0a0800000000000000
+      internalID: -6860153949402034061
       vertices: []
       indices: 
       edges: []

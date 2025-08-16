@@ -1,0 +1,717 @@
+fileFormatVersion: 2
+guid: 5495291ed2758e2478bb1490796e5ec1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6959215499711135024
+    second: ICON_Controller_AnalogStick_0
+  - first:
+      213: 7427712963656032156
+    second: ICON_Controller_AnalogStick_1
+  - first:
+      213: -5459957353611823002
+    second: ICON_Controller_AnalogStick_2
+  - first:
+      213: 4125781879723000271
+    second: ICON_Controller_AnalogStick_3
+  - first:
+      213: -815999474741391180
+    second: ICON_Controller_AnalogStick_4
+  - first:
+      213: 5582862752299043790
+    second: ICON_Controller_AnalogStick_5
+  - first:
+      213: 6589148916139848556
+    second: ICON_Controller_AnalogStick_6
+  - first:
+      213: -1933502045845869783
+    second: ICON_Controller_AnalogStick_7
+  - first:
+      213: 1201536258768374130
+    second: ICON_Controller_AnalogStick_8
+  - first:
+      213: 8269913003067003237
+    second: ICON_Controller_AnalogStick_9
+  - first:
+      213: 372370302702348890
+    second: ICON_Controller_AnalogStick_10
+  - first:
+      213: -164975282331274365
+    second: ICON_Controller_AnalogStick_11
+  - first:
+      213: 1252261551677251309
+    second: ICON_Controller_AnalogStick_12
+  - first:
+      213: -1363211912239478305
+    second: ICON_Controller_AnalogStick_13
+  - first:
+      213: -5893422135724077905
+    second: ICON_Controller_AnalogStick_14
+  - first:
+      213: -5933085239264401773
+    second: ICON_Controller_AnalogStick_15
+  - first:
+      213: 7659218408895474093
+    second: ICON_Controller_AnalogStick_16
+  - first:
+      213: -8016406448284582745
+    second: ICON_Controller_AnalogStick_17
+  - first:
+      213: -6961777203397824835
+    second: ICON_Controller_AnalogStick_18
+  - first:
+      213: 7768216850080923013
+    second: ICON_Controller_AnalogStick_19
+  - first:
+      213: 5260138592835872916
+    second: ICON_Controller_AnalogStick_20
+  - first:
+      213: 5700986361231293012
+    second: ICON_Controller_AnalogStick_21
+  - first:
+      213: 8259727113707282770
+    second: ICON_Controller_AnalogStick_22
+  - first:
+      213: -8558868672001616650
+    second: ICON_Controller_AnalogStick_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 33
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03dbcaf10a9149060800000000000000
+      internalID: 6959215499711135024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 33
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9f18443699841760800000000000000
+      internalID: 7427712963656032156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 33
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6687f2907b55a34b0800000000000000
+      internalID: -5459957353611823002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 33
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc102a1a2c8b14930800000000000000
+      internalID: 4125781879723000271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_4
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 33
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b052231dccfca4f0800000000000000
+      internalID: -815999474741391180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_5
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 33
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb4b8c08105a7d40800000000000000
+      internalID: 5582862752299043790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_6
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 33
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c637aa6470c517b50800000000000000
+      internalID: 6589148916139848556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_7
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 33
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92badd82222da25e0800000000000000
+      internalID: -1933502045845869783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_8
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 33
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27904a08cd6bca010800000000000000
+      internalID: 1201536258768374130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_9
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 33
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56151377f02a4c270800000000000000
+      internalID: 8269913003067003237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_10
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 33
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a6a7141dcea2500800000000000000
+      internalID: 372370302702348890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_11
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 33
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383bce3dad3e5bdf0800000000000000
+      internalID: -164975282331274365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee1a991f3de06110800000000000000
+      internalID: 1252261551677251309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_13
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd982690df5e41de0800000000000000
+      internalID: -1363211912239478305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_14
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac0eb0dacb563ea0800000000000000
+      internalID: -5893422135724077905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_15
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3962883e86279ada0800000000000000
+      internalID: -5933085239264401773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_16
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9e85700920b4a60800000000000000
+      internalID: 7659218408895474093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_17
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7acb8dadec000c090800000000000000
+      internalID: -8016406448284582745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_18
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe6f02c48cc26f90800000000000000
+      internalID: -6961777203397824835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_19
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58df64f31104ecb60800000000000000
+      internalID: 7768216850080923013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_20
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 1
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4982e474e24cff840800000000000000
+      internalID: 5260138592835872916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_21
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ab982f3e8fd1f40800000000000000
+      internalID: 5700986361231293012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_22
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2516f2a4c0270a270800000000000000
+      internalID: 8259727113707282770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICON_Controller_AnalogStick_23
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f4df162a4ac83980800000000000000
+      internalID: -8558868672001616650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

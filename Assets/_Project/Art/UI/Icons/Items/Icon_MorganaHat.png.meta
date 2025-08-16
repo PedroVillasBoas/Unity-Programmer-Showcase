@@ -3,8 +3,8 @@ guid: be936b4caf17b3b4a8cfb96c1651fd60
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8973481882369411432
-    second: Icon_MorganaHat_0
+      213: -7474134415187074852
+    second: ICON_MorganaHat_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon_MorganaHat_0
+      name: ICON_MorganaHat_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 869480d7a36388c70800000000000000
-      internalID: 8973481882369411432
+      spriteID: cd0a04b595a864890800000000000000
+      internalID: -7474134415187074852
       vertices: []
       indices: 
       edges: []

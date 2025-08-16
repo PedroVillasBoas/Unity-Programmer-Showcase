@@ -3,8 +3,8 @@ guid: 5adb59aa627f601459481867d5dddbdc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6524000462475524650
-    second: Icon_Infernum_0
+      213: 7310113173356385034
+    second: ICON_Infernum_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon_Infernum_0
+      name: ICON_Infernum_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d589af15281675a0800000000000000
-      internalID: -6524000462475524650
+      spriteID: a039fc5533db27560800000000000000
+      internalID: 7310113173356385034
       vertices: []
       indices: 
       edges: []

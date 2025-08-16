@@ -3,8 +3,8 @@ guid: 12cf55498ddbe5049bcfb378d673f886
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -690997381787112448
-    second: Icon_MorganaRing_0
+      213: -2598282214444399265
+    second: ICON_MorganaRing_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon_MorganaRing_0
+      name: ICON_MorganaRing_0
       rect:
         serializedVersion: 2
         x: 5
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00caad5da851966f0800000000000000
-      internalID: -690997381787112448
+      spriteID: f5583dd971c01fbd0800000000000000
+      internalID: -2598282214444399265
       vertices: []
       indices: 
       edges: []
