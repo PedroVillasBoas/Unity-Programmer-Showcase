@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6913830351465344111}
   - component: {fileID: 8611083037367994973}
   - component: {fileID: 560498242951921177}
+  - component: {fileID: 7171859129993783082}
   m_Layer: 5
   m_Name: Prefab_Tooltip-Panel
   m_TagString: Untagged
@@ -149,6 +150,18 @@ SortingGroup:
   m_SortingLayer: 8
   m_SortingOrder: 5
   m_SortAtRoot: 0
+--- !u!225 &7171859129993783082
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761477406347840475}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &5798415669492847979
 GameObject:
   m_ObjectHideFlags: 0
