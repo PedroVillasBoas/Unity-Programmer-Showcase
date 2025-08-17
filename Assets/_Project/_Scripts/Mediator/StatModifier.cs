@@ -8,15 +8,16 @@ namespace GoodVillageGames.Core.Mediator
     /// </summary>
     public abstract class StatModifier : IDisposable
     {
+        public object Source { get; private set; }
+
         public bool MarkedForRemoval { get; protected set; }
-
         public event Action<StatModifier> OnDispose;
-
         protected readonly CountdownTimer _timer;
 
-        protected StatModifier(float duration)
+        protected StatModifier(object source, float duration)
         {
-            // A duration of 0 or less signifies a permanent modifier ;)
+            Source = source;
+
             if (duration <= 0) return;
 
             _timer = new CountdownTimer(duration);
@@ -25,16 +26,14 @@ namespace GoodVillageGames.Core.Mediator
         }
 
         public virtual void Update(float deltaTime) => _timer?.Tick(deltaTime);
-
         public abstract void Handle(object sender, Query query);
 
-        // Modifier/Upgrade/Buff is done and can be Removed com the List
         public void Dispose()
         {
             OnDispose?.Invoke(this);
             OnDisposed();
         }
-        
+
         protected virtual void OnDisposed() { }
     }
 }

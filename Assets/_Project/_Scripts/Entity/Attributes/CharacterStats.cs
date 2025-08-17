@@ -36,9 +36,14 @@ namespace GoodVillageGames.Core.Character.Attributes
             return _reusableQuery.Value;
         }
 
-public void AddModifier(StatModifier modifier)
+        public void AddModifier(StatModifier modifier)
         {
             _mediator.AddModifier(modifier);
+        }
+
+        public void RemoveModifiersFromSource(object source)
+        {
+            _mediator.RemoveModifiersFromSource(source);
         }
 
         /// <summary>
@@ -76,5 +81,7 @@ public void AddModifier(StatModifier modifier)
                 _ => 0f
             };
         }
+
+
     }
 }

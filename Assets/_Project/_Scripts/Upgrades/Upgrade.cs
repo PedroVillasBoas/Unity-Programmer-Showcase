@@ -24,14 +24,12 @@ namespace GoodVillageGames.Core.Attributes.Upgrades
         // We hold a reference to a strategy object
         private IModificationStrategy _strategy;
 
-        public void ApplyUpgrade(IStatProvider statProvider)
+        public void ApplyUpgrade(IStatProvider statProvider, object source)
         {
-            // The strategy is selected based on the enum
-            // This could also be implemented with a dictionary for more complex cases which, again, is not the case here
             _strategy = GetStrategy();
 
-            // The strategy's 'Apply' method provides the logic (the Func<float, float>)
-            var modifier = new FunctionalStatModifier(_statType, _duration, (v) => _strategy.Apply(v, _value));
+            // The 'source' is now passed when creating the new modifier.
+            var modifier = new FunctionalStatModifier(source, _statType, _duration, (v) => _strategy.Apply(v, _value));
 
             statProvider.AddModifier(modifier);
         }

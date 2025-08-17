@@ -15,11 +15,14 @@ namespace GoodVillageGames.Core.Actions
         private CharacterDasher _dasher;
         private GroundChecker _groundChecker;
         private float _gravityScale;
+        private bool _hasDoubleJumped;
 
         [HideInInspector]
         public bool _isJumpPressed = false;
 
         public bool CanJump => _groundChecker.IsGrounded;
+        public bool CanDoubleJump => DoubleJumpEnabled && !_hasDoubleJumped;
+        public bool DoubleJumpEnabled { get; set; }
 
         private void Awake()
         {
@@ -54,15 +57,28 @@ namespace GoodVillageGames.Core.Actions
                 // Otherwise, it's default gravity ;)
                 Rb.gravityScale = _gravityScale;
             }
+
+            // Reset double jump when grounded 
+            // (I had a cooldown for the double jump, but... CD in a double jump?! Not fun!! So I removed it)
+            if (_groundChecker.IsGrounded)
+            {
+                _hasDoubleJumped = false;
+            }
         }
 
         public void Jump()
         {
-            // Not checking if IsJumping since Double Jump is also present in the project showcase
-            if (!CanJump) return;
-
             float impulseForce = Stats.GetStat(AttributeType.JumpForce);
-            Rb.linearVelocity = new(Rb.linearVelocityX, impulseForce);
+
+            if (CanJump)
+            {
+                Rb.linearVelocity = new(Rb.linearVelocityX, impulseForce);
+            }
+            else if (CanDoubleJump)
+            {
+                Rb.linearVelocity = new(Rb.linearVelocityX, impulseForce);
+                _hasDoubleJumped = true;
+            }
         }
     }
 }

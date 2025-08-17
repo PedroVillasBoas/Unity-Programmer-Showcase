@@ -11,5 +11,6 @@ namespace GoodVillageGames.Core.Character.Attributes
         float GetStat(AttributeType type);
         T GetModifier<T>() where T : StatModifier;
         void AddModifier(StatModifier modifier);
+        void RemoveModifiersFromSource(object source);
     }
 }

@@ -99,6 +99,35 @@ namespace GoodVillageGames.Core.Itemization
             return false;
         }
 
+        /// <summary>
+        /// Removes an entire slot's contents from the inventory.
+        /// Used by the EquipmentManager. ;)
+        /// </summary>
+        public void RemoveItem(int slotIndex)
+        {
+            if (slotIndex < 0 || slotIndex >= inventorySlots.Count) return;
+
+            inventorySlots[slotIndex] = null;
+            OnInventoryChanged?.Invoke();
+        }
+
+        /// <summary>
+        /// Reduces the quantity.
+        /// If the quantity reaches zero, the slot is cleared. 
+        /// Used for consumables.
+        /// </summary>
+        public void UseItem(int slotIndex)
+        {
+            if (slotIndex < 0 || slotIndex >= inventorySlots.Count || inventorySlots[slotIndex] == null) return;
+
+            inventorySlots[slotIndex].quantity--;
+            if (inventorySlots[slotIndex].quantity <= 0)
+            {
+                inventorySlots[slotIndex] = null;
+            }
+            OnInventoryChanged?.Invoke();
+        }
+
         public void SwapItems(int draggedSlotIndex, int switcherSlotIndex)
         {
             // Just to make sure that no slot has some weird index
@@ -145,6 +174,5 @@ namespace GoodVillageGames.Core.Itemization
             }
             return false;
         }
-
     }
 }

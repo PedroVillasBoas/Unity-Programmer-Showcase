@@ -31,6 +31,19 @@ namespace GoodVillageGames.Core.Mediator
             modifier.OnDispose += HandleModifierDisposal;
         }
 
+        /// <summary>
+        /// Finds all modifiers with the given source and marks them for removal.
+        /// </summary>
+        public void RemoveModifiersFromSource(object source)
+        {
+            var modifiersToDispose = _modifiers.Where(mod => mod.Source == source).ToList();
+
+            foreach (var modifier in modifiersToDispose)
+            {
+                modifier.Dispose();
+            }
+        }
+
         public T GetModifier<T>() where T : StatModifier
         {
             // I'm using LINQ's OfType to find the first modifier of a specific type

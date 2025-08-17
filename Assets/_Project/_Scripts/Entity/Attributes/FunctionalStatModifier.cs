@@ -12,7 +12,8 @@ namespace GoodVillageGames.Core.Character.Attributes.Modifiers
         private readonly AttributeType _type;
         private readonly Func<float, float> _operation;
 
-        public FunctionalStatModifier(AttributeType type, float duration, Func<float, float> operation) : base(duration)
+        public FunctionalStatModifier(object source, AttributeType type, float duration, Func<float, float> operation)
+            : base(source, duration)
         {
             _type = type;
             _operation = operation;

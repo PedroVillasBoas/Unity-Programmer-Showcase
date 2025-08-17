@@ -16,8 +16,9 @@ namespace GoodVillageGames.Core.Actions
         [HideInInspector]
         public bool _isDashPressed = false;
 
+        public bool DashEnabled { get; set; } 
         public bool IsDashing { get; private set; }
-        public bool CanDash => (_dashTimer == null || _dashTimer.IsFinished) && !IsDashing;
+        public bool CanDash => DashEnabled && (_dashTimer == null || _dashTimer.IsFinished) && !IsDashing;
 
         protected override void Start()
         {
@@ -56,7 +57,7 @@ namespace GoodVillageGames.Core.Actions
             // --- Dash Setup ---
             IsDashing = true;
             Rb.gravityScale = 0f;
-            
+
             Rb.linearVelocity = new(Rb.linearVelocityX, 0f);
 
             // --- To-Do ---
