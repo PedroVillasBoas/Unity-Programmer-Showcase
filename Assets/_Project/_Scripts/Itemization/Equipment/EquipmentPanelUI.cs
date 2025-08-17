@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Linq;
 using System.Collections.Generic;
 using TriInspector;
+using GoodVillageGames.Player.Input;
 
 namespace GoodVillageGames.Core.Itemization.Equipment
 {
@@ -12,7 +13,8 @@ namespace GoodVillageGames.Core.Itemization.Equipment
     public class EquipmentPanelUI : MonoBehaviour
     {
         [Title("UI References")]
-        [SerializeField] private Transform slotsParent;
+        [SerializeField] private GameObject _equipmentPanel;
+        [SerializeField] private Transform _slotsParent;
 
         private List<EquipmentSlotUI> _equipmentSlotUIs;
 
@@ -23,9 +25,11 @@ namespace GoodVillageGames.Core.Itemization.Equipment
                 EquipmentManager.Instance.OnEquipmentChanged += UpdatePanel;
             }
 
-            // --- Find and Initialize slots ---
-            _equipmentSlotUIs = slotsParent.GetComponentsInChildren<EquipmentSlotUI>().ToList();
+            InputPresenter.OnToggleInventoryPressed += TogglePanel;
 
+            // --- Find and Initialize slots ---
+            _equipmentSlotUIs = _slotsParent.GetComponentsInChildren<EquipmentSlotUI>().ToList();
+            _equipmentPanel.SetActive(false);
             UpdatePanel();
         }
 
@@ -36,6 +40,7 @@ namespace GoodVillageGames.Core.Itemization.Equipment
             {
                 EquipmentManager.Instance.OnEquipmentChanged -= UpdatePanel;
             }
+            InputPresenter.OnToggleInventoryPressed -= TogglePanel;
         }
 
         /// <summary>
@@ -52,5 +57,19 @@ namespace GoodVillageGames.Core.Itemization.Equipment
                 slotUI.UpdateSlot(equippedItem);
             }
         }
+
+        /// <summary>
+        /// Toggles the visibility of the equipment panel.
+        /// This is called by the OnToggleInventoryPressed event.
+        /// </summary>
+        /// <remarks>
+        /// Since this method will probrably appear in most UI panels, I could make this a interface
+        /// and take advantage of the contract.
+        /// </remarks>
+        private void TogglePanel()
+        {
+            _equipmentPanel.SetActive(!_equipmentPanel.activeSelf);
+        }
+
     }
 }

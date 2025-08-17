@@ -1934,7 +1934,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276409164}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3cca8f01f6128047a0df68cf109e197, type: 3}
   m_Name: 
@@ -5467,7 +5467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6889875934397b4e91597879ccdef61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemData: {fileID: 11400000, guid: 746f95bfbc6e98a4fac1d56924e6e775, type: 2}
+  _itemData: {fileID: 11400000, guid: 01ebd12cfdf92e6418c6ca6aaf8ba8c3, type: 2}
 --- !u!114 &1524085472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10263,7 +10263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8b41474ab6ebae40a8d77552e0496d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotsParent: {fileID: 833550610}
+  _equipmentPanel: {fileID: 2051181392}
+  _slotsParent: {fileID: 833550610}
 --- !u!1 &2084783962
 GameObject:
   m_ObjectHideFlags: 0

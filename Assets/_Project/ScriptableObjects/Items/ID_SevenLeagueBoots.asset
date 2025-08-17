@@ -20,5 +20,9 @@ MonoBehaviour:
   IsStackable: 0
   MaxStackSize: 1
   EquipmentType: 5
-  StatUpgrades: []
-  GrantedAbility: 0
+  StatUpgrades:
+  - _statType: 1
+    _operatorType: 0
+    _value: 100
+    _duration: 0
+  GrantedAbility: 3

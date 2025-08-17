@@ -2,7 +2,6 @@ using System;
 using UnityEngine;
 using System.Collections.Generic;
 using GoodVillageGames.Core.Actions;
-using GoodVillageGames.Core.Character;
 using GoodVillageGames.Core.Character.Attributes;
 
 namespace GoodVillageGames.Core.Itemization.Equipment

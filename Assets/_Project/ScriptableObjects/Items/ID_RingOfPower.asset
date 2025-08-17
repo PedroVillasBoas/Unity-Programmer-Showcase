@@ -22,4 +22,4 @@ MonoBehaviour:
   MaxStackSize: 1
   EquipmentType: 4
   StatUpgrades: []
-  GrantedAbility: 0
+  GrantedAbility: 1
