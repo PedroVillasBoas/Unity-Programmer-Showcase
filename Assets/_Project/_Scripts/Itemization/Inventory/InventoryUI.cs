@@ -1,6 +1,7 @@
 using UnityEngine;
 using TriInspector;
 using System.Collections.Generic;
+using GoodVillageGames.Player.Input;
 
 namespace GoodVillageGames.Core.Itemization
 {
@@ -22,13 +23,17 @@ namespace GoodVillageGames.Core.Itemization
             // Subscribe to the inventory change event. This is the core of the UI updating. (Told ya that the UI would subscribe to it, didn't I? ;)
             InventoryManager.Instance.OnInventoryChanged += UpdateUI;
 
-            // _inventoryPanel.SetActive(false); I literally forgot about adding a input to open/close the inventory... have to do this later.
+            // Presenter will tell the UI when the player asked for the UI
+            InputPresenter.OnToggleInventoryPressed += ToggleInventory;
 
+            _inventoryPanel.SetActive(false);
             InitializeInventory();
         }
 
         private void OnDestroy()
         {
+            InputPresenter.OnToggleInventoryPressed -= ToggleInventory;
+
             if (InventoryManager.Instance != null)
             {
                 InventoryManager.Instance.OnInventoryChanged -= UpdateUI;
@@ -59,12 +64,11 @@ namespace GoodVillageGames.Core.Itemization
 
             for (int i = 0; i < _slotUIs.Count; i++)
             {
-                // If there's an item in the corresponding data slot, update the UI slot.
+                // If there's an item in the corresponding data slot, update the UI slot
                 if (i < inventorySlots.Count)
                 {
                     _slotUIs[i].UpdateSlot(inventorySlots[i]);
                 }
-                // Otherwise, clear the UI slot.
                 else
                 {
                     _slotUIs[i].ClearSlot();

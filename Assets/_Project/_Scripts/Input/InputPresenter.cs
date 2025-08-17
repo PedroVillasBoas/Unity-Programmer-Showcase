@@ -25,12 +25,16 @@ namespace GoodVillageGames.Player.Input
         private CharacterAttacker _attacker;
         private CharacterDasher _dasher;
         private CharacterJumper _jumper;
-        // private CharacterInteractor _interactor;
+        private CharacterInteractor _interactor;
         // private CharacterSpecialAttacker _specialAttacker;
 
         // --- State ---
         private float _moveDirection;
         private IS_PlayerActions _inputActions;
+
+        // --- Radio Station ---
+        public static event Action OnToggleInventoryPressed;
+        public static event Action OnTogglePausePressed;
 
         private void Awake()
         {
@@ -55,8 +59,10 @@ namespace GoodVillageGames.Player.Input
             _inputActions.Player.BasicAttack.performed += OnAttack;
             _inputActions.Player.Dash.performed += OnDashPerformed;
             _inputActions.Player.Dash.canceled += OnDashCanceled;
-            
-            // _inputActions.Player.Interact.performed += OnInteract;
+
+            _inputActions.Player.Interact.performed += OnInteract;
+            _inputActions.Player.Inventory.performed += OnToggleInventory;
+            _inputActions.Player.Pause.performed += OnTogglePause;
             // _inputActions.Player.SpecialAttack.performed += OnSpecialAttack;
         }
 
@@ -74,7 +80,9 @@ namespace GoodVillageGames.Player.Input
             _inputActions.Player.Dash.performed -= OnDashPerformed;
             _inputActions.Player.Dash.performed -= OnDashCanceled;
 
-            // _inputActions.Player.Interact.performed -= OnInteract;
+            _inputActions.Player.Interact.performed -= OnInteract;
+            _inputActions.Player.Inventory.performed -= OnToggleInventory;
+            _inputActions.Player.Pause.performed -= OnTogglePause;
             // _inputActions.Player.SpecialAttack.performed -= OnSpecialAttack;
         }
 
@@ -118,6 +126,21 @@ namespace GoodVillageGames.Player.Input
         private void OnJumpCanceled(InputAction.CallbackContext context)
         {
             _jumper._isJumpPressed = false;
+        }
+
+        private void OnInteract(InputAction.CallbackContext context)
+        {
+            _interactor.DoInteraction();
+        }
+
+        private void OnToggleInventory(InputAction.CallbackContext context)
+        {
+            OnToggleInventoryPressed?.Invoke();
+        }
+
+        private void OnTogglePause(InputAction.CallbackContext context)
+        {
+            OnTogglePausePressed?.Invoke();
         }
     }
 }
