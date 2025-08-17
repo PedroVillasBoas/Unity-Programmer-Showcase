@@ -17,11 +17,9 @@ MonoBehaviour:
   ItemDescription: "The One Ring, also called the Ruling Ring and Isildur's Bane.
     \nLegend tells that a Hobbit took it into a volcano and threw it inside. But
     how would it be here now?"
+  Category: 0
   IsStackable: 0
   MaxStackSize: 1
-  statUpgrades:
-  - _statType: 5
-    _operatorType: 0
-    _value: 5
-    _duration: 0
-  grantedAbility: 1
+  EquipmentType: 4
+  StatUpgrades: []
+  GrantedAbility: 0

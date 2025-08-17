@@ -16,7 +16,9 @@ MonoBehaviour:
   ItemIcon: {fileID: 21300000, guid: 076ed5ba98b2dc24eabe016a51a09a47, type: 3}
   ItemDescription: Legend says that this robe increase the magic defense of the user.
     But... You don't even have a defense attribute!
+  Category: 0
   IsStackable: 0
   MaxStackSize: 1
-  statUpgrades: []
-  grantedAbility: 0
+  EquipmentType: 3
+  StatUpgrades: []
+  GrantedAbility: 0

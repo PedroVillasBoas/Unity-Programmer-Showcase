@@ -15,7 +15,9 @@ MonoBehaviour:
   ItemName: Golden Key
   ItemIcon: {fileID: 21300000, guid: 54deb2626a8806d4b86607e5ff6262d5, type: 3}
   ItemDescription: You can open chests with it! Go for it!
+  Category: 2
   IsStackable: 1
   MaxStackSize: 10
-  statUpgrades: []
-  grantedAbility: 0
+  EquipmentType: 0
+  StatUpgrades: []
+  GrantedAbility: 0

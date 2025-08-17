@@ -16,7 +16,9 @@ MonoBehaviour:
   ItemIcon: {fileID: 21300000, guid: 66e277323bc120f42b02fe7e4fc04634, type: 3}
   ItemDescription: Maybe you can cross that river now? The Seven-League Boots sure
     help you travel long distances!
+  Category: 0
   IsStackable: 0
   MaxStackSize: 1
-  statUpgrades: []
-  grantedAbility: 3
+  EquipmentType: 5
+  StatUpgrades: []
+  GrantedAbility: 0

@@ -16,7 +16,9 @@ MonoBehaviour:
   ItemIcon: {fileID: 21300000, guid: aef311d69af8dcb498c19bca38b43a54, type: 3}
   ItemDescription: NO WAY! YOU FOUND IT?! But... I wonder what you can open with
     it... And where is the chest to use this?
+  Category: 3
   IsStackable: 0
   MaxStackSize: 1
-  statUpgrades: []
-  grantedAbility: 0
+  EquipmentType: 0
+  StatUpgrades: []
+  GrantedAbility: 0

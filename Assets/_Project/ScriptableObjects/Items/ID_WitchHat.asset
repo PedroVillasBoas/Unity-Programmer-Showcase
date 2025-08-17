@@ -15,7 +15,9 @@ MonoBehaviour:
   ItemName: Witch's Hat
   ItemIcon: {fileID: 21300000, guid: be936b4caf17b3b4a8cfb96c1651fd60, type: 3}
   ItemDescription: It's your hat. Did you even forget about this?!
+  Category: 0
   IsStackable: 0
   MaxStackSize: 1
-  statUpgrades: []
-  grantedAbility: 0
+  EquipmentType: 2
+  StatUpgrades: []
+  GrantedAbility: 0

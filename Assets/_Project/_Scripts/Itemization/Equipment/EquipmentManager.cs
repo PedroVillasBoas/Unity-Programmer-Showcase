@@ -20,7 +20,6 @@ namespace GoodVillageGames.Core.Itemization.Equipment
         public event Action OnEquipmentChanged;
 
         // --- Player Components ---
-        private Entity _playerEntity;
         private IStatProvider _playerStats;
         private CharacterJumper _jumper;
         private CharacterDasher _dasher;
@@ -63,8 +62,8 @@ namespace GoodVillageGames.Core.Itemization.Equipment
 
             _playerStats = player.Stats;
             _jumper = player.GetComponent<CharacterJumper>();
-            _dasher = _playerEntity.GetComponent<CharacterDasher>();
-            // _characterSpecialAttacker = playerEntity.GetComponent<CharacterSpecialAttacker>(); // Eventually I'll add this, trust me
+            _dasher = player.GetComponent<CharacterDasher>();
+            // _specialAttacker = player.GetComponent<CharacterSpecialAttacker>(); // Eventually I'll add this, trust me
 
         }
 

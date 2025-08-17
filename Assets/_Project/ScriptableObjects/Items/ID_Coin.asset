@@ -16,7 +16,9 @@ MonoBehaviour:
   ItemIcon: {fileID: 21300000, guid: 9e0b3e7e0386d6141a191933a2e8cdba, type: 3}
   ItemDescription: It's money... Keep in a safe place. People around here have the
     habit of taking it without asking.
+  Category: 2
   IsStackable: 1
   MaxStackSize: 1000
-  statUpgrades: []
-  grantedAbility: 0
+  EquipmentType: 0
+  StatUpgrades: []
+  GrantedAbility: 0
