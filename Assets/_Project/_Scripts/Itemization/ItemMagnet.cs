@@ -7,12 +7,14 @@ namespace GoodVillageGames.Core.Itemization
     /// <summary>
     /// When activated, this component moves the GameObject towards a target transform. (In this case, Morgana)
     /// It's designed for collectible items that should be "sucked in" (or better yet, looted) by the player.
+    /// When the player (Morgana) get's the Item, it'll trigger the IInteractable component.
     /// </summary>
     /// <remarks>
     /// I made something similar when making my previous game, Void Protocol, but was not this.
     /// There I just had colliders and when detected the exp runes went to the player. It did not have anything like the 
     /// IInteractable I made here. ;)
     /// </remarks>
+    [RequireComponent(typeof(ItemPickup))]
     [RequireComponent(typeof(CircleCollider2D))]
     public class ItemMagnet : MonoBehaviour
     {
@@ -20,8 +22,8 @@ namespace GoodVillageGames.Core.Itemization
         [SerializeField] private float _itemSpeed = 15f;
         [SerializeField] private float _collectionDistance = 0.5f; // Distance that the item will be when it's collected
 
-        private Transform _target;
         private bool _isFollowing;
+        private Transform _target;
         private IInteractable _interactable;
 
         private void Awake()
