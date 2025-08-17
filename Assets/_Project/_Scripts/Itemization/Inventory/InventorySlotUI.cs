@@ -3,6 +3,8 @@ using UnityEngine;
 using TriInspector;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using GoodVillageGames.Core.Util.UI;
+using GoodVillageGames.Core.Itemization.Equipment;
 
 namespace GoodVillageGames.Core.Itemization
 {
@@ -11,13 +13,12 @@ namespace GoodVillageGames.Core.Itemization
     /// This is just a component that is controlled by the InventoryUI.
     /// It also takes care of the player input interaction with the item slot.
     /// </summary>
-    public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
+    [RequireComponent(typeof(UIDragItem))]
+    public class InventorySlotUI : MonoBehaviour, IDropHandler
     {
         [Title("UI References")]
         [SerializeField] private Image _itemIcon;
         [SerializeField] private TextMeshProUGUI _quantityText;
-
-        private Transform _defaultParent;
 
         public int SlotIndex { get; private set; }
 
@@ -65,46 +66,21 @@ namespace GoodVillageGames.Core.Itemization
             _quantityText.enabled = false;
         }
 
-        // --- Inventory Drag and Drop ---
-
-        public void OnBeginDrag(PointerEventData eventData)
-        {
-            // Is there even an item to be dragged in the first place?
-            if (_itemIcon.enabled)
-            {
-                _defaultParent = transform.parent;
-                // Just to make sure it will render on top of everything else ;)
-                transform.SetParent(GetComponentInParent<Canvas>().transform);
-
-                // Disable raycasting for the slot bellow it can actually see something and know what to do
-                GetComponent<CanvasGroup>().blocksRaycasts = false;
-            }
-        }
-
-        public void OnDrag(PointerEventData eventData)
-        {
-            if (_itemIcon.enabled)
-            {
-                transform.position = eventData.position;
-            }
-        }
-
-        public void OnEndDrag(PointerEventData eventData)
-        {
-            if (_itemIcon.enabled)
-            {
-                // Return to default state
-                transform.SetParent(_defaultParent);
-                transform.SetSiblingIndex(SlotIndex);
-                GetComponent<CanvasGroup>().blocksRaycasts = true;
-            }
-        }
-
+        /// <summary>
+        /// Will be called when another UI item is dropped in this slot.
+        /// </summary>
         public void OnDrop(PointerEventData eventData)
         {
-            if (eventData.pointerDrag.TryGetComponent<InventorySlotUI>(out var draggedSlot))
+            var draggedItem = UIDragItem.draggedItem;
+            if (draggedItem == null) return;
+
+            if (draggedItem.sourceSlotUI is InventorySlotUI sourceInventorySlot)
             {
-                InventoryManager.Instance.SwapItems(draggedSlot.SlotIndex, this.SlotIndex);
+                InventoryManager.Instance.SwapItems(sourceInventorySlot.SlotIndex, this.SlotIndex);
+            }
+            else if (draggedItem.sourceSlotUI is EquipmentSlotUI sourceEquipmentSlot)
+            {
+                EquipmentManager.Instance.UnequipItemToSlot(sourceEquipmentSlot.GetSlotType(), this.SlotIndex);
             }
         }
     }

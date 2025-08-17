@@ -20,7 +20,7 @@ namespace GoodVillageGames.Core.Itemization.Equipment
         public event Action OnEquipmentChanged;
 
         // --- Player Components ---
-        [SerializeField] private Entity playerEntity;
+        private Entity _playerEntity;
         private IStatProvider _playerStats;
         private CharacterJumper _jumper;
         private CharacterDasher _dasher;
@@ -41,15 +41,31 @@ namespace GoodVillageGames.Core.Itemization.Equipment
             }
         }
 
-        private void Start()
+        private void OnEnable()
         {
-            if (playerEntity != null)
+            PlayerEntity.OnPlayerSpawned += OnPlayerSpawned;
+
+            if (PlayerEntity.Instance != null)
             {
-                _playerStats = playerEntity.Stats;
-                _jumper = playerEntity.GetComponent<CharacterJumper>();
-                _dasher = playerEntity.GetComponent<CharacterDasher>();
-                // _characterSpecialAttacker = playerEntity.GetComponent<CharacterSpecialAttacker>();
+                OnPlayerSpawned(PlayerEntity.Instance);
             }
+        }
+
+        private void OnDisable()
+        {
+            PlayerEntity.OnPlayerSpawned -= OnPlayerSpawned;
+        }
+
+        private void OnPlayerSpawned(PlayerEntity player)
+        {
+            // Just making sure to not subscribe again if the event fires multiple times
+            if (_playerStats != null) return;
+
+            _playerStats = player.Stats;
+            _jumper = player.GetComponent<CharacterJumper>();
+            _dasher = _playerEntity.GetComponent<CharacterDasher>();
+            // _characterSpecialAttacker = playerEntity.GetComponent<CharacterSpecialAttacker>(); // Eventually I'll add this, trust me
+
         }
 
         private void InitializeEquipment()
@@ -67,17 +83,19 @@ namespace GoodVillageGames.Core.Itemization.Equipment
 
         public void EquipItem(InventorySlot slot)
         {
+            if (slot == null || slot.itemData == null) return;
+
             ItemData itemToEquip = slot.itemData;
-            if (itemToEquip.equipmentType == EquipmentType.None) return;
+            if (itemToEquip.EquipmentType == EquipmentType.None) return;
 
             // If there's already an item in that slot, unequip
-            if (_equippedItems[itemToEquip.equipmentType] != null)
+            if (_equippedItems[itemToEquip.EquipmentType] != null)
             {
-                UnequipItem(itemToEquip.equipmentType);
+                UnequipItem(itemToEquip.EquipmentType);
             }
 
             // Equip the item in the slot
-            _equippedItems[itemToEquip.equipmentType] = itemToEquip;
+            _equippedItems[itemToEquip.EquipmentType] = itemToEquip;
 
             ApplyItemEffects(itemToEquip);
 
@@ -104,16 +122,41 @@ namespace GoodVillageGames.Core.Itemization.Equipment
             }
         }
 
+        public void UnequipItemToSlot(EquipmentType equipmentSlotType, int inventorySlotIndex)
+        {
+            ItemData itemToUnequip = _equippedItems[equipmentSlotType];
+            InventorySlot targetInventorySlot = InventoryManager.Instance.inventorySlots[inventorySlotIndex];
+
+            if (targetInventorySlot == null)
+            {
+                UnequipItem(equipmentSlotType);
+            }
+            else if (targetInventorySlot.itemData.EquipmentType == equipmentSlotType)
+            {
+                RemoveItemEffects(itemToUnequip);
+                EquipItem(targetInventorySlot);
+                InventoryManager.Instance.SetItemInSlot(inventorySlotIndex, new InventorySlot(itemToUnequip, 1));
+            }
+        }
+
+        public ItemData GetEquippedItem(EquipmentType slotType)
+        {
+            _equippedItems.TryGetValue(slotType, out ItemData item);
+            return item;
+        }
+
         private void ApplyItemEffects(ItemData item)
         {
+            if (_playerStats == null) return;
+
             // Apply stat upgrades
-            foreach (var upgrade in item.statUpgrades)
+            foreach (var upgrade in item.StatUpgrades)
             {
                 upgrade.ApplyUpgrade(_playerStats, item);
             }
 
             // Grant new Skills!
-            switch (item.grantedAbility)
+            switch (item.GrantedAbility)
             {
                 case GrantedAbility.DoubleJump:
                     if (_jumper != null) _jumper.DoubleJumpEnabled = true;
@@ -129,11 +172,13 @@ namespace GoodVillageGames.Core.Itemization.Equipment
 
         private void RemoveItemEffects(ItemData item)
         {
+            if (_playerStats == null) return;
+
             // Use the new method to remove all modifiers originating from this specific item.
             _playerStats?.RemoveModifiersFromSource(item);
 
             // Revoke special abilities
-            switch (item.grantedAbility)
+            switch (item.GrantedAbility)
             {
                 case GrantedAbility.DoubleJump:
                     if (_jumper != null) _jumper.DoubleJumpEnabled = false;
@@ -141,8 +186,10 @@ namespace GoodVillageGames.Core.Itemization.Equipment
                 case GrantedAbility.JetDash:
                     if (_dasher != null) _dasher.DashEnabled = true;
                     break;
+                    // case GrantedAbility.Infernum:
+                    //     if (_specialAttacker != null) _specialAttacker.SpecialAttackEnabled = false;
+                    //     break;
             }
         }
     }
-
 }

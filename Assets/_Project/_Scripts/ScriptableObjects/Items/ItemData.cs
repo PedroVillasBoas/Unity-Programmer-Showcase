@@ -49,13 +49,13 @@ namespace GoodVillageGames.Core.Itemization
         [Group("Behavior")] public int MaxStackSize = 100;
 
         [Title("Equipment")]
-        [Group("Equipment")] public EquipmentType equipmentType = EquipmentType.None;
+        [Group("Equipment")] public EquipmentType EquipmentType = EquipmentType.None;
 
         [Title("Stat Modifiers")]
-        [Group("Modifiers")] public List<Upgrade> statUpgrades;
+        [Group("Modifiers")] public List<Upgrade> StatUpgrades;
 
         [Title("Item Skills")]
-        [Group("Skill")] public GrantedAbility grantedAbility = GrantedAbility.None;
+        [Group("Skill")] public GrantedAbility GrantedAbility = GrantedAbility.None;
 
     }
 }

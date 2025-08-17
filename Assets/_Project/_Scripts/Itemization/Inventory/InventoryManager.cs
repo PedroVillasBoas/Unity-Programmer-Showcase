@@ -143,6 +143,16 @@ namespace GoodVillageGames.Core.Itemization
             OnInventoryChanged?.Invoke();
         }
 
+        /// <summary>
+        /// Sets the contents of a specific inventory slot.
+        /// </summary>
+        public void SetItemInSlot(int index, InventorySlot slot)
+        {
+            if (index < 0 || index >= inventorySlots.Count) return;
+            inventorySlots[index] = slot;
+            OnInventoryChanged?.Invoke();
+        }
+
         // --- Currency & Keys ---
 
         private void AddCurrency(ItemData currencyItem, int amount)
