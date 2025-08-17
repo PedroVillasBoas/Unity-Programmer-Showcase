@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7171612597068730990}
   - component: {fileID: 6174909273489950130}
   - component: {fileID: 8110786290495901109}
+  - component: {fileID: 5631187421463656970}
   - component: {fileID: 6237090473127041035}
   m_Layer: 5
   m_Name: Prefab_Inventory_Slot
@@ -35,10 +36,10 @@ RectTransform:
   - {fileID: 3023705918218961075}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6174909273489950130
 CanvasRenderer:
@@ -78,6 +79,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &5631187421463656970
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3386474722104840400}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &6237090473127041035
 MonoBehaviour:
   m_ObjectHideFlags: 0

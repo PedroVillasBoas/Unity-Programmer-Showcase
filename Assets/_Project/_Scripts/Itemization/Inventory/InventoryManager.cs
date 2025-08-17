@@ -56,5 +56,20 @@ namespace GoodVillageGames.Core.Itemization
             Debug.Log("Inventory is full!"); // For now this will have to do. But I don't plan on adding that many items for this to be a problem.
             return false;
         }
+
+        public void SwapItems(int draggedSlotIndex, int switcherSlotIndex)
+        {
+            // Just to make sure that no slot has some weird index
+            if (draggedSlotIndex < 0 || draggedSlotIndex >= inventorySlots.Count || switcherSlotIndex < 0 || switcherSlotIndex >= inventorySlots.Count)
+            {
+                return;
+            }
+
+            // Tuple swap
+            (inventorySlots[switcherSlotIndex], inventorySlots[draggedSlotIndex]) = (inventorySlots[draggedSlotIndex], inventorySlots[switcherSlotIndex]);
+
+            // Can somebody please redraw the UI?! Thank you!
+            OnInventoryChanged?.Invoke();
+        }
     }
 }

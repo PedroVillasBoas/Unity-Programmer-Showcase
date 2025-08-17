@@ -36,7 +36,7 @@ MonoBehaviour:
       isIconRecursive: 0
       isColorRecursive: 0
     - iconNameOrGuid: Prefab Icon
-      colorIndex: 0
+      colorIndex: 2
       isIconRecursive: 0
       isColorRecursive: 0
     - iconNameOrGuid: AudioSource Icon
@@ -48,7 +48,7 @@ MonoBehaviour:
       isIconRecursive: 0
       isColorRecursive: 0
     - iconNameOrGuid: ScriptableObject Icon
-      colorIndex: 8
+      colorIndex: 4
       isIconRecursive: 0
       isColorRecursive: 0
     - iconNameOrGuid: AnimationClip Icon

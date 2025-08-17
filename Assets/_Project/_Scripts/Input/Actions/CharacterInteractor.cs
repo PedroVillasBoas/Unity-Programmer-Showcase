@@ -91,20 +91,5 @@ namespace GoodVillageGames.Core.Actions
             }
             return closest;
         }
-
-        // I'll remove this later ;)
-        private void OnDrawGizmosSelected()
-        {
-            if (Stats == null) return;
-
-            // Collect Range
-            Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(transform.position, Stats.GetStat(AttributeType.CollectRange));
-
-            // Interact Range
-            Gizmos.color = Color.blue;
-            Gizmos.DrawWireSphere(transform.position, Stats.GetStat(AttributeType.InteractRange));
-        }
-
     }
 }

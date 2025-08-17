@@ -50,9 +50,11 @@ namespace GoodVillageGames.Core.Itemization
             for (int i = 0; i < inventorySize; i++)
             {
                 InventorySlotUI newSlot = Instantiate(_slotPrefab, _slotsParent);
-                newSlot.ClearSlot();
+                newSlot.Initialize(i);
                 _slotUIs.Add(newSlot);
             }
+
+            UpdateUI();
         }
 
         /// <summary>
