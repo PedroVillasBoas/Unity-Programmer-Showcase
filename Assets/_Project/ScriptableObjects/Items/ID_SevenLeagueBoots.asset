@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c4b9b5f1fa4f94b951e6b8f1778e3f, type: 3}
   m_Name: ID_SevenLeagueBoots
   m_EditorClassIdentifier: 
-  ItemName: 
-  ItemIcon: {fileID: 0}
-  ItemDescription: 
-  IsStackable: 1
-  MaxStackSize: 100
+  ItemName: Seven-League Boots
+  ItemIcon: {fileID: 21300000, guid: 66e277323bc120f42b02fe7e4fc04634, type: 3}
+  ItemDescription: Maybe you can cross that river now? The Seven-League Boots sure
+    help you travel long distances!
+  IsStackable: 0
+  MaxStackSize: 1
   statUpgrades: []
   grantedAbility: 3

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c4b9b5f1fa4f94b951e6b8f1778e3f, type: 3}
   m_Name: ID_Key
   m_EditorClassIdentifier: 
-  ItemName: 
-  ItemIcon: {fileID: 0}
-  ItemDescription: 
+  ItemName: Golden Key
+  ItemIcon: {fileID: 21300000, guid: 54deb2626a8806d4b86607e5ff6262d5, type: 3}
+  ItemDescription: You can open chests with it! Go for it!
   IsStackable: 1
-  MaxStackSize: 100
+  MaxStackSize: 10
   statUpgrades: []
   grantedAbility: 0

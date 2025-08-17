@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Merlin's Grimoire
   ItemIcon: {fileID: 21300000, guid: 33f797c452a7afa40b878fb88a294c63, type: 3}
-  ItemDescription: 
-  IsStackable: 1
-  MaxStackSize: 100
+  ItemDescription: The most wanted book of all realms. Keep it save. And use it carefully.
+    It holds an enormous Skill!
+  IsStackable: 0
+  MaxStackSize: 1
   statUpgrades: []
   grantedAbility: 2
