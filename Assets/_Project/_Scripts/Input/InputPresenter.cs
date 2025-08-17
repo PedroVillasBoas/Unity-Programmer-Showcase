@@ -53,7 +53,8 @@ namespace GoodVillageGames.Player.Input
             _inputActions.Player.Jump.canceled += OnJumpCanceled;
 
             _inputActions.Player.BasicAttack.performed += OnAttack;
-            _inputActions.Player.Dash.performed += OnDash;
+            _inputActions.Player.Dash.performed += OnDashPerformed;
+            _inputActions.Player.Dash.canceled += OnDashCanceled;
             
             // _inputActions.Player.Interact.performed += OnInteract;
             // _inputActions.Player.SpecialAttack.performed += OnSpecialAttack;
@@ -70,7 +71,8 @@ namespace GoodVillageGames.Player.Input
             _inputActions.Player.Jump.canceled -= OnJumpCanceled;
 
             _inputActions.Player.BasicAttack.performed -= OnAttack;
-            _inputActions.Player.Dash.performed -= OnDash;
+            _inputActions.Player.Dash.performed -= OnDashPerformed;
+            _inputActions.Player.Dash.performed -= OnDashCanceled;
 
             // _inputActions.Player.Interact.performed -= OnInteract;
             // _inputActions.Player.SpecialAttack.performed -= OnSpecialAttack;
@@ -96,16 +98,19 @@ namespace GoodVillageGames.Player.Input
             _attacker.Attack();
         }
 
-        private void OnDash(InputAction.CallbackContext context)
+        private void OnDashPerformed(InputAction.CallbackContext context)
         {
+            _dasher._isDashPressed = true;
             _dasher.Dash(_moveDirection);
+        }
+
+        private void OnDashCanceled(InputAction.CallbackContext context)
+        {
+            _dasher.CancelDash();
         }
 
         private void OnJumpPerformed(InputAction.CallbackContext context)
         {
-            // Not checking if IsJumping since Double Jump is also present in the project showcase
-            if (!_jumper.CanJump) return;
-
             _jumper._isJumpPressed = true;
             _jumper.Jump();
         }

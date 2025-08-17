@@ -19,7 +19,7 @@ MonoBehaviour:
   Deceleration: 10
   InteractRange: 10
   CollectRange: 20
-  JumpForce: 30
+  JumpForce: 10
   DoubleJumpCooldown: 5
   Damage: 10
   AttackSpeed: 1

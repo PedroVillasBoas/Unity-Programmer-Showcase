@@ -53,6 +53,9 @@ namespace GoodVillageGames.Core.Actions
 
         public void Jump()
         {
+            // Not checking if IsJumping since Double Jump is also present in the project showcase
+            if (!CanJump) return;
+
             // --- Getting Stats ---
             float impulseForce = Stats.GetStat(AttributeType.JumpForce);
 
