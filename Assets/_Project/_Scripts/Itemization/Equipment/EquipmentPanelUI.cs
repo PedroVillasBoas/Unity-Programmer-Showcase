@@ -1,35 +1,31 @@
 using UnityEngine;
-using System.Collections.Generic;
 using System.Linq;
+using System.Collections.Generic;
+using TriInspector;
 
 namespace GoodVillageGames.Core.Itemization.Equipment
 {
-
-
     /// <summary>
     /// The main controller for the equipment UI.
     /// It listens to the EquipmentManager and updates UI slots.
     /// </summary>
     public class EquipmentPanelUI : MonoBehaviour
     {
-        [Header("UI References")]
-        [SerializeField] private Transform slotsParent; // The object that holds the equipment slots
+        [Title("UI References")]
+        [SerializeField] private Transform slotsParent;
 
-        // This list will be populated automatically based on the children of slotsParent.
         private List<EquipmentSlotUI> _equipmentSlotUIs;
 
         private void Start()
         {
-            // --- Subscribe to the EquipmentManager's event ---
             if (EquipmentManager.Instance != null)
             {
                 EquipmentManager.Instance.OnEquipmentChanged += UpdatePanel;
             }
 
-            // --- Automatically find and initialize slots ---
+            // --- Find and Initialize slots ---
             _equipmentSlotUIs = slotsParent.GetComponentsInChildren<EquipmentSlotUI>().ToList();
 
-            // Do an initial draw of the panel
             UpdatePanel();
         }
 
@@ -49,7 +45,7 @@ namespace GoodVillageGames.Core.Itemization.Equipment
         {
             if (EquipmentManager.Instance == null) return;
 
-            // Ask the EquipmentManager for the current state and update each slot.
+            // Ask the EquipmentManager for the current state of each slot and update them!
             foreach (var slotUI in _equipmentSlotUIs)
             {
                 ItemData equippedItem = EquipmentManager.Instance.GetEquippedItem(slotUI.GetSlotType());
@@ -57,5 +53,4 @@ namespace GoodVillageGames.Core.Itemization.Equipment
             }
         }
     }
-
 }
