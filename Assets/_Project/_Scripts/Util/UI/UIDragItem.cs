@@ -40,9 +40,9 @@ namespace GoodVillageGames.Core.Util.UI
                 _ghostIcon.raycastTarget = false;
                 ghostObj.SetActive(false);
 
-                _ghostIconTransform.pivot = new Vector2(0.5f, 0.5f); // Center pivot
-                _ghostIconTransform.anchorMin = new Vector2(0.5f, 0.5f); // Center anchor
-                _ghostIconTransform.anchorMax = new Vector2(0.5f, 0.5f); // Center anchor
+                _ghostIconTransform.pivot = new Vector2(0.5f, 0.5f);        // Center pivot
+                _ghostIconTransform.anchorMin = new Vector2(0.5f, 0.5f);    // Center anchor
+                _ghostIconTransform.anchorMax = new Vector2(0.5f, 0.5f);    // Center anchor
             }
         }
 
@@ -85,6 +85,11 @@ namespace GoodVillageGames.Core.Util.UI
         {
             // When dropping I already did the Slot handle the data stuff
             // Here I just need to be a janitor
+            if (eventData.pointerDrag != null && _itemIcon != null)
+            {
+                _itemIcon.enabled = true;
+            }
+
             draggedItem = null;
             _ghostIcon.gameObject.SetActive(false);
         }
