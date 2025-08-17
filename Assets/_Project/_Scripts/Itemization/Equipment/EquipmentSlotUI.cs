@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using GoodVillageGames.Core.Util.UI;
+using GoodVillageGames.Core.Tooltip;
 
 namespace GoodVillageGames.Core.Itemization.Equipment
 {
@@ -11,7 +12,7 @@ namespace GoodVillageGames.Core.Itemization.Equipment
     /// Acts as a drop zone for items from the inventory and a drag source for unequipping items.
     /// </summary>
     [RequireComponent(typeof(UIDragItem))]
-    public class EquipmentSlotUI : MonoBehaviour, IDropHandler
+    public class EquipmentSlotUI : MonoBehaviour, IDropHandler, ITooltipDataProvider 
     {
         [SerializeField] private EquipmentType _slotType;
         [SerializeField] private Image _itemIcon;
@@ -70,6 +71,11 @@ namespace GoodVillageGames.Core.Itemization.Equipment
                     InventoryManager.Instance.RemoveItem(sourceInventorySlot.SlotIndex);
                 }
             }
+        }
+
+        public ItemData GetItemData()
+        {
+            return _equippedItem;
         }
     }
 }

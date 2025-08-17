@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 7101693612943424015}
   - component: {fileID: 7136357675903946407}
   - component: {fileID: 1637125696903547583}
+  - component: {fileID: 3802258532326680803}
   m_Layer: 5
   m_Name: Prefab_Equipment-Slot
   m_TagString: Untagged
@@ -152,6 +153,18 @@ MonoBehaviour:
   _slotType: 0
   _itemIcon: {fileID: 4420970560594920252}
   _slotNameText: {fileID: 2369406708556465134}
+--- !u!114 &3802258532326680803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2471660409395989170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6456b03b52a85b4b97777b569f835ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7549008538485082829
 GameObject:
   m_ObjectHideFlags: 0

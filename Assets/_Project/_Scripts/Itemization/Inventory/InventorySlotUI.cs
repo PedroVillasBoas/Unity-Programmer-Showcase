@@ -4,6 +4,7 @@ using TriInspector;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using GoodVillageGames.Core.Util.UI;
+using GoodVillageGames.Core.Tooltip;
 using GoodVillageGames.Core.Itemization.Equipment;
 
 namespace GoodVillageGames.Core.Itemization
@@ -14,7 +15,7 @@ namespace GoodVillageGames.Core.Itemization
     /// It also takes care of the player input interaction with the item slot.
     /// </summary>
     [RequireComponent(typeof(UIDragItem))]
-    public class InventorySlotUI : MonoBehaviour, IDropHandler
+    public class InventorySlotUI : MonoBehaviour, IDropHandler, ITooltipDataProvider
     {
         [Title("UI References")]
         [SerializeField] private Image _itemIcon;
@@ -82,6 +83,11 @@ namespace GoodVillageGames.Core.Itemization
             {
                 EquipmentManager.Instance.UnequipItemToSlot(sourceEquipmentSlot.GetSlotType(), this.SlotIndex);
             }
+        }
+
+        public ItemData GetItemData()
+        {
+            return InventoryManager.Instance.inventorySlots[SlotIndex]?.itemData;
         }
     }
 }
