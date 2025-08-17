@@ -1,4 +1,5 @@
 using UnityEngine;
+using TriInspector;
 using GoodVillageGames.Core.Interfaces;
 
 namespace GoodVillageGames.Core.Itemization
@@ -9,7 +10,7 @@ namespace GoodVillageGames.Core.Itemization
     /// </summary>
     public class ItemPickup : MonoBehaviour, IInteractable
     {
-        [Header("Data")]
+        [Title("Data")]
         [Tooltip("The ScriptableObject that defines this item.")]
         [SerializeField] private ItemData _itemData;
 
@@ -17,16 +18,18 @@ namespace GoodVillageGames.Core.Itemization
 
         public bool Interact()
         {
-            Debug.Log($"Adding {_itemData.ItemName} to inventory!");
+            bool itemAdded = InventoryManager.Instance.AddItem(_itemData);
 
-            // --- To-Do ---
-            // This is where I call the InventoryManager. If I had one :')
-            // For now, I'll just sent it to tartarus 
-            if (GetComponent<ItemMagnet>() == null)
+            if (itemAdded)
             {
-                Destroy(gameObject);
+                // If item does NOT have a magnet, it means it was picked up directly (somehow), so just to make sure, I'll destroy it here. 
+                // If it has a magnet, the magnet will handle the destruction after it reaches Morgana.
+                if (GetComponent<ItemMagnet>() == null)
+                {
+                    Destroy(gameObject);
+                }
             }
-            return true;
+            return itemAdded;
         }
     }
 }
