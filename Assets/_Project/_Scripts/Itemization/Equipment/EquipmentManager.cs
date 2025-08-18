@@ -199,14 +199,19 @@ namespace GoodVillageGames.Core.Itemization.Equipment
         {
             var saveData = new EquipmentSaveData
             {
-                equippedItemNames = new Dictionary<EquipmentType, string>()
+                equippedItems = new List<EquipmentSlotSaveData>()
             };
 
+            // Convert the runtime dictionary into a serializable list
             foreach (var pair in _equippedItems)
             {
                 if (pair.Value != null)
                 {
-                    saveData.equippedItemNames[pair.Key] = pair.Value.name;
+                    saveData.equippedItems.Add(new EquipmentSlotSaveData
+                    {
+                        slotType = pair.Key,
+                        itemName = pair.Value.name
+                    });
                 }
             }
             return saveData;
@@ -215,17 +220,18 @@ namespace GoodVillageGames.Core.Itemization.Equipment
         public void LoadSaveData(EquipmentSaveData data)
         {
             if (data == null) return;
+            InitializeEquipment();
 
-            foreach (var pair in data.equippedItemNames)
+            // Convert the list back into the runtime dict
+            foreach (var savedSlot in data.equippedItems)
             {
-                ItemData itemData = _itemDatabase.FindItemByName(pair.Value);
+                ItemData itemData = _itemDatabase.FindItemByName(savedSlot.itemName);
                 if (itemData != null)
                 {
-                    _equippedItems[pair.Key] = itemData;
+                    _equippedItems[savedSlot.slotType] = itemData;
                     ApplyItemEffects(itemData);
                 }
             }
-
             OnEquipmentChanged?.Invoke();
         }
     }
