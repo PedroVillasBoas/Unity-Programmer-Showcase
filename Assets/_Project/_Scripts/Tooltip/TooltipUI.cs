@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Text;
 using TriInspector;
 using GoodVillageGames.Core.Itemization;
+using GoodVillageGames.Core.Attributes.Upgrades;
 
 namespace GoodVillageGames.Core.Tooltip
 {
@@ -41,11 +42,19 @@ namespace GoodVillageGames.Core.Tooltip
             StringBuilder statsBuilder = new();
             foreach (var upgrade in itemData.StatUpgrades)
             {
-                // This will need the Upgrade class to have public accessors for its fields (which right now, they don't)
-                // I'll need to change the Upgrade code to expose them
-                // Just leaving these here so I don't forget
-                // statsBuilder.AppendLine($"+{upgrade.Value} {upgrade.StatType}");
-                // Maybe also put some style on the text depending on the statType (?)
+                // Format the string based on the operator type
+                switch (upgrade.OperatorType)
+                {
+                    case OperatorType.Add:
+                        statsBuilder.AppendLine($"+{upgrade.Value} {upgrade.StatType}");
+                        break;
+                    case OperatorType.Subtract:
+                        statsBuilder.AppendLine($"-{upgrade.Value} {upgrade.StatType}");
+                        break;
+                    case OperatorType.Multiply:
+                        statsBuilder.AppendLine($"x{upgrade.Value} {upgrade.StatType}");
+                        break;
+                }
             }
             _itemStatsText.text = statsBuilder.ToString();
         }

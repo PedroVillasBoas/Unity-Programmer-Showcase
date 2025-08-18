@@ -21,6 +21,10 @@ namespace GoodVillageGames.Core.Attributes.Upgrades
         // Duration is part of the upgrade definition, -1 or 0 means permanent ;)
         [SerializeField] private float _duration = -1f;
 
+        public AttributeType StatType => _statType;
+        public OperatorType OperatorType => _operatorType;
+        public float Value => _value;
+
         // We hold a reference to a strategy object
         private IModificationStrategy _strategy;
 
