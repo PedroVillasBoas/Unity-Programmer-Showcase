@@ -2,15 +2,29 @@ using UnityEngine;
 using Unity.Cinemachine;
 using GoodVillageGames.Core.Dialogue;
 
-namespace GoodVillageGames.Core.Util.Camera
+namespace GoodVillageGames.Core.Util.Cameras
 {
     /// <summary>
     /// Listens for dialogue events and controls Cinemachine cameras accordingly.
     /// </summary>
     public class CameraDirector : MonoBehaviour
     {
-        [SerializeField] private CinemachineCamera gameplayCamera;
-        [SerializeField] private CinemachineCamera dialogueCamera;
+        [SerializeField] private CinemachineCamera _gameplayCamera;
+        [SerializeField] private CinemachineCamera _dialogueCamera;
+
+        [SerializeField] private Camera _entitiesCamera;
+
+        private int _defaultPriority;
+        private CinemachineBrain _cinemachineBrain;
+
+        private void Awake()
+        {
+            if (_gameplayCamera != null)
+            {
+                _defaultPriority = _gameplayCamera.Priority;
+            }
+            _cinemachineBrain = Camera.main.GetComponent<CinemachineBrain>();
+        }
 
         private void Start()
         {
@@ -29,16 +43,14 @@ namespace GoodVillageGames.Core.Util.Camera
 
         private void OnDialogueStarted()
         {
-            // Increase the dialogue camera's priority to make it the active camera
-            if (dialogueCamera != null) dialogueCamera.Priority = 20;
-            if (gameplayCamera != null) gameplayCamera.Priority = 10;
+            if (_dialogueCamera != null) _dialogueCamera.Priority = _defaultPriority + 10;
+            if (_gameplayCamera != null) _gameplayCamera.Priority = _defaultPriority - 10;
         }
 
         private void OnDialogueEnded()
         {
-            // Restore the gameplay camera's priority
-            if (gameplayCamera != null) gameplayCamera.Priority = 20;
-            if (dialogueCamera != null) dialogueCamera.Priority = 10;
+            if (_gameplayCamera != null) _gameplayCamera.Priority = _defaultPriority + 10;
+            if (_dialogueCamera != null) _dialogueCamera.Priority = _defaultPriority - 10;
         }
     }
 }

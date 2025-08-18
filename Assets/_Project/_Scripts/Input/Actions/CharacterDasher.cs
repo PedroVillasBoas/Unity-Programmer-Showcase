@@ -63,7 +63,7 @@ namespace GoodVillageGames.Core.Actions
             // --- To-Do ---
             // This is here because I know morgana has a small casting animation before the actual dash
             // So later I'll have to add something to let the dasher know when it's finished ;)
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.8f);
 
             // No more Dash... Now she can Fly!
             float dashSpeed = Stats.GetStat(AttributeType.DashSpeed);
