@@ -25,7 +25,7 @@ namespace GoodVillageGames.Core.Itemization.Equipment
                 EquipmentManager.Instance.OnEquipmentChanged += UpdatePanel;
             }
 
-            InputPresenter.OnToggleInventoryPressed += TogglePanel;
+            UIManager.OnToggleCharacterMenu += TogglePanel;
 
             // --- Find and Initialize slots ---
             _equipmentSlotUIs = _slotsParent.GetComponentsInChildren<EquipmentSlotUI>().ToList();
@@ -40,7 +40,7 @@ namespace GoodVillageGames.Core.Itemization.Equipment
             {
                 EquipmentManager.Instance.OnEquipmentChanged -= UpdatePanel;
             }
-            InputPresenter.OnToggleInventoryPressed -= TogglePanel;
+            UIManager.OnToggleCharacterMenu -= TogglePanel;
         }
 
         /// <summary>

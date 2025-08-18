@@ -20,11 +20,11 @@ namespace GoodVillageGames.Core.Itemization
 
         private void Start()
         {
-            // Subscribe to the inventory change event. This is the core of the UI updating. (Told ya that the UI would subscribe to it, didn't I? ;)
+            // Subscribing to the inventory change event. This is the core of the UI updating. (Told ya that the UI would subscribe to it, didn't I? ;)
             InventoryManager.Instance.OnInventoryChanged += UpdateUI;
 
             // Presenter will tell the UI when the player asked for the UI
-            InputPresenter.OnToggleInventoryPressed += ToggleInventory;
+            UIManager.OnToggleCharacterMenu += ToggleInventory;
 
             _inventoryPanel.SetActive(false);
             InitializeInventory();
@@ -32,7 +32,7 @@ namespace GoodVillageGames.Core.Itemization
 
         private void OnDestroy()
         {
-            InputPresenter.OnToggleInventoryPressed -= ToggleInventory;
+            UIManager.OnToggleCharacterMenu -= ToggleInventory;
 
             if (InventoryManager.Instance != null)
             {

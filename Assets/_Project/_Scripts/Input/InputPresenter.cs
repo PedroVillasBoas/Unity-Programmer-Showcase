@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using GoodVillageGames.Core.Actions;
 using GoodVillageGames.Core.Util.Locomotion;
-using System;
 
 namespace GoodVillageGames.Player.Input
 {
@@ -32,10 +31,6 @@ namespace GoodVillageGames.Player.Input
         private float _moveDirection;
         private IS_PlayerActions _inputActions;
 
-        // --- Radio Station ---
-        public static event Action OnToggleInventoryPressed;
-        public static event Action OnTogglePausePressed;
-
         private void Awake()
         {
             _mover = GetComponent<CharacterMover>();
@@ -61,8 +56,6 @@ namespace GoodVillageGames.Player.Input
             _inputActions.Player.Dash.canceled += OnDashCanceled;
 
             _inputActions.Player.Interact.performed += OnInteract;
-            _inputActions.Player.Inventory.performed += OnToggleInventory;
-            _inputActions.Player.Pause.performed += OnTogglePause;
             // _inputActions.Player.SpecialAttack.performed += OnSpecialAttack;
         }
 
@@ -81,8 +74,6 @@ namespace GoodVillageGames.Player.Input
             _inputActions.Player.Dash.performed -= OnDashCanceled;
 
             _inputActions.Player.Interact.performed -= OnInteract;
-            _inputActions.Player.Inventory.performed -= OnToggleInventory;
-            _inputActions.Player.Pause.performed -= OnTogglePause;
             // _inputActions.Player.SpecialAttack.performed -= OnSpecialAttack;
         }
 
@@ -131,16 +122,6 @@ namespace GoodVillageGames.Player.Input
         private void OnInteract(InputAction.CallbackContext context)
         {
             _interactor.DoInteraction();
-        }
-
-        private void OnToggleInventory(InputAction.CallbackContext context)
-        {
-            OnToggleInventoryPressed?.Invoke();
-        }
-
-        private void OnTogglePause(InputAction.CallbackContext context)
-        {
-            OnTogglePausePressed?.Invoke();
         }
     }
 }

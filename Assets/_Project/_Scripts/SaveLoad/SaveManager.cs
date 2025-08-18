@@ -10,6 +10,9 @@ namespace GoodVillageGames.Core.Itemization.Equipment
     {
         public static SaveManager Instance { get; private set; }
 
+        [SerializeField] private float _autoSaveInterval = 60f;
+
+        private float _autoSaveTimer;
         private string _saveFilePath;
 
         private void Awake()
@@ -22,21 +25,31 @@ namespace GoodVillageGames.Core.Itemization.Equipment
             {
                 Instance = this;
                 _saveFilePath = Path.Combine(Application.persistentDataPath, "PedroVilasBoas-GameShowcase-savedata.json");
+                _autoSaveTimer = _autoSaveInterval;
             }
         }
 
         private void Update()
         {
-            // --- Temporary Test Controls ---
-            if (Input.GetKeyDown(KeyCode.O))
-            {
-                SaveGame();
-            }
+            _autoSaveTimer -= Time.unscaledDeltaTime;
 
-            if (Input.GetKeyDown(KeyCode.P))
+            AutoSave();
+        }
+
+        private void AutoSave()
+        {
+            if (_autoSaveTimer <= 0f)
             {
-                LoadGame();
+                Debug.Log("Autosaving...");
+                SaveGame();
+                _autoSaveTimer = _autoSaveInterval;
             }
+        }
+
+        private void OnApplicationQuit()
+        {
+            Debug.Log("Application quitting, performing final save...");
+            SaveGame();
         }
 
         public void SaveGame()

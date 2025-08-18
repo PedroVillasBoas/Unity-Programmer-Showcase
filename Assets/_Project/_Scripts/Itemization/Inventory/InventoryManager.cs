@@ -251,17 +251,16 @@ namespace GoodVillageGames.Core.Itemization
                 {
                     saveData.savedSlots.Add(new InventorySlotSaveData
                     {
-                        itemName = slot.itemData.name, // Use .name as a unique ID
+                        itemName = slot.itemData.name,
                         quantity = slot.quantity
                     });
                 }
                 else
                 {
-                    saveData.savedSlots.Add(null); // Preserve empty slots
+                    saveData.savedSlots.Add(null);
                 }
             }
 
-            // ... (add currency saving logic here if needed)
 
             return saveData;
         }
@@ -274,8 +273,6 @@ namespace GoodVillageGames.Core.Itemization
             {
                 if (data.savedSlots[i] != null)
                 {
-                    // You need a way to find the ItemData asset from its name.
-                    // This requires the ItemDatabase we built earlier.
                     ItemData itemData = _itemDatabase.FindItemByName(data.savedSlots[i].itemName);
                     if (itemData != null)
                     {
@@ -287,10 +284,8 @@ namespace GoodVillageGames.Core.Itemization
                     inventorySlots[i] = null;
                 }
             }
-
-            // ... (add currency loading logic here if needed)
-
-            OnInventoryChanged?.Invoke(); // Update the UI
+            OnInventoryChanged?.Invoke();
         }
     }
+
 }

@@ -15,7 +15,7 @@ namespace GoodVillageGames.Core.Itemization
 
         private void Start()
         {
-            InputPresenter.OnToggleInventoryPressed += TogglePanel;
+            UIManager.OnToggleCharacterMenu += TogglePanel;
             if (dropZonePanel != null)
             {
                 dropZonePanel.SetActive(false);
@@ -24,7 +24,7 @@ namespace GoodVillageGames.Core.Itemization
 
         private void OnDestroy()
         {
-            InputPresenter.OnToggleInventoryPressed -= TogglePanel;
+            UIManager.OnToggleCharacterMenu -= TogglePanel;
         }
 
         private void TogglePanel()
