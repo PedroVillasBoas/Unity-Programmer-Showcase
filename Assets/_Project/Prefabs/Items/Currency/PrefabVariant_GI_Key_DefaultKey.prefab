@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1029747640289336308, guid: 829c689c7e43dea4c8335e0fa86e729b, type: 3}
+      propertyPath: _itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: 89e59b957d017f849b3c9e43423ca9fa, type: 2}
     - target: {fileID: 1616357763696489539, guid: 829c689c7e43dea4c8335e0fa86e729b, type: 3}
       propertyPath: m_Name
       value: PrefabVariant_GI_Key_DefaultKey

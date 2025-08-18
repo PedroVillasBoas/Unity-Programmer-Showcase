@@ -1,6 +1,7 @@
 using UnityEngine;
 using TriInspector;
 using GoodVillageGames.Core.Interfaces;
+using System.Collections;
 
 namespace GoodVillageGames.Core.Itemization
 {
@@ -21,22 +22,29 @@ namespace GoodVillageGames.Core.Itemization
         [Title("Magnet Configs")]
         [SerializeField] private float _itemSpeed = 15f;
         [SerializeField] private float _collectionDistance = 0.5f; // Distance that the item will be when it's collected
+        [SerializeField] private float _idleDuration = 0.5f;        // Time that the item will remain not wanting to be collected
 
         private bool _isFollowing;
         private Transform _target;
         private IInteractable _interactable;
+        private bool _isIdle = true;
 
         private void Awake()
         {
             _interactable = GetComponent<IInteractable>();
         }
 
+        private void Start()
+        {
+            StartCoroutine(IdleStateCoroutine());
+        }
+
         /// <summary>
-        /// Starts the attraction towards the target.
+        /// Starts the attraction towards the target. Only if not idle.
         /// </summary>
         public void StartFollowing(Transform target)
         {
-            if (_isFollowing) return;
+            if (_isIdle || _isFollowing) return;
 
             _target = target;
             _isFollowing = true;
@@ -53,12 +61,16 @@ namespace GoodVillageGames.Core.Itemization
             {
                 _interactable?.Interact();
                 _isFollowing = false;
-
-                // --- To-Do ---
-                // Later I'll add the functionality to add the item to the inventory ;) (in the item script, ok? not here!)
-                // Just leaving it here so I don't forget
                 Destroy(gameObject);
             }
+        }
+        /// <summary>
+        /// A simple coroutine that waits for the idle duration to end.
+        /// </summary>
+        private IEnumerator IdleStateCoroutine()
+        {
+            yield return new WaitForSeconds(_idleDuration);
+            _isIdle = false;
         }
     }
 }
