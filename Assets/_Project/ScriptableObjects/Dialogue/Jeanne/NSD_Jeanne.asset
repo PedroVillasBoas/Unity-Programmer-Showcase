@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bfa171541b5aee42a288a71ea6cd706, type: 3}
+  m_Name: NSD_Jeanne
+  m_EditorClassIdentifier: 
+  NpcName: Jeanne D'Arc
+  NpcPortrait: {fileID: -5693385986458454339, guid: 98016bdfe8b413c42b02dd629fb73bc6, type: 3}
+  NpcNameColor: {r: 0.9411765, g: 0.70980394, b: 0.25490198, a: 1}

@@ -15,10 +15,12 @@ namespace GoodVillageGames.Core.Dialogue
         public event Action OnDialogueStarted;
         public event Action OnDialogueEnded;
 
-        [SerializeField] private DialogueUI dialogueUI;
+        [SerializeField] private DialogueUI _dialogueUI;
 
         private Queue<DialogueLine> _lineQueue;
-        private bool _isDialogueActive = false;
+        
+        public bool IsDialogueActive { get; private set; } = false;
+        public bool IsCurrentLineFinished => _dialogueUI.IsLineFinishedTyping;
 
         private void Awake()
         {
@@ -30,9 +32,9 @@ namespace GoodVillageGames.Core.Dialogue
 
         public void StartDialogue(DialogueTree dialogueTree)
         {
-            if (_isDialogueActive) return;
+            if (IsDialogueActive) return;
 
-            _isDialogueActive = true;
+            IsDialogueActive = true;
             OnDialogueStarted?.Invoke();
             GameManager.Instance.TogglePauseState();
 
@@ -42,7 +44,7 @@ namespace GoodVillageGames.Core.Dialogue
                 _lineQueue.Enqueue(line);
             }
 
-            dialogueUI.ShowPanel();
+            _dialogueUI.ShowPanel();
             DisplayNextLine();
         }
 
@@ -55,18 +57,18 @@ namespace GoodVillageGames.Core.Dialogue
             }
 
             DialogueLine currentLine = _lineQueue.Dequeue();
-            dialogueUI.DisplayLine(currentLine, _lineQueue.Count == 0);
+            _dialogueUI.DisplayLine(currentLine, _lineQueue.Count == 0);
         }
 
         public void SpeedUpText()
         {
-            dialogueUI.SpeedUpTextAnimation();
+            _dialogueUI.SpeedUpTextAnimation();
         }
 
         private void EndDialogue()
         {
-            _isDialogueActive = false;
-            dialogueUI.HidePanel();
+            IsDialogueActive = false;
+            _dialogueUI.HidePanel();
             GameManager.Instance.TogglePauseState();
             OnDialogueEnded?.Invoke();
         }

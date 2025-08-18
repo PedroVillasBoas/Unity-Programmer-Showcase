@@ -12,7 +12,7 @@ namespace GoodVillageGames.Core.Util.Camera
         [SerializeField] private CinemachineCamera gameplayCamera;
         [SerializeField] private CinemachineCamera dialogueCamera;
 
-        private void OnEnable()
+        private void Start()
         {
             DialogueManager.Instance.OnDialogueStarted += OnDialogueStarted;
             DialogueManager.Instance.OnDialogueEnded += OnDialogueEnded;
@@ -29,14 +29,14 @@ namespace GoodVillageGames.Core.Util.Camera
 
         private void OnDialogueStarted()
         {
-            // Increase the dialogue camera's priority to make it the active camera.
+            // Increase the dialogue camera's priority to make it the active camera
             if (dialogueCamera != null) dialogueCamera.Priority = 20;
             if (gameplayCamera != null) gameplayCamera.Priority = 10;
         }
 
         private void OnDialogueEnded()
         {
-            // Restore the gameplay camera's priority.
+            // Restore the gameplay camera's priority
             if (gameplayCamera != null) gameplayCamera.Priority = 20;
             if (dialogueCamera != null) dialogueCamera.Priority = 10;
         }

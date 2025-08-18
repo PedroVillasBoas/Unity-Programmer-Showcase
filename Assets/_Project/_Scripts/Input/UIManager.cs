@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using GoodVillageGames.Core.GameController;
+using GoodVillageGames.Core.Dialogue;
 
 namespace GoodVillageGames.Player.Input
 {
@@ -43,6 +44,22 @@ namespace GoodVillageGames.Player.Input
             _uiInputActions.UI.Disable();
             _uiInputActions.UI.Inventory.performed -= OnToggleCharacterMenuInput;
             //_uiInputActions.UI.Pause.performed -= OnTogglePause;
+        }
+
+        private void Update()
+        {
+            // Check if the dialogue system is active and if the player has clicked
+            if (DialogueManager.Instance.IsDialogueActive && UnityEngine.Input.GetMouseButtonDown(0))
+            {
+                if (DialogueManager.Instance.IsCurrentLineFinished)
+                {
+                    DialogueManager.Instance.DisplayNextLine();
+                }
+                else
+                {
+                    DialogueManager.Instance.SpeedUpText();
+                }
+            }
         }
 
         /// <summary>

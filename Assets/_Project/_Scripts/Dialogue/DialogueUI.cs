@@ -26,8 +26,9 @@ namespace GoodVillageGames.Core.Dialogue
         [Group("Continue Icons")][SerializeField] private GameObject _nextIcon;
         [Group("Continue Icons")][SerializeField] private GameObject _endIcon;
 
-        private bool _isLineFinishedTyping = false;
         private bool _isCurrentLineTheLast = false;
+
+        public bool IsLineFinishedTyping { get; private set; } = false;
 
         private void Awake()
         {
@@ -39,28 +40,12 @@ namespace GoodVillageGames.Core.Dialogue
             _typewriter.onTextShowed.RemoveListener(OnLineFinished);
         }
 
-        private void Update()
-        {
-            // Advancing dialogue
-            if (Input.GetMouseButtonDown(0) && _dialoguePanel.activeSelf)
-            {
-                if (_isLineFinishedTyping)
-                {
-                    DialogueManager.Instance.DisplayNextLine();
-                }
-                else
-                {
-                    DialogueManager.Instance.SpeedUpText();
-                }
-            }
-        }
-
         public void ShowPanel() => _dialoguePanel.SetActive(true);
         public void HidePanel() => _dialoguePanel.SetActive(false);
 
         public void DisplayLine(DialogueLine line, bool isLastLine)
         {
-            _isLineFinishedTyping = false;
+            IsLineFinishedTyping = false;
             _isCurrentLineTheLast = isLastLine;
 
             bool hasSpeaker = line.NpcSpeakerData != null;
@@ -86,8 +71,7 @@ namespace GoodVillageGames.Core.Dialogue
 
         private void OnLineFinished()
         {
-            _isLineFinishedTyping = true;
-
+            IsLineFinishedTyping = true;
             _nextIcon.SetActive(!_isCurrentLineTheLast);
             _endIcon.SetActive(_isCurrentLineTheLast);
         }

@@ -17,6 +17,7 @@ namespace GoodVillageGames.Player.Input
     [RequireComponent(typeof(CharacterAttacker))]
     [RequireComponent(typeof(CharacterDasher))]
     [RequireComponent(typeof(CharacterJumper))]
+    [RequireComponent(typeof(CharacterInteractor))]
     public class InputPresenter : MonoBehaviour
     {
         // --- Dependencies ---
@@ -37,6 +38,7 @@ namespace GoodVillageGames.Player.Input
             _attacker = GetComponent<CharacterAttacker>();
             _dasher = GetComponent<CharacterDasher>();
             _jumper = GetComponent<CharacterJumper>();
+            _interactor = GetComponent<CharacterInteractor>();
 
             _inputActions = new IS_PlayerActions();
         }
