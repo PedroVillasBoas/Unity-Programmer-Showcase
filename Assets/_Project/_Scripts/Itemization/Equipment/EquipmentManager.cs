@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using TriInspector;
 using System.Collections.Generic;
 using GoodVillageGames.Core.Actions;
 using GoodVillageGames.Core.Character.Attributes;
@@ -14,6 +15,9 @@ namespace GoodVillageGames.Core.Itemization.Equipment
     public class EquipmentManager : MonoBehaviour
     {
         public static EquipmentManager Instance { get; private set; }
+
+        [Title("Dependencies")]
+        [SerializeField] private ItemDatabase _itemDatabase;
 
         // The UI will subscribe to this!! (Again!!)
         public event Action OnEquipmentChanged;
@@ -188,6 +192,41 @@ namespace GoodVillageGames.Core.Itemization.Equipment
                     //     if (_specialAttacker != null) _specialAttacker.SpecialAttackEnabled = false;
                     //     break;
             }
+        }
+
+        // --- Save and Load ---
+        public EquipmentSaveData GetSaveData()
+        {
+            var saveData = new EquipmentSaveData
+            {
+                equippedItemNames = new Dictionary<EquipmentType, string>()
+            };
+
+            foreach (var pair in _equippedItems)
+            {
+                if (pair.Value != null)
+                {
+                    saveData.equippedItemNames[pair.Key] = pair.Value.name;
+                }
+            }
+            return saveData;
+        }
+
+        public void LoadSaveData(EquipmentSaveData data)
+        {
+            if (data == null) return;
+
+            foreach (var pair in data.equippedItemNames)
+            {
+                ItemData itemData = _itemDatabase.FindItemByName(pair.Value);
+                if (itemData != null)
+                {
+                    _equippedItems[pair.Key] = itemData;
+                    ApplyItemEffects(itemData);
+                }
+            }
+
+            OnEquipmentChanged?.Invoke();
         }
     }
 }

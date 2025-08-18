@@ -20,7 +20,7 @@ namespace GoodVillageGames.Core.Itemization
         public event Action<ItemData, int> OnCurrencyChanged;
 
         [Title("Dependencies")]
-        [SerializeField] private ItemDatabase itemDatabase;
+        [SerializeField] private ItemDatabase _itemDatabase;
 
         [Title("Inventory Config")]
         [SerializeField] private int _inventorySize = 24;
@@ -113,7 +113,7 @@ namespace GoodVillageGames.Core.Itemization
             if (slotIndex < 0 || slotIndex >= inventorySlots.Count || inventorySlots[slotIndex] == null) return;
 
             ItemData itemToDrop = inventorySlots[slotIndex].itemData;
-            GameObject prefabToDrop = itemDatabase.GetPrefab(itemToDrop);
+            GameObject prefabToDrop = _itemDatabase.GetPrefab(itemToDrop);
 
             if (prefabToDrop != null)
             {
@@ -233,6 +233,64 @@ namespace GoodVillageGames.Core.Itemization
                 return true;
             }
             return false;
+        }
+
+        // --- Save and Load ---
+
+        public InventorySaveData GetSaveData()
+        {
+            var saveData = new InventorySaveData
+            {
+                savedSlots = new List<InventorySlotSaveData>(),
+                savedCurrencies = new Dictionary<string, int>()
+            };
+
+            foreach (var slot in inventorySlots)
+            {
+                if (slot != null)
+                {
+                    saveData.savedSlots.Add(new InventorySlotSaveData
+                    {
+                        itemName = slot.itemData.name, // Use .name as a unique ID
+                        quantity = slot.quantity
+                    });
+                }
+                else
+                {
+                    saveData.savedSlots.Add(null); // Preserve empty slots
+                }
+            }
+
+            // ... (add currency saving logic here if needed)
+
+            return saveData;
+        }
+
+        public void LoadSaveData(InventorySaveData data)
+        {
+            if (data == null) return;
+
+            for (int i = 0; i < inventorySlots.Count; i++)
+            {
+                if (data.savedSlots[i] != null)
+                {
+                    // You need a way to find the ItemData asset from its name.
+                    // This requires the ItemDatabase we built earlier.
+                    ItemData itemData = _itemDatabase.FindItemByName(data.savedSlots[i].itemName);
+                    if (itemData != null)
+                    {
+                        inventorySlots[i] = new InventorySlot(itemData, data.savedSlots[i].quantity);
+                    }
+                }
+                else
+                {
+                    inventorySlots[i] = null;
+                }
+            }
+
+            // ... (add currency loading logic here if needed)
+
+            OnInventoryChanged?.Invoke(); // Update the UI
         }
     }
 }
