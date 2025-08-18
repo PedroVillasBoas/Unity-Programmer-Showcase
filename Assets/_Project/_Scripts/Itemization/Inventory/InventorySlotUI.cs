@@ -15,7 +15,7 @@ namespace GoodVillageGames.Core.Itemization
     /// It also takes care of the player input interaction with the item slot.
     /// </summary>
     [RequireComponent(typeof(UIDragItem))]
-    public class InventorySlotUI : MonoBehaviour, IDropHandler, ITooltipDataProvider
+    public class InventorySlotUI : MonoBehaviour, IDropHandler, ITooltipDataProvider, IPointerClickHandler
     {
         [Title("UI References")]
         [SerializeField] private Image _itemIcon;
@@ -88,6 +88,17 @@ namespace GoodVillageGames.Core.Itemization
         public ItemData GetItemData()
         {
             return InventoryManager.Instance.inventorySlots[SlotIndex]?.itemData;
+        }
+
+        /// <summary>
+        /// Called when the slot is clicked. Handles right-click for using/equipping items.
+        /// </summary>
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            if (eventData.button == PointerEventData.InputButton.Right)
+            {
+                InventoryManager.Instance.UseItem(SlotIndex);
+            }
         }
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using UnityEngine;
 using System.Collections.Generic;
+using GoodVillageGames.Core.Itemization.Equipment;
 
 namespace GoodVillageGames.Core.Itemization
 {
@@ -112,20 +113,42 @@ namespace GoodVillageGames.Core.Itemization
         }
 
         /// <summary>
-        /// Reduces the quantity.
-        /// If the quantity reaches zero, the slot is cleared. 
-        /// Used for consumables.
+        /// Handles the logic for using an item from a specific slot via right-click.
         /// </summary>
         public void UseItem(int slotIndex)
         {
             if (slotIndex < 0 || slotIndex >= inventorySlots.Count || inventorySlots[slotIndex] == null) return;
 
-            inventorySlots[slotIndex].quantity--;
-            if (inventorySlots[slotIndex].quantity <= 0)
+            ItemData itemToUse = inventorySlots[slotIndex].itemData;
+            switch (itemToUse.Category)
             {
-                inventorySlots[slotIndex] = null;
+                case ItemCategory.Consumable:
+                    // Apply the consumable's effects
+                    var playerStats = PlayerEntity.Instance.Stats;
+                    foreach (var upgrade in itemToUse.StatUpgrades)
+                    {
+                        upgrade.ApplyUpgrade(playerStats, itemToUse);
+                    }
+
+                    // Reduce quantity or remove the item
+                    inventorySlots[slotIndex].quantity--;
+                    if (inventorySlots[slotIndex].quantity <= 0)
+                    {
+                        inventorySlots[slotIndex] = null;
+                    }
+                    OnInventoryChanged?.Invoke();
+                    break;
+
+                case ItemCategory.Standard:
+                    // If the item is equippable, call EquipmentManager to do it's thing
+                    if (itemToUse.EquipmentType != EquipmentType.None)
+                    {
+                        InventorySlot slotToEquip = inventorySlots[slotIndex];
+                        RemoveItem(slotIndex);
+                        EquipmentManager.Instance.EquipItem(slotToEquip);
+                    }
+                    break;
             }
-            OnInventoryChanged?.Invoke();
         }
 
         public void SwapItems(int draggedSlotIndex, int switcherSlotIndex)

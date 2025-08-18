@@ -58,7 +58,7 @@ namespace GoodVillageGames.Core.Actions
             IsDashing = true;
             Rb.gravityScale = 0f;
 
-            Rb.linearVelocity = new(Rb.linearVelocityX, 0f);
+            Rb.linearVelocity = Vector2.zero;
 
             // --- To-Do ---
             // This is here because I know morgana has a small casting animation before the actual dash

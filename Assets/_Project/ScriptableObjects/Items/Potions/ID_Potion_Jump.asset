@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1c4b9b5f1fa4f94b951e6b8f1778e3f, type: 3}
-  m_Name: ID_SevenLeagueBoots
+  m_Name: ID_Potion_Jump
   m_EditorClassIdentifier: 
-  ItemName: Seven-League Boots
-  ItemIcon: {fileID: 21300000, guid: 66e277323bc120f42b02fe7e4fc04634, type: 3}
-  ItemDescription: Maybe you can cross that river now? The Seven-League Boots sure
-    help you travel long distances!
-  Category: 0
-  IsStackable: 0
-  MaxStackSize: 1
-  EquipmentType: 5
+  ItemName: Potion of Jumpness
+  ItemIcon: {fileID: 21300000, guid: 45e1f66589e9b1746abc91f9d3021c89, type: 3}
+  ItemDescription: "It's a potion. You can drink. \nIt'll make you jump higher!"
+  Category: 1
+  IsStackable: 1
+  MaxStackSize: 5
+  EquipmentType: 0
   StatUpgrades:
-  - _statType: 1
+  - _statType: 4
     _operatorType: 0
-    _value: 100
-    _duration: 0
-  GrantedAbility: 3
+    _value: 2
+    _duration: -1
+  GrantedAbility: 0
