@@ -186,7 +186,7 @@ namespace GoodVillageGames.Core.Itemization.Equipment
                     if (_jumper != null) _jumper.DoubleJumpEnabled = false;
                     break;
                 case GrantedAbility.JetDash:
-                    if (_dasher != null) _dasher.DashEnabled = true;
+                    if (_dasher != null) _dasher.DashEnabled = false;
                     break;
                     // case GrantedAbility.Infernum:
                     //     if (_specialAttacker != null) _specialAttacker.SpecialAttackEnabled = false;
