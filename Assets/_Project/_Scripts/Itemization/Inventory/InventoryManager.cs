@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using UnityEngine;
+using TriInspector;
 using System.Collections.Generic;
 using GoodVillageGames.Core.Itemization.Equipment;
 
@@ -18,6 +19,10 @@ namespace GoodVillageGames.Core.Itemization
         public event Action OnInventoryChanged;
         public event Action<ItemData, int> OnCurrencyChanged;
 
+        [Title("Dependencies")]
+        [SerializeField] private ItemDatabase itemDatabase;
+
+        [Title("Inventory Config")]
         [SerializeField] private int _inventorySize = 24;
         public List<InventorySlot> inventorySlots = new();              // Items that occupy a inventory slot
         private Dictionary<ItemData, int> _currencyQuantities = new();  // Items that do not occupy a inventory slot
@@ -98,6 +103,28 @@ namespace GoodVillageGames.Core.Itemization
             // --- Inventory Full ---
             Debug.Log("Inventory is full!"); // For now this will have to do. But I don't plan on adding that many items for this to be a problem
             return false;
+        }
+
+        /// <summary>
+        /// Removes an item from the inventory and instantiates its prefab in the world
+        /// </summary>
+        public void DropItem(int slotIndex)
+        {
+            if (slotIndex < 0 || slotIndex >= inventorySlots.Count || inventorySlots[slotIndex] == null) return;
+
+            ItemData itemToDrop = inventorySlots[slotIndex].itemData;
+            GameObject prefabToDrop = itemDatabase.GetPrefab(itemToDrop);
+
+            if (prefabToDrop != null)
+            {
+                // Safe spawn position
+                Vector3 spawnPosition = PlayerEntity.Instance.transform.position + (PlayerEntity.Instance.transform.right * 1.5f);
+
+                Instantiate(prefabToDrop, spawnPosition, Quaternion.identity);
+
+                // Remove from inventory
+                RemoveItem(slotIndex);
+            }
         }
 
         /// <summary>
