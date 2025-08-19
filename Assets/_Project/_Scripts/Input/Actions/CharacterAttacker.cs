@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using GoodVillageGames.Core.Util.Timer;
 using GoodVillageGames.Core.Enums.Attributes;
@@ -6,6 +7,8 @@ namespace GoodVillageGames.Core.Actions
 {
     public class CharacterAttacker : ActionHandler
     {
+        public event Action OnAttackPerformed;
+
         private CountdownTimer _attackCooldown;
         public bool CanAttack => _attackCooldown == null || _attackCooldown.IsFinished;
 
@@ -31,6 +34,7 @@ namespace GoodVillageGames.Core.Actions
             _attackCooldown.Start();
 
             float damage = Stats.GetStat(AttributeType.Damage);
+            OnAttackPerformed?.Invoke();
             Debug.Log($"Attacked! Damage: {damage}, Cooldown: {cooldownDuration}s");
 
             // --- To-Do ---

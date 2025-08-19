@@ -6,10 +6,10 @@ using GoodVillageGames.Core.Enums.Attributes;
 
 namespace GoodVillageGames.Core.Actions
 {
-    [RequireComponent(typeof(EntityVisuals))]
+    [RequireComponent(typeof(VisualsFlipper))]
     public class CharacterDasher : ActionHandler
     {
-        private EntityVisuals _visuals;
+        private VisualsFlipper _visuals;
         private CountdownTimer _dashTimer;
         private float _gravityScale;
 

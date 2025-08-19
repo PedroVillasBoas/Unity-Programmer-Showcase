@@ -12,19 +12,22 @@ namespace GoodVillageGames.Core.Util.UI
     public class UIDragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
     {
         public static UIDragItem draggedItem;
+        public static bool dropSuccessful;
 
         private static Image _ghostIcon;
         private static RectTransform _ghostIconTransform;
 
+        public Component sourceSlotUI;
+
         [SerializeField] private Image _itemIcon;
         private Canvas _rootCanvas;
-
-        public Component sourceSlotUI;
+        private CanvasGroup _canvasGroup;
 
         private void Awake()
         {
             sourceSlotUI = GetComponent<IDropHandler>() as Component;
             _rootCanvas = GetComponentInParent<Canvas>();
+            _canvasGroup = GetComponent<CanvasGroup>();
 
             // Ghost icon, only if does not exist yet
             if (_ghostIcon == null)
@@ -55,6 +58,7 @@ namespace GoodVillageGames.Core.Util.UI
             }
 
             draggedItem = this;
+            dropSuccessful = false;
 
             _ghostIcon.sprite = _itemIcon.sprite;
             _ghostIcon.material = _itemIcon.material;
@@ -64,12 +68,11 @@ namespace GoodVillageGames.Core.Util.UI
 
             // The ghost needs to apply the canvas scale factor to get the correct visual size (This was a tricky bug to solve)
             _ghostIconTransform.sizeDelta = size * _rootCanvas.scaleFactor;
-
             _ghostIcon.gameObject.SetActive(true);
             _ghostIconTransform.position = eventData.position;
             _ghostIcon.transform.SetAsLastSibling();
-
             _itemIcon.enabled = false;
+            _canvasGroup.blocksRaycasts = false;
         }
 
         public void OnDrag(PointerEventData eventData)
@@ -84,6 +87,15 @@ namespace GoodVillageGames.Core.Util.UI
         {
             // When dropping I already did the Slot handle the data stuff
             // Here I just need to be a janitor
+            _canvasGroup.blocksRaycasts = true;
+
+            if (!dropSuccessful)
+            {
+                if (_itemIcon != null)
+                {
+                    _itemIcon.enabled = true;
+                }
+            }
             draggedItem = null;
             _ghostIcon.gameObject.SetActive(false);
         }

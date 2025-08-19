@@ -69,6 +69,7 @@ namespace GoodVillageGames.Core.Itemization.Equipment
                     EquipmentManager.Instance.EquipItem(inventorySlotData);
                     // Command the InventoryManager to clear the source slot.
                     InventoryManager.Instance.RemoveItem(sourceInventorySlot.SlotIndex);
+                    UIDragItem.dropSuccessful = true;
                 }
             }
         }

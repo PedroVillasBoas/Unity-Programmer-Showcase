@@ -83,11 +83,8 @@ namespace GoodVillageGames.Core.Itemization
             {
                 EquipmentManager.Instance.UnequipItemToSlot(sourceEquipmentSlot.GetSlotType(), this.SlotIndex);
             }
-        }
-
-        public ItemData GetItemData()
-        {
-            return InventoryManager.Instance.inventorySlots[SlotIndex]?.itemData;
+            
+            UIDragItem.dropSuccessful = true;
         }
 
         /// <summary>
@@ -97,8 +94,14 @@ namespace GoodVillageGames.Core.Itemization
         {
             if (eventData.button == PointerEventData.InputButton.Right)
             {
+                TooltipManager.Instance.HideTooltip();
                 InventoryManager.Instance.UseItem(SlotIndex);
             }
+        }
+
+        public ItemData GetItemData()
+        {
+            return InventoryManager.Instance.inventorySlots[SlotIndex]?.itemData;
         }
     }
 }

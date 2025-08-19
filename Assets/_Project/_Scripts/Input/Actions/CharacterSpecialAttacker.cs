@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using TriInspector;
 using GoodVillageGames.Player.Skills;
@@ -12,6 +13,8 @@ namespace GoodVillageGames.Core.Actions
     /// </summary>
     public class CharacterSpecialAttacker : ActionHandler
     {
+        public event Action OnSpecialAttackPerformed;
+
         [Title("Special Attack Configs")]
         [SerializeField] private GameObject _fireHurricanePrefab;
         [SerializeField] private Transform _spawnPoint;
@@ -53,7 +56,7 @@ namespace GoodVillageGames.Core.Actions
                     infernumScript.Initialize(playerDamage);
                 }
             }
-
+            OnSpecialAttackPerformed?.Invoke();
             _cooldownTimer.Start();
         }
     }

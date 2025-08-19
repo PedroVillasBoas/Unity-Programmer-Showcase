@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using TriInspector;
 using GoodVillageGames.Core.Util.Locomotion;
@@ -8,6 +9,8 @@ namespace GoodVillageGames.Core.Actions
     [RequireComponent(typeof(GroundChecker))]
     public class CharacterJumper : ActionHandler
     {
+        public event Action OnDoubleJumpPerformed;
+        
         [Title("Jump Configs")]
         [SerializeField] private float _jumpFallMult = 3f;
         [SerializeField] private float _hopFallMult = 2.5f;
@@ -77,6 +80,7 @@ namespace GoodVillageGames.Core.Actions
             else if (CanDoubleJump)
             {
                 Rb.linearVelocity = new(Rb.linearVelocityX, impulseForce);
+                OnDoubleJumpPerformed?.Invoke();
                 _hasDoubleJumped = true;
             }
         }
