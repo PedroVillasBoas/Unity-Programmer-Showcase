@@ -14,10 +14,11 @@ namespace GoodVillageGames.Player.Input
     [RequireComponent(typeof(PlayerInput))]
     [RequireComponent(typeof(GroundChecker))]
     [RequireComponent(typeof(CharacterMover))]
-    [RequireComponent(typeof(CharacterAttacker))]
     [RequireComponent(typeof(CharacterDasher))]
     [RequireComponent(typeof(CharacterJumper))]
+    [RequireComponent(typeof(CharacterAttacker))]
     [RequireComponent(typeof(CharacterInteractor))]
+    [RequireComponent(typeof(CharacterSpecialAttacker))]
     public class InputPresenter : MonoBehaviour
     {
         // --- Dependencies ---
@@ -26,7 +27,7 @@ namespace GoodVillageGames.Player.Input
         private CharacterDasher _dasher;
         private CharacterJumper _jumper;
         private CharacterInteractor _interactor;
-        // private CharacterSpecialAttacker _specialAttacker;
+        private CharacterSpecialAttacker _specialAttacker;
 
         // --- State ---
         private float _moveDirection;
@@ -35,10 +36,11 @@ namespace GoodVillageGames.Player.Input
         private void Awake()
         {
             _mover = GetComponent<CharacterMover>();
-            _attacker = GetComponent<CharacterAttacker>();
             _dasher = GetComponent<CharacterDasher>();
             _jumper = GetComponent<CharacterJumper>();
+            _attacker = GetComponent<CharacterAttacker>();
             _interactor = GetComponent<CharacterInteractor>();
+            _specialAttacker = GetComponent<CharacterSpecialAttacker>();
 
             _inputActions = new IS_PlayerActions();
         }
@@ -54,11 +56,12 @@ namespace GoodVillageGames.Player.Input
             _inputActions.Player.Jump.canceled += OnJumpCanceled;
 
             _inputActions.Player.BasicAttack.performed += OnAttack;
+            _inputActions.Player.SpecialAttack.performed += OnSpecialAttack;
+
             _inputActions.Player.Dash.performed += OnDashPerformed;
             _inputActions.Player.Dash.canceled += OnDashCanceled;
 
             _inputActions.Player.Interact.performed += OnInteract;
-            // _inputActions.Player.SpecialAttack.performed += OnSpecialAttack;
         }
 
         private void OnDisable()
@@ -72,11 +75,12 @@ namespace GoodVillageGames.Player.Input
             _inputActions.Player.Jump.canceled -= OnJumpCanceled;
 
             _inputActions.Player.BasicAttack.performed -= OnAttack;
+            _inputActions.Player.SpecialAttack.performed -= OnSpecialAttack;
+
             _inputActions.Player.Dash.performed -= OnDashPerformed;
             _inputActions.Player.Dash.performed -= OnDashCanceled;
 
             _inputActions.Player.Interact.performed -= OnInteract;
-            // _inputActions.Player.SpecialAttack.performed -= OnSpecialAttack;
         }
 
         private void Update()
@@ -124,6 +128,13 @@ namespace GoodVillageGames.Player.Input
         private void OnInteract(InputAction.CallbackContext context)
         {
             _interactor.DoInteraction();
+        }
+
+        private void OnSpecialAttack(InputAction.CallbackContext context)
+        {
+            // State check: Can't special attack while dashing ;)
+            if (_dasher.IsDashing) return;
+            _specialAttacker.PerformSpecialAttack();
         }
     }
 }

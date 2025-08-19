@@ -83,5 +83,4 @@ namespace GoodVillageGames.Core.Itemization
             _inventoryPanel.SetActive(!_inventoryPanel.activeSelf);
         }
     }
-
 }

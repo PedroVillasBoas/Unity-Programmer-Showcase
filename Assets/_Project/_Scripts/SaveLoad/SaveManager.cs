@@ -10,7 +10,7 @@ namespace GoodVillageGames.Core.Itemization.Equipment
     {
         public static SaveManager Instance { get; private set; }
 
-        [SerializeField] private float _autoSaveInterval = 60f;
+        [SerializeField] private float _autoSaveInterval = 180f;
 
         private float _autoSaveTimer;
         private string _saveFilePath;

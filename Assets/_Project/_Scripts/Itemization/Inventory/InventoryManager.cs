@@ -242,9 +242,10 @@ namespace GoodVillageGames.Core.Itemization
             var saveData = new InventorySaveData
             {
                 savedSlots = new List<InventorySlotSaveData>(),
-                savedCurrencies = new Dictionary<string, int>()
+                savedCurrencies = new List<CurrencySaveData>()
             };
 
+            // Items
             foreach (var slot in inventorySlots)
             {
                 if (slot != null)
@@ -261,6 +262,15 @@ namespace GoodVillageGames.Core.Itemization
                 }
             }
 
+            // Currency
+            foreach (var currency in _currencyQuantities)
+            {
+                saveData.savedCurrencies.Add(new CurrencySaveData
+                {
+                    currencyName = currency.Key.name,
+                    quantity = currency.Value
+                });
+            }
 
             return saveData;
         }

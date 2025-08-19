@@ -13,13 +13,14 @@ GameObject:
   - component: {fileID: 7578034695646797297}
   - component: {fileID: 8328197796579587864}
   - component: {fileID: 5329181520193200577}
+  - component: {fileID: 1029084512206750830}
   m_Layer: 11
   m_Name: Prefab_Morgana_Infernum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3211655734916387067
 Transform:
   m_ObjectHideFlags: 0
@@ -185,3 +186,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1029084512206750830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7977056048916162052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 560652c0a697fa245a136f8f02da0c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamagePerTick: 5
+  casterDamageScaling: 0.5
+  timeBetweenTicks: 0.5

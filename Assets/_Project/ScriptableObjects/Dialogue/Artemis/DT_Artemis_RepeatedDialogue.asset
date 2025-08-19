@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a53a5c4795387fb46b7e87463175f192, type: 3}
+  m_Name: DT_Artemis_RepeatedDialogue
+  m_EditorClassIdentifier: 
+  Lines:
+  - NpcSpeakerData: {fileID: 11400000, guid: c51ee72361df07343864e6bbcb4257cb, type: 2}
+    LineText: You're insistent! I knew it! hahaha
+  - NpcSpeakerData: {fileID: 11400000, guid: c51ee72361df07343864e6bbcb4257cb, type: 2}
+    LineText: Fine, fine! I'll tell you, jez... A Goddess can't even have some fun
+      anymore. And it's the third time you ask the same thing. Oh wel...
+  - NpcSpeakerData: {fileID: 11400000, guid: c51ee72361df07343864e6bbcb4257cb, type: 2}
+    LineText: I knew already because Pedro told me, okay? Are you happy now?
+  - NpcSpeakerData: {fileID: 11400000, guid: c51ee72361df07343864e6bbcb4257cb, type: 2}
+    LineText: Oh! By the way, did you got the item I told you last time? The one
+      past the waterfall? You can do some cool things with it, just saying...

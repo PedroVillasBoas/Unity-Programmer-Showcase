@@ -20,7 +20,7 @@ namespace GoodVillageGames.Core.Itemization
         Standard,   // A regular item that goes into an inventory slot (Nothing special about it)
         Consumable, // An item that can be used up, often applying a temporary effect (POTIONS!!)
         Currency,   // An item that is counted, but does not take up a slot (Keys, coins etc)
-        QuestItem   // A special item AND SECRET item ;)
+        QuestItem   // A special AND SECRET item ;)
     }
 
     // Enum to define the different equipment slots available

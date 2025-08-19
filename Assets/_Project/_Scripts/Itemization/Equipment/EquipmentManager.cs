@@ -26,7 +26,7 @@ namespace GoodVillageGames.Core.Itemization.Equipment
         private IStatProvider _playerStats;
         private CharacterJumper _jumper;
         private CharacterDasher _dasher;
-        // private CharacterSpecialAttacker _specialAttacker; // Still need to do this
+        private CharacterSpecialAttacker _specialAttacker;
 
         private Dictionary<EquipmentType, ItemData> _equippedItems;
 
@@ -66,7 +66,7 @@ namespace GoodVillageGames.Core.Itemization.Equipment
             _playerStats = player.Stats;
             _jumper = player.GetComponent<CharacterJumper>();
             _dasher = player.GetComponent<CharacterDasher>();
-            // _specialAttacker = player.GetComponent<CharacterSpecialAttacker>(); // Eventually I'll add this, trust me
+            _specialAttacker = player.GetComponent<CharacterSpecialAttacker>();
 
         }
 
@@ -166,9 +166,9 @@ namespace GoodVillageGames.Core.Itemization.Equipment
                 case GrantedAbility.JetDash:
                     if (_dasher != null) _dasher.DashEnabled = true;
                     break;
-                    // case GrantedAbility.Infernum:
-                    //     if (_specialAttacker != null) _specialAttacker.SpecialAttackEnabled = true;
-                    //     break;
+                case GrantedAbility.Infernum:
+                    if (_specialAttacker != null) _specialAttacker.SpecialAttackEnabled = true;
+                    break;
             }
         }
 
@@ -176,7 +176,7 @@ namespace GoodVillageGames.Core.Itemization.Equipment
         {
             if (_playerStats == null) return;
 
-            // Use the new method to remove all modifiers originating from this specific item.
+            // Remove all modifiers originating from this specific item
             _playerStats?.RemoveModifiersFromSource(item);
 
             // Revoke special abilities
@@ -188,9 +188,9 @@ namespace GoodVillageGames.Core.Itemization.Equipment
                 case GrantedAbility.JetDash:
                     if (_dasher != null) _dasher.DashEnabled = false;
                     break;
-                    // case GrantedAbility.Infernum:
-                    //     if (_specialAttacker != null) _specialAttacker.SpecialAttackEnabled = false;
-                    //     break;
+                case GrantedAbility.Infernum:
+                    if (_specialAttacker != null) _specialAttacker.SpecialAttackEnabled = false;
+                    break;
             }
         }
 

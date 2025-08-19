@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lines:
   - NpcSpeakerData: {fileID: 11400000, guid: ce8250491d7843440a50c74e8ad2e91c, type: 2}
-    LineText: I told you to go away... Or did you forget about that too?
+    LineText: 'I told you to go away... '
+  - NpcSpeakerData: {fileID: 11400000, guid: ce8250491d7843440a50c74e8ad2e91c, type: 2}
+    LineText: Or did you forget about that too?
+  - NpcSpeakerData: {fileID: 11400000, guid: ce8250491d7843440a50c74e8ad2e91c, type: 2}
+    LineText: And don't even think about going past the waterfall!

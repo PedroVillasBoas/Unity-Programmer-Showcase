@@ -61,6 +61,7 @@ namespace GoodVillageGames.Core.Dialogue
             _nextIcon.SetActive(false);
             _endIcon.SetActive(false);
 
+            _typewriter.StopShowingText();
             _typewriter.ShowText(line.LineText);
         }
 

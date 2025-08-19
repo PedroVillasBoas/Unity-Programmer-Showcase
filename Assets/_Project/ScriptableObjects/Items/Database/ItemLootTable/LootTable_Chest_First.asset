@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3843bd2d12f8584ba6bb335ba7a0f4b, type: 3}
+  m_Name: LootTable_Chest_First
+  m_EditorClassIdentifier: 
+  GuaranteedDrops:
+  - ItemData: {fileID: 11400000, guid: 6b75f2f991f62224c9d40b01c9ce1d4c, type: 2}
+    Weight: 0
+    MinQuantity: 1
+    MaxQuantity: 1
+  RandomDrops:
+  - ItemData: {fileID: 11400000, guid: e06e549bf2dbf954c973073c9578ecd4, type: 2}
+    Weight: 5
+    MinQuantity: 2
+    MaxQuantity: 5
+  - ItemData: {fileID: 11400000, guid: c6d3da4fc84c9f547aaf01bd51a135f9, type: 2}
+    Weight: 2
+    MinQuantity: 1
+    MaxQuantity: 5

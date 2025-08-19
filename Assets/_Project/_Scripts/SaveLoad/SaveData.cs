@@ -19,13 +19,26 @@ namespace GoodVillageGames.Core.Itemization.Equipment
     public class InventorySaveData
     {
         public List<InventorySlotSaveData> savedSlots;
-        public Dictionary<string, int> savedCurrencies;
+        public List<CurrencySaveData> savedCurrencies;
     }
 
+    /// <summary>
+    /// Holds the state of a slot in the inventory.
+    /// </summary>
     [System.Serializable]
     public class InventorySlotSaveData
     {
         public string itemName;
+        public int quantity;
+    }
+
+    /// <summary>
+    /// Holds the state of the currency in the inventory.
+    /// </summary>
+    [System.Serializable]
+    public class CurrencySaveData
+    {
+        public string currencyName;
         public int quantity;
     }
 

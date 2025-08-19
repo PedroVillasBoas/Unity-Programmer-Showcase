@@ -29,6 +29,7 @@ namespace GoodVillageGames.Core.Dialogue
         private DialogueTree GetCurrentDialogue()
         {
             // If I had more time, I would use a quest/flag system to determine which dialogue is appropriate here
+            // But I don't... So... Next time?
             if (!_hasBeenSpokenTo)
             {
                 return initialDialogue;

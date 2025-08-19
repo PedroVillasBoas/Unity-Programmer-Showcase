@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using GoodVillageGames.Core.Itemization;
 
 namespace GoodVillageGames.Core.Dialogue
 {
@@ -23,5 +24,8 @@ namespace GoodVillageGames.Core.Dialogue
     public class DialogueTree : ScriptableObject
     {
         public List<DialogueLine> Lines;
+        [Header("Reward")]
+        [Tooltip("The item to give the player when this dialogue is completed. Can be null.")]
+        public ItemData itemReward;
     }
 }

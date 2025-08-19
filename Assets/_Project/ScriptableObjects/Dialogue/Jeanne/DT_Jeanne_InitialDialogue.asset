@@ -22,3 +22,6 @@ MonoBehaviour:
   - NpcSpeakerData: {fileID: 11400000, guid: ce8250491d7843440a50c74e8ad2e91c, type: 2}
     LineText: Nah, I'm not going to explain to you EVERYTHING again... Just go. There's
       a war happening you know?!
+  - NpcSpeakerData: {fileID: 11400000, guid: ce8250491d7843440a50c74e8ad2e91c, type: 2}
+    LineText: Oh, and you had asked me to give you this the next you wake up.
+  itemReward: {fileID: 11400000, guid: 89e59b957d017f849b3c9e43423ca9fa, type: 2}

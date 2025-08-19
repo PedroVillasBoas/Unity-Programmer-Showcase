@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a53a5c4795387fb46b7e87463175f192, type: 3}
+  m_Name: DT_Artemis_InitialDialogue
+  m_EditorClassIdentifier: 
+  Lines:
+  - NpcSpeakerData: {fileID: 11400000, guid: c51ee72361df07343864e6bbcb4257cb, type: 2}
+    LineText: Ow! Hello!
+  - NpcSpeakerData: {fileID: 11400000, guid: c51ee72361df07343864e6bbcb4257cb, type: 2}
+    LineText: I didn't expect to see you here!
+  - NpcSpeakerData: {fileID: 11400000, guid: c51ee72361df07343864e6bbcb4257cb, type: 2}
+    LineText: I'm kidding! I knew already you would get here.
+  - NpcSpeakerData: {fileID: 11400000, guid: c51ee72361df07343864e6bbcb4257cb, type: 2}
+    LineText: What do you mean "how?"?
+  - NpcSpeakerData: {fileID: 11400000, guid: c51ee72361df07343864e6bbcb4257cb, type: 2}
+    LineText: Hm... If you insist maybe I'll tell. No promisses tho.
