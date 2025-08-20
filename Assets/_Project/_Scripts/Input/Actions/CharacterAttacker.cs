@@ -47,8 +47,8 @@ namespace GoodVillageGames.Core.Actions
             // --- Player Animation ---
             OnAttackPerformed?.Invoke();
 
-            // --- Instantiate and Initialize the Skill ---
-            if (_slashSkillPrefab != null && _spawnPoint != null)
+            // --- Instantiate, Initialize & Rotate the Skill ---
+            if (_slashSkillPrefab != null && _spawnPoint != null && _visuals != null)
             {
                 GameObject skillInstance = Instantiate(_slashSkillPrefab, _spawnPoint.position, _spawnPoint.rotation);
 
@@ -56,11 +56,7 @@ namespace GoodVillageGames.Core.Actions
                 {
                     float playerDamage = Stats.GetStat(AttributeType.Damage);
                     slashScript.Initialize(playerDamage);
-
-                    if (_visuals != null)
-                    {
-                        slashScript.SetDirection(_visuals.IsFacingRight);
-                    }
+                    slashScript.SetDirection(_visuals.IsFacingRight);
                 }
             }
         }
