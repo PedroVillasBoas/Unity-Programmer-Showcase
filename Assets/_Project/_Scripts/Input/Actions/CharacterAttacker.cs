@@ -1,5 +1,8 @@
 using System;
 using UnityEngine;
+using TriInspector;
+using GoodVillageGames.Player.Skills;
+using GoodVillageGames.Core.Character;
 using GoodVillageGames.Core.Util.Timer;
 using GoodVillageGames.Core.Enums.Attributes;
 
@@ -9,7 +12,13 @@ namespace GoodVillageGames.Core.Actions
     {
         public event Action OnAttackPerformed;
 
+        [Title("Basic Attack Configs")]
+        [SerializeField] private GameObject _slashSkillPrefab;
+        [SerializeField] private Transform _spawnPoint;
+
         private CountdownTimer _attackCooldown;
+        private VisualsFlipper _visuals;
+
         public bool CanAttack => _attackCooldown == null || _attackCooldown.IsFinished;
 
         protected override void Start()
@@ -17,6 +26,7 @@ namespace GoodVillageGames.Core.Actions
             base.Start();
             // We initialize the timer but we don't start it just yet ;)
             _attackCooldown = new CountdownTimer(0);
+            _visuals = GetComponentInChildren<VisualsFlipper>();
         }
 
         private void Update()
@@ -28,17 +38,31 @@ namespace GoodVillageGames.Core.Actions
         {
             if (!CanAttack) return;
 
+            // --- Cooldown Logic ---
             float attackSpeed = Stats.GetStat(AttributeType.AttackSpeed);
             float cooldownDuration = 1f / attackSpeed;
             _attackCooldown.Reset(cooldownDuration);
             _attackCooldown.Start();
 
-            float damage = Stats.GetStat(AttributeType.Damage);
+            // --- Player Animation ---
             OnAttackPerformed?.Invoke();
-            Debug.Log($"Attacked! Damage: {damage}, Cooldown: {cooldownDuration}s");
 
-            // --- To-Do ---
-            // Trigger attack instance here
+            // --- Instantiate and Initialize the Skill ---
+            if (_slashSkillPrefab != null && _spawnPoint != null)
+            {
+                GameObject skillInstance = Instantiate(_slashSkillPrefab, _spawnPoint.position, _spawnPoint.rotation);
+
+                if (skillInstance.TryGetComponent<SlashSkill>(out var slashScript))
+                {
+                    float playerDamage = Stats.GetStat(AttributeType.Damage);
+                    slashScript.Initialize(playerDamage);
+
+                    if (_visuals != null)
+                    {
+                        slashScript.SetDirection(_visuals.IsFacingRight);
+                    }
+                }
+            }
         }
     }
 }

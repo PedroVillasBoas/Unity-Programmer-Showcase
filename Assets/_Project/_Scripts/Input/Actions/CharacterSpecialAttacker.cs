@@ -4,7 +4,6 @@ using TriInspector;
 using GoodVillageGames.Player.Skills;
 using GoodVillageGames.Core.Util.Timer;
 using GoodVillageGames.Core.Enums.Attributes;
-using GoodVillageGames.Core.Util.Locomotion;
 
 namespace GoodVillageGames.Core.Actions
 {
@@ -17,7 +16,7 @@ namespace GoodVillageGames.Core.Actions
         public event Action OnSpecialAttackPerformed;
 
         [Title("Special Attack Configs")]
-        [SerializeField] private GameObject _fireHurricanePrefab;
+        [SerializeField] private GameObject _infernumSkillPrefab;
         [SerializeField] private Transform _spawnPoint;
         [SerializeField] private float _cooldownDuration = 10f;
 
@@ -47,9 +46,9 @@ namespace GoodVillageGames.Core.Actions
         {
             if (!CanUseSpecial) return;
 
-            if (_fireHurricanePrefab != null && _spawnPoint != null)
+            if (_infernumSkillPrefab != null && _spawnPoint != null)
             {
-                GameObject skillInstance = Instantiate(_fireHurricanePrefab, _spawnPoint.position, _spawnPoint.rotation);
+                GameObject skillInstance = Instantiate(_infernumSkillPrefab, _spawnPoint.position, _spawnPoint.rotation);
 
                 if (skillInstance.TryGetComponent<InfernumSkill>(out var infernumScript))
                 {

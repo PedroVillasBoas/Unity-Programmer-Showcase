@@ -259,6 +259,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9b21b87dbc913a4e90b1ef6a1ee57f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _slashSkillPrefab: {fileID: 6905191813587995523, guid: bce5f6681fc251d4e920f0f932e47375, type: 3}
+  _spawnPoint: {fileID: 4368328608599542367}
 --- !u!114 &7288285987371633196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,7 +319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffadc8ceba543c42a8e6bbe2f97b888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fireHurricanePrefab: {fileID: 7977056048916162052, guid: 05e4e4079d449154d9610b747cd0f783, type: 3}
+  _infernumSkillPrefab: {fileID: 0}
   _spawnPoint: {fileID: 4368328608599542367}
   _cooldownDuration: 10
 --- !u!1 &3871573035374935135
