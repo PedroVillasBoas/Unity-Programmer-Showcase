@@ -3,15 +3,19 @@ using System.Collections;
 using GoodVillageGames.Core.Character;
 using GoodVillageGames.Core.Util.Timer;
 using GoodVillageGames.Core.Enums.Attributes;
+using GoodVillageGames.Player.Animations;
 
 namespace GoodVillageGames.Core.Actions
 {
     [RequireComponent(typeof(VisualsFlipper))]
     public class CharacterDasher : ActionHandler
     {
-        private VisualsFlipper _visuals;
+        [SerializeField] private PlayerAnimator _animator;
+        [SerializeField] private VisualsFlipper _visuals;
+
         private CountdownTimer _dashTimer;
         private float _gravityScale;
+        private float _dashCastLength;
 
         [HideInInspector]
         public bool _isDashPressed = false;
@@ -31,6 +35,9 @@ namespace GoodVillageGames.Core.Actions
             // Immediately stop it so the first dash is available if the player has the item equipped
             _dashTimer.Stop();
             _dashTimer.Time = 0;
+
+            _dashCastLength = _animator.GetAnimationClipLength("ANIM_Player_Dash_Cast");
+            Debug.Log($"Dash Cast Time: {_dashCastLength}");
         }
 
         private void Update()
@@ -63,7 +70,7 @@ namespace GoodVillageGames.Core.Actions
             // --- To-Do ---
             // This is here because I know morgana has a small casting animation before the actual dash
             // So later I'll have to add something to let the dasher know when it's finished ;)
-            yield return new WaitForSeconds(0.8f);
+            yield return new WaitForSeconds(_dashCastLength);
 
             // No more Dash... Now she can Fly!
             float dashSpeed = Stats.GetStat(AttributeType.DashSpeed);

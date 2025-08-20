@@ -38,7 +38,7 @@ namespace GoodVillageGames.Core.Actions
             Debug.Log($"Attacked! Damage: {damage}, Cooldown: {cooldownDuration}s");
 
             // --- To-Do ---
-            // Trigger attack animation & hitbox here
+            // Trigger attack instance here
         }
     }
 }

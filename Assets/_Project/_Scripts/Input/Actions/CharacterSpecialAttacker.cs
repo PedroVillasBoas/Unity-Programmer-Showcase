@@ -4,6 +4,7 @@ using TriInspector;
 using GoodVillageGames.Player.Skills;
 using GoodVillageGames.Core.Util.Timer;
 using GoodVillageGames.Core.Enums.Attributes;
+using GoodVillageGames.Core.Util.Locomotion;
 
 namespace GoodVillageGames.Core.Actions
 {

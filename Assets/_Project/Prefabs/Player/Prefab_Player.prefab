@@ -244,6 +244,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55248b976b1de543a80f08e44cb64df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 3988092506951521294}
+  _visuals: {fileID: 2486531373931572810}
   _isDashPressed: 0
 --- !u!114 &215344867243678962
 MonoBehaviour:

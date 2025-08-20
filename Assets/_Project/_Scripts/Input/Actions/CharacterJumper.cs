@@ -79,6 +79,7 @@ namespace GoodVillageGames.Core.Actions
             }
             else if (CanDoubleJump)
             {
+                Rb.linearVelocity = Vector2.zero;
                 Rb.linearVelocity = new(Rb.linearVelocityX, impulseForce);
                 OnDoubleJumpPerformed?.Invoke();
                 _hasDoubleJumped = true;

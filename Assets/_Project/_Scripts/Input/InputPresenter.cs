@@ -29,8 +29,10 @@ namespace GoodVillageGames.Player.Input
         private CharacterInteractor _interactor;
         private CharacterSpecialAttacker _specialAttacker;
 
+
         // --- State ---
         private float _moveDirection;
+        private GroundChecker _groundChecker;
         private IS_PlayerActions _inputActions;
 
         private void Awake()
@@ -41,6 +43,7 @@ namespace GoodVillageGames.Player.Input
             _attacker = GetComponent<CharacterAttacker>();
             _interactor = GetComponent<CharacterInteractor>();
             _specialAttacker = GetComponent<CharacterSpecialAttacker>();
+            _groundChecker = GetComponent<GroundChecker>();
 
             _inputActions = new IS_PlayerActions();
         }
@@ -97,14 +100,17 @@ namespace GoodVillageGames.Player.Input
 
         private void OnAttack(InputAction.CallbackContext context)
         {
-            // State check: Can't attack while dashing ;)
-            if (_dasher.IsDashing) return;
+            // State check: Can't attack while in the air ;)
+            if (_dasher.IsDashing || !_groundChecker.IsGrounded) return;
 
             _attacker.Attack();
         }
 
         private void OnDashPerformed(InputAction.CallbackContext context)
         {
+            // Can only dash while in the air / jumping
+            if (_groundChecker.IsGrounded) return;
+
             _dasher._isDashPressed = true;
             _dasher.Dash(_moveDirection);
         }
@@ -132,8 +138,8 @@ namespace GoodVillageGames.Player.Input
 
         private void OnSpecialAttack(InputAction.CallbackContext context)
         {
-            // State check: Can't special attack while dashing ;)
-            if (_dasher.IsDashing) return;
+            // State check: Can't special attack while in the air ;)
+            if (_dasher.IsDashing || !_groundChecker.IsGrounded) return;
             _specialAttacker.PerformSpecialAttack();
         }
     }
