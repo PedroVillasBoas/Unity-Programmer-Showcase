@@ -2,6 +2,7 @@ using UnityEngine;
 using TriInspector;
 using System.Collections.Generic;
 using GoodVillageGames.Core.Interfaces;
+using GoodVillageGames.Core.Audio.Bridges;
 
 namespace GoodVillageGames.Player.Skills
 {
@@ -17,6 +18,9 @@ namespace GoodVillageGames.Player.Skills
         [SerializeField] private float _casterDamageScaling = 0.5f;
         [SerializeField] private float _timeBetweenTicks = 0.5f;
         [SerializeField] private float _skillTotalTime = 2f;
+
+        [Title("Audio Configs")]
+        [SerializeField] private string _skillIDAudioRef = "infernum";
 
         private float _tickTimer;
         private float _finalDamagePerTick;
@@ -40,6 +44,7 @@ namespace GoodVillageGames.Player.Skills
         public void Initialize(float casterDamageStat)
         {
             _finalDamagePerTick = _baseDamagePerTick + (casterDamageStat * _casterDamageScaling);
+            SkillAudioBridge.Instance.PlaySkillStartSound(_skillIDAudioRef, transform.position);
         }
 
         private void Update()
@@ -56,6 +61,7 @@ namespace GoodVillageGames.Player.Skills
             _skillTotalTime -= Time.deltaTime;
             if (_skillTotalTime <= 0f)
             {
+                SkillAudioBridge.Instance.StopSkillLoopAndPlayEnd(_skillIDAudioRef, transform.position);
                 _skillAnimator.SetTrigger("Stop");
             }
         }
@@ -97,7 +103,11 @@ namespace GoodVillageGames.Player.Skills
         }
 
         // --- Animation Event Methods ---
-        public void EnableDamage() => _damageCollider.enabled = true;
+        public void EnableDamage()
+        {
+            _damageCollider.enabled = true;
+            SkillAudioBridge.Instance.StartSkillLoop(_skillIDAudioRef, gameObject);
+        }
         public void DisableDamage() => _damageCollider.enabled = false;
         public void DestroySelf() => Destroy(gameObject);
     }

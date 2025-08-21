@@ -1,6 +1,6 @@
+using UnityEngine;
 using System.Collections.Generic;
 using GoodVillageGames.Core.Interfaces;
-using UnityEngine;
 
 namespace GoodVillageGames.Player.Skills
 {

@@ -1,4 +1,5 @@
 using TMPro;
+using System;
 using UnityEngine;
 using TriInspector;
 using UnityEngine.UI;
@@ -15,8 +16,12 @@ namespace GoodVillageGames.Core.Itemization
     /// It also takes care of the player input interaction with the item slot.
     /// </summary>
     [RequireComponent(typeof(UIDragItem))]
-    public class InventorySlotUI : MonoBehaviour, IDropHandler, ITooltipDataProvider, IPointerClickHandler
+    public class InventorySlotUI : MonoBehaviour, IDropHandler, ITooltipDataProvider, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
     {
+        public static event Action<ItemData> OnAnyItemUsed;
+        public static event Action OnAnySlotHoveredEnter;
+        public static event Action OnAnySlotHoveredExit;
+
         [Title("UI References")]
         [SerializeField] private Image _itemIcon;
         [SerializeField] private TextMeshProUGUI _quantityText;
@@ -83,7 +88,7 @@ namespace GoodVillageGames.Core.Itemization
             {
                 EquipmentManager.Instance.UnequipItemToSlot(sourceEquipmentSlot.GetSlotType(), this.SlotIndex);
             }
-            
+
             UIDragItem.dropSuccessful = true;
         }
 
@@ -94,6 +99,11 @@ namespace GoodVillageGames.Core.Itemization
         {
             if (eventData.button == PointerEventData.InputButton.Right)
             {
+                var slotData = InventoryManager.Instance.inventorySlots[SlotIndex];
+                if (slotData != null)
+                {
+                    OnAnyItemUsed?.Invoke(slotData.itemData);
+                }
                 TooltipManager.Instance.HideTooltip();
                 InventoryManager.Instance.UseItem(SlotIndex);
             }
@@ -102,6 +112,22 @@ namespace GoodVillageGames.Core.Itemization
         public ItemData GetItemData()
         {
             return InventoryManager.Instance.inventorySlots[SlotIndex]?.itemData;
+        }
+
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            if (InventoryManager.Instance.inventorySlots[SlotIndex] != null)
+            {
+                OnAnySlotHoveredEnter?.Invoke();
+            }
+        }
+
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            if (InventoryManager.Instance.inventorySlots[SlotIndex] != null)
+            {
+                OnAnySlotHoveredExit?.Invoke();
+            }
         }
     }
 }

@@ -1,6 +1,8 @@
+using FMODUnity;
 using UnityEngine;
 using TriInspector;
 using MoreMountains.Feedbacks;
+using GoodVillageGames.Core.Audio;
 using GoodVillageGames.Core.Interfaces;
 
 namespace GoodVillageGames.Core.NPC.DamageableNPC
@@ -14,6 +16,9 @@ namespace GoodVillageGames.Core.NPC.DamageableNPC
     {
         [Title("Feedback")]
         [SerializeField] private MMF_Player _hitFeedback;
+
+        [Title("Audio")]
+        [SerializeField] private EventReference _hitSound;
 
         private Animator _animator;
         private MMF_FloatingText _damageNumberFeedback;
@@ -38,6 +43,7 @@ namespace GoodVillageGames.Core.NPC.DamageableNPC
             {
                 _damageNumberFeedback.Value = damageInfo.damageAmount.ToString();
                 _hitFeedback?.PlayFeedbacks(damageInfo.hitPoint);
+                SoundManager.Instance.PlayOneShot(_hitSound, transform.position);
             }
         }
     }

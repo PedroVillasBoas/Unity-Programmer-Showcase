@@ -17,8 +17,8 @@ MonoBehaviour:
   Speed: 10
   Acceleration: 20
   Deceleration: 10
-  InteractRange: 10
-  CollectRange: 20
+  InteractRange: 2
+  CollectRange: 4
   JumpForce: 10
   DoubleJumpCooldown: 5
   Damage: 10

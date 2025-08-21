@@ -1,0 +1,2507 @@
+fileFormatVersion: 2
+guid: 80d21f2fcc1149e46bda92181a0183d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8827636581242794067
+    second: Golic_Smoke_Puff_107x124_0
+  - first:
+      213: 6866339165940284189
+    second: Golic_Smoke_Puff_107x124_1
+  - first:
+      213: -5274078716274830437
+    second: Golic_Smoke_Puff_107x124_2
+  - first:
+      213: 3374477961821112745
+    second: Golic_Smoke_Puff_107x124_3
+  - first:
+      213: -5809679926331356327
+    second: Golic_Smoke_Puff_107x124_4
+  - first:
+      213: 5534957284198164807
+    second: Golic_Smoke_Puff_107x124_5
+  - first:
+      213: -4972915252508191236
+    second: Golic_Smoke_Puff_107x124_6
+  - first:
+      213: 3800209557484964349
+    second: Golic_Smoke_Puff_107x124_7
+  - first:
+      213: -8525061266504962421
+    second: Golic_Smoke_Puff_107x124_8
+  - first:
+      213: -8404784379853202817
+    second: Golic_Smoke_Puff_107x124_9
+  - first:
+      213: 1899909283696233626
+    second: Golic_Smoke_Puff_107x124_10
+  - first:
+      213: 2670782545424834473
+    second: Golic_Smoke_Puff_107x124_11
+  - first:
+      213: 131805619235676069
+    second: Golic_Smoke_Puff_107x124_12
+  - first:
+      213: 3930382705453542850
+    second: Golic_Smoke_Puff_107x124_13
+  - first:
+      213: 3877249647115259521
+    second: Golic_Smoke_Puff_107x124_14
+  - first:
+      213: -313107937135158967
+    second: Golic_Smoke_Puff_107x124_15
+  - first:
+      213: -6634252420179884030
+    second: Golic_Smoke_Puff_107x124_16
+  - first:
+      213: -6284799559183158513
+    second: Golic_Smoke_Puff_107x124_17
+  - first:
+      213: 3491468556870673098
+    second: Golic_Smoke_Puff_107x124_18
+  - first:
+      213: -1554812263296067919
+    second: Golic_Smoke_Puff_107x124_19
+  - first:
+      213: -5756426461712784633
+    second: Golic_Smoke_Puff_107x124_20
+  - first:
+      213: -3353235625579150890
+    second: Golic_Smoke_Puff_107x124_21
+  - first:
+      213: 5936772633216963821
+    second: Golic_Smoke_Puff_107x124_22
+  - first:
+      213: 180850561425164412
+    second: Golic_Smoke_Puff_107x124_23
+  - first:
+      213: -6609862607087053148
+    second: Golic_Smoke_Puff_107x124_24
+  - first:
+      213: 3169212659388360388
+    second: Golic_Smoke_Puff_107x124_25
+  - first:
+      213: 3091845740237217453
+    second: Golic_Smoke_Puff_107x124_26
+  - first:
+      213: -1347803840117413603
+    second: Golic_Smoke_Puff_107x124_27
+  - first:
+      213: 3319473773465380864
+    second: Golic_Smoke_Puff_107x124_28
+  - first:
+      213: -6986730433951440420
+    second: Golic_Smoke_Puff_107x124_29
+  - first:
+      213: 6199416846314303517
+    second: Golic_Smoke_Puff_107x124_30
+  - first:
+      213: 753267946255261381
+    second: Golic_Smoke_Puff_107x124_31
+  - first:
+      213: 5409194396006333106
+    second: Golic_Smoke_Puff_107x124_32
+  - first:
+      213: 4592891316513835018
+    second: Golic_Smoke_Puff_107x124_33
+  - first:
+      213: -4973445948233602897
+    second: Golic_Smoke_Puff_107x124_34
+  - first:
+      213: 3889448033017106935
+    second: Golic_Smoke_Puff_107x124_35
+  - first:
+      213: -2427516318315208128
+    second: Golic_Smoke_Puff_107x124_36
+  - first:
+      213: 3309492869271925391
+    second: Golic_Smoke_Puff_107x124_37
+  - first:
+      213: 3791783637965368122
+    second: Golic_Smoke_Puff_107x124_38
+  - first:
+      213: -8118975450125003371
+    second: Golic_Smoke_Puff_107x124_39
+  - first:
+      213: -6595846713574956985
+    second: Golic_Smoke_Puff_107x124_40
+  - first:
+      213: 3859016003114371722
+    second: Golic_Smoke_Puff_107x124_41
+  - first:
+      213: 4063078588507887275
+    second: Golic_Smoke_Puff_107x124_42
+  - first:
+      213: 3538678873751463228
+    second: Golic_Smoke_Puff_107x124_43
+  - first:
+      213: 378565148502815430
+    second: Golic_Smoke_Puff_107x124_44
+  - first:
+      213: 519963349063629764
+    second: Golic_Smoke_Puff_107x124_45
+  - first:
+      213: 7409473497818389294
+    second: Golic_Smoke_Puff_107x124_46
+  - first:
+      213: 855265318048149289
+    second: Golic_Smoke_Puff_107x124_47
+  - first:
+      213: -1177307112139998676
+    second: Golic_Smoke_Puff_107x124_48
+  - first:
+      213: 2629711033125446193
+    second: Golic_Smoke_Puff_107x124_49
+  - first:
+      213: 1910830319400387496
+    second: Golic_Smoke_Puff_107x124_50
+  - first:
+      213: -5771122079887791054
+    second: Golic_Smoke_Puff_107x124_51
+  - first:
+      213: -5754438345738086754
+    second: Golic_Smoke_Puff_107x124_52
+  - first:
+      213: 5818717955380234474
+    second: Golic_Smoke_Puff_107x124_53
+  - first:
+      213: 267213803761314816
+    second: Golic_Smoke_Puff_107x124_54
+  - first:
+      213: 897895628917003736
+    second: Golic_Smoke_Puff_107x124_55
+  - first:
+      213: -5611094255976088654
+    second: Golic_Smoke_Puff_107x124_56
+  - first:
+      213: 1050819850334982763
+    second: Golic_Smoke_Puff_107x124_57
+  - first:
+      213: -2782388171424378472
+    second: Golic_Smoke_Puff_107x124_58
+  - first:
+      213: 9199537863939509353
+    second: Golic_Smoke_Puff_107x124_59
+  - first:
+      213: -2076628268924896235
+    second: Golic_Smoke_Puff_107x124_60
+  - first:
+      213: -2432038559262792981
+    second: Golic_Smoke_Puff_107x124_61
+  - first:
+      213: -1875886059480833121
+    second: Golic_Smoke_Puff_107x124_62
+  - first:
+      213: -8899772772596198073
+    second: Golic_Smoke_Puff_107x124_63
+  - first:
+      213: 2673439136195731129
+    second: Golic_Smoke_Puff_107x124_64
+  - first:
+      213: -1264841097451058137
+    second: Golic_Smoke_Puff_107x124_65
+  - first:
+      213: 3730889223963453615
+    second: Golic_Smoke_Puff_107x124_66
+  - first:
+      213: -1158356421614156675
+    second: Golic_Smoke_Puff_107x124_67
+  - first:
+      213: 5696993501000217499
+    second: Golic_Smoke_Puff_107x124_68
+  - first:
+      213: 7781796296685829393
+    second: Golic_Smoke_Puff_107x124_69
+  - first:
+      213: 5105445893848444719
+    second: Golic_Smoke_Puff_107x124_70
+  - first:
+      213: 6439668756596522625
+    second: Golic_Smoke_Puff_107x124_71
+  - first:
+      213: -1083299525346557315
+    second: Golic_Smoke_Puff_107x124_72
+  - first:
+      213: -2818979582044732854
+    second: Golic_Smoke_Puff_107x124_73
+  - first:
+      213: -5049865131144249745
+    second: Golic_Smoke_Puff_107x124_74
+  - first:
+      213: 3118290927936745308
+    second: Golic_Smoke_Puff_107x124_75
+  - first:
+      213: -5204173892120740868
+    second: Golic_Smoke_Puff_107x124_76
+  - first:
+      213: -3872786951670262929
+    second: Golic_Smoke_Puff_107x124_77
+  - first:
+      213: 4677674367482402532
+    second: Golic_Smoke_Puff_107x124_78
+  - first:
+      213: 3580443603641093999
+    second: Golic_Smoke_Puff_107x124_79
+  - first:
+      213: 1039240734366327981
+    second: Golic_Smoke_Puff_107x124_80
+  - first:
+      213: -1256506168211061881
+    second: Golic_Smoke_Puff_107x124_81
+  - first:
+      213: -7635550324763898013
+    second: Golic_Smoke_Puff_107x124_82
+  - first:
+      213: 6001926036526036543
+    second: Golic_Smoke_Puff_107x124_83
+  - first:
+      213: -1479211602371574985
+    second: Golic_Smoke_Puff_107x124_84
+  - first:
+      213: -2590371524323962894
+    second: Golic_Smoke_Puff_107x124_85
+  - first:
+      213: 4897996107049169214
+    second: Golic_Smoke_Puff_107x124_86
+  - first:
+      213: 6711194812959356937
+    second: Golic_Smoke_Puff_107x124_87
+  - first:
+      213: 5732555613486430523
+    second: Golic_Smoke_Puff_107x124_88
+  - first:
+      213: -5205016761870169265
+    second: Golic_Smoke_Puff_107x124_89
+  - first:
+      213: -3987306529185458151
+    second: Golic_Smoke_Puff_107x124_90
+  - first:
+      213: 3961662864547250532
+    second: Golic_Smoke_Puff_107x124_91
+  - first:
+      213: -7640681182826971494
+    second: Golic_Smoke_Puff_107x124_92
+  - first:
+      213: -5632793725034261834
+    second: Golic_Smoke_Puff_107x124_93
+  - first:
+      213: -5342374054271041108
+    second: Golic_Smoke_Puff_107x124_94
+  - first:
+      213: -1485740943218645369
+    second: Golic_Smoke_Puff_107x124_95
+  - first:
+      213: -6504133942675336869
+    second: Golic_Smoke_Puff_107x124_96
+  - first:
+      213: -4185460610254966059
+    second: Golic_Smoke_Puff_107x124_97
+  - first:
+      213: 3662131756822154219
+    second: Golic_Smoke_Puff_107x124_98
+  - first:
+      213: -2245342945781393680
+    second: Golic_Smoke_Puff_107x124_99
+  - first:
+      213: 3421816409736527761
+    second: Golic_Smoke_Puff_107x124_100
+  - first:
+      213: 7370645731412160142
+    second: Golic_Smoke_Puff_107x124_101
+  - first:
+      213: 1712905871947264796
+    second: Golic_Smoke_Puff_107x124_102
+  - first:
+      213: -8652952988202951001
+    second: Golic_Smoke_Puff_107x124_103
+  - first:
+      213: -4181044303941919511
+    second: Golic_Smoke_Puff_107x124_104
+  - first:
+      213: -6375622078372422658
+    second: Golic_Smoke_Puff_107x124_105
+  - first:
+      213: 3484619895700225984
+    second: Golic_Smoke_Puff_107x124_106
+  - first:
+      213: 8125270004681479964
+    second: Golic_Smoke_Puff_107x124_107
+  - first:
+      213: 4465788706460932227
+    second: Golic_Smoke_Puff_107x124_108
+  - first:
+      213: -7611398211766854001
+    second: Golic_Smoke_Puff_107x124_109
+  - first:
+      213: 1154497302657094089
+    second: Golic_Smoke_Puff_107x124_110
+  - first:
+      213: 2843468344630324841
+    second: Golic_Smoke_Puff_107x124_111
+  - first:
+      213: -8745370517001540706
+    second: Golic_Smoke_Puff_107x124_112
+  - first:
+      213: -5898342701736021513
+    second: Golic_Smoke_Puff_107x124_113
+  - first:
+      213: -1583284984204475848
+    second: Golic_Smoke_Puff_107x124_114
+  - first:
+      213: 9174905886850166525
+    second: Golic_Smoke_Puff_107x124_115
+  - first:
+      213: -5397065376242280684
+    second: Golic_Smoke_Puff_107x124_116
+  - first:
+      213: 684412713121650087
+    second: Golic_Smoke_Puff_107x124_117
+  - first:
+      213: 3100816635734425560
+    second: Golic_Smoke_Puff_107x124_118
+  - first:
+      213: 8839184608893693937
+    second: Golic_Smoke_Puff_107x124_119
+  - first:
+      213: 7602565098129180972
+    second: Golic_Smoke_Puff_107x124_120
+  - first:
+      213: 8962505258339414661
+    second: Golic_Smoke_Puff_107x124_121
+  - first:
+      213: -5383874531848338420
+    second: Golic_Smoke_Puff_107x124_122
+  - first:
+      213: -3226817666900613911
+    second: Golic_Smoke_Puff_107x124_123
+  - first:
+      213: 6547232095362086098
+    second: Golic_Smoke_Puff_107x124_124
+  - first:
+      213: -6630335815168117079
+    second: Golic_Smoke_Puff_107x124_125
+  - first:
+      213: 1883387842670472393
+    second: Golic_Smoke_Puff_107x124_126
+  - first:
+      213: 1458394907293451808
+    second: Golic_Smoke_Puff_107x124_127
+  - first:
+      213: -612818856452197249
+    second: Golic_Smoke_Puff_107x124_128
+  - first:
+      213: -7124182031425844731
+    second: Golic_Smoke_Puff_107x124_129
+  - first:
+      213: -7796740307295993748
+    second: Golic_Smoke_Puff_107x124_130
+  - first:
+      213: -5329307167632454698
+    second: Golic_Smoke_Puff_107x124_131
+  - first:
+      213: 1766876980231827577
+    second: Golic_Smoke_Puff_107x124_132
+  - first:
+      213: 3295386622355856344
+    second: Golic_Smoke_Puff_107x124_133
+  - first:
+      213: 8461030500607040520
+    second: Golic_Smoke_Puff_107x124_134
+  - first:
+      213: 3135881624932238268
+    second: Golic_Smoke_Puff_107x124_135
+  - first:
+      213: -7152782450047958640
+    second: Golic_Smoke_Puff_107x124_136
+  - first:
+      213: -7296882573903661341
+    second: Golic_Smoke_Puff_107x124_137
+  - first:
+      213: -5764465037446002761
+    second: Golic_Smoke_Puff_107x124_138
+  - first:
+      213: 8160502447282124768
+    second: Golic_Smoke_Puff_107x124_139
+  - first:
+      213: -8568316808048915815
+    second: Golic_Smoke_Puff_107x124_140
+  - first:
+      213: 5047379634816043196
+    second: Golic_Smoke_Puff_107x124_141
+  - first:
+      213: 8321330246774150789
+    second: Golic_Smoke_Puff_107x124_142
+  - first:
+      213: -5303967229577506773
+    second: Golic_Smoke_Puff_107x124_143
+  - first:
+      213: -2851385068798743932
+    second: Golic_Smoke_Puff_107x124_144
+  - first:
+      213: 2930340732273462618
+    second: Golic_Smoke_Puff_107x124_145
+  - first:
+      213: 5308212336347114221
+    second: Golic_Smoke_Puff_107x124_146
+  - first:
+      213: -6188415560296701564
+    second: Golic_Smoke_Puff_107x124_147
+  - first:
+      213: -7259035556732914494
+    second: Golic_Smoke_Puff_107x124_148
+  - first:
+      213: -1646952873817123002
+    second: Golic_Smoke_Puff_107x124_149
+  - first:
+      213: 5211446365632592094
+    second: Golic_Smoke_Puff_107x124_150
+  - first:
+      213: 854325964486397329
+    second: Golic_Smoke_Puff_107x124_151
+  - first:
+      213: -4244827875097352622
+    second: Golic_Smoke_Puff_107x124_152
+  - first:
+      213: 3658309652085234306
+    second: Golic_Smoke_Puff_107x124_153
+  - first:
+      213: 1297548592673910312
+    second: Golic_Smoke_Puff_107x124_154
+  - first:
+      213: 3074447498587207233
+    second: Golic_Smoke_Puff_107x124_155
+  - first:
+      213: 8699286038884102129
+    second: Golic_Smoke_Puff_107x124_156
+  - first:
+      213: -1511469335092761770
+    second: Golic_Smoke_Puff_107x124_157
+  - first:
+      213: 4842187449273858303
+    second: Golic_Smoke_Puff_107x124_158
+  - first:
+      213: -2716688561219669655
+    second: Golic_Smoke_Puff_107x124_159
+  - first:
+      213: 6405541144245909112
+    second: Golic_Smoke_Puff_107x124_160
+  - first:
+      213: 5967310896914486852
+    second: Golic_Smoke_Puff_107x124_161
+  - first:
+      213: -7071610027074125667
+    second: Golic_Smoke_Puff_107x124_162
+  - first:
+      213: -7661060249803573224
+    second: Golic_Smoke_Puff_107x124_163
+  - first:
+      213: -1120652050143419008
+    second: Golic_Smoke_Puff_107x124_164
+  - first:
+      213: -4176742871830680868
+    second: Golic_Smoke_Puff_107x124_165
+  - first:
+      213: -2619994119307292798
+    second: Golic_Smoke_Puff_107x124_166
+  - first:
+      213: 7191363214168648298
+    second: Golic_Smoke_Puff_107x124_167
+  - first:
+      213: 4344539788668207633
+    second: Golic_Smoke_Puff_107x124_168
+  - first:
+      213: -6127442828473506501
+    second: Golic_Smoke_Puff_107x124_169
+  - first:
+      213: 5349028645543495364
+    second: Golic_Smoke_Puff_107x124_170
+  - first:
+      213: -5503350958700680188
+    second: Golic_Smoke_Puff_107x124_171
+  - first:
+      213: -4830259379325106434
+    second: Golic_Smoke_Puff_107x124_172
+  - first:
+      213: 6880073896675119671
+    second: Golic_Smoke_Puff_107x124_173
+  - first:
+      213: 7640192797065337396
+    second: Golic_Smoke_Puff_107x124_174
+  - first:
+      213: 8906595996890635085
+    second: Golic_Smoke_Puff_107x124_175
+  - first:
+      213: 2087358415104253415
+    second: Golic_Smoke_Puff_107x124_176
+  - first:
+      213: 2107763977665176453
+    second: Golic_Smoke_Puff_107x124_177
+  - first:
+      213: 5315949139830379677
+    second: Golic_Smoke_Puff_107x124_178
+  - first:
+      213: 2819065972215264041
+    second: Golic_Smoke_Puff_107x124_179
+  - first:
+      213: -1180317852728361512
+    second: Golic_Smoke_Puff_107x124_180
+  - first:
+      213: -2134527168537204015
+    second: Golic_Smoke_Puff_107x124_181
+  - first:
+      213: -3825452120859144657
+    second: Golic_Smoke_Puff_107x124_182
+  - first:
+      213: -1906007625480546294
+    second: Golic_Smoke_Puff_107x124_183
+  - first:
+      213: -7039068536664148126
+    second: Golic_Smoke_Puff_107x124_184
+  - first:
+      213: -1523513823630854136
+    second: Golic_Smoke_Puff_107x124_185
+  - first:
+      213: 2710260604665895536
+    second: Golic_Smoke_Puff_107x124_186
+  - first:
+      213: 1488724567516431525
+    second: Golic_Smoke_Puff_107x124_187
+  - first:
+      213: -6031150462014669686
+    second: Golic_Smoke_Puff_107x124_188
+  - first:
+      213: -2675551971630976857
+    second: Golic_Smoke_Puff_107x124_189
+  - first:
+      213: -2656872111707941105
+    second: Golic_Smoke_Puff_107x124_190
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 992
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350783723b0128a70800000000000000
+      internalID: 8827636581242794067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 992
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1bf83d87132a4f50800000000000000
+      internalID: 6866339165940284189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_2
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 992
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b939dfec955bec6b0800000000000000
+      internalID: -5274078716274830437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_3
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 992
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a94bb8d3dd84de20800000000000000
+      internalID: 3374477961821112745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_4
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 992
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95b4d4453eedf5fa0800000000000000
+      internalID: -5809679926331356327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_5
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 992
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749a793135e10dc40800000000000000
+      internalID: 5534957284198164807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_6
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 992
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5902cece7acfab0800000000000000
+      internalID: -4972915252508191236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_7
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 992
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df98fe9457e0db430800000000000000
+      internalID: 3800209557484964349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_8
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 992
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ea78122f5e0b980800000000000000
+      internalID: -8525061266504962421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 868
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a191113253c5b80800000000000000
+      internalID: -8404784379853202817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_10
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 868
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c4e286d65dd5a10800000000000000
+      internalID: 1899909283696233626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_11
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 868
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af5c5c1396801520800000000000000
+      internalID: 2670782545424834473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_12
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 868
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5af51f9238444d100800000000000000
+      internalID: 131805619235676069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_13
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 868
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cda5ed1f368b8630800000000000000
+      internalID: 3930382705453542850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_14
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 868
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e40d1f202cec530800000000000000
+      internalID: 3877249647115259521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_15
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 868
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94914b67dfd97abf0800000000000000
+      internalID: -313107937135158967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_16
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 868
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20807e8d2966ee3a0800000000000000
+      internalID: -6634252420179884030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_17
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 868
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f033b566918e7c8a0800000000000000
+      internalID: -6284799559183158513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 744
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2e8b46720347030800000000000000
+      internalID: 3491468556870673098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_19
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 744
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b611d9fb723c6ae0800000000000000
+      internalID: -1554812263296067919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_20
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 744
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70363f5c1a01d10b0800000000000000
+      internalID: -5756426461712784633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_21
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 744
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d18b29f6f9e671d0800000000000000
+      internalID: -3353235625579150890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_22
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 744
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4582b6147a36250800000000000000
+      internalID: 5936772633216963821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_23
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 744
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c784d2f90a2828200800000000000000
+      internalID: 180850561425164412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_24
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 744
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6507abafc0544a0800000000000000
+      internalID: -6609862607087053148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_25
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 744
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6a38c5f1e4bfb20800000000000000
+      internalID: 3169212659388360388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_26
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 744
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daed427c15178ea20800000000000000
+      internalID: 3091845740237217453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 620
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19e4e26c83ab4de0800000000000000
+      internalID: -1347803840117413603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_28
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 620
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00821a44fc3211e20800000000000000
+      internalID: 3319473773465380864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_29
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 620
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1e9e600b52a0f90800000000000000
+      internalID: -6986730433951440420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_30
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 620
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10f22b96c0c80650800000000000000
+      internalID: 6199416846314303517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_31
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 620
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ce9b35c435247a00800000000000000
+      internalID: 753267946255261381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_32
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 620
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2babdfed4a1511b40800000000000000
+      internalID: 5409194396006333106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_33
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 620
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0888c4715a3dbf30800000000000000
+      internalID: 4592891316513835018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_34
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 620
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa82ee1b245cafab0800000000000000
+      internalID: -4973445948233602897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_35
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 620
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1935cf0681af530800000000000000
+      internalID: 3889448033017106935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 496
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042ab5025cabf4ed0800000000000000
+      internalID: -2427516318315208128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_37
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 496
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8234abea3eaded20800000000000000
+      internalID: 3309492869271925391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_38
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 496
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b6016012f1f9430800000000000000
+      internalID: 3791783637965368122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_39
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 496
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5959e2328da935f80800000000000000
+      internalID: -8118975450125003371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_40
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 496
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 740ef6c3c58d674a0800000000000000
+      internalID: -6595846713574956985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_41
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 496
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8a0e20eb9afd8530800000000000000
+      internalID: 3859016003114371722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_42
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 496
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6128af274f26830800000000000000
+      internalID: 4063078588507887275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_43
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 496
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c35a22cdfa9eb1130800000000000000
+      internalID: 3538678873751463228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_44
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 496
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c27ad03ffee04500800000000000000
+      internalID: 378565148502815430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 372
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cbf82d39e7473700800000000000000
+      internalID: 519963349063629764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_46
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 372
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2bd222a3ecb3d660800000000000000
+      internalID: 7409473497818389294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_47
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 372
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92fa8fe76438edb00800000000000000
+      internalID: 855265318048149289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_48
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 372
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2aba5d4b6d59afe0800000000000000
+      internalID: -1177307112139998676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_49
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 372
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1322e57704c9e7420800000000000000
+      internalID: 2629711033125446193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_50
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 372
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a308ed2d02a48a10800000000000000
+      internalID: 1910830319400387496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_51
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 372
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23cefd88b0bd8efa0800000000000000
+      internalID: -5771122079887791054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_52
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 372
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e96156810d02420b0800000000000000
+      internalID: -5754438345738086754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_53
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 372
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae840aac62d30c050800000000000000
+      internalID: 5818717955380234474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c264ce98555b300800000000000000
+      internalID: 267213803761314816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_55
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 248
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d559f63157f57c00800000000000000
+      internalID: 897895628917003736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_56
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 248
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd2bdc9dfc0bae449afbfc1bd36dc17
+      internalID: -5611094255976088654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_57
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 248
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896af355582b11f40a8cfed6ade30901
+      internalID: 1050819850334982763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_58
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 248
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c89bb7e7ff9694abdc1d7d234448c7
+      internalID: -2782388171424378472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_59
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 248
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb5a5978144d7a41a68f22c662ab1c7
+      internalID: 9199537863939509353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_60
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 248
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbdbd71551a8dda4a8940229d6a73782
+      internalID: -2076628268924896235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_61
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 248
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0e7583572ecc946a7fbc17dfc8788b
+      internalID: -2432038559262792981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_62
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 248
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19de6c1e6f7aeb47a391734609914d1
+      internalID: -1875886059480833121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 124
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f745c26c757d51e43954a9d2adf3fba4
+      internalID: -8899772772596198073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_64
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 124
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e4a6719f0fc214ea8329f1bd2a6520
+      internalID: 2673439136195731129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_65
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 124
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31639e7d6b3cf0448829b736d0bea229
+      internalID: -1264841097451058137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_66
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 124
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d57226ba11a67f4dbc5bdc99857b521
+      internalID: 3730889223963453615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_67
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 124
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea8d73e7073e50439ab63ff22f3d32e
+      internalID: -1158356421614156675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_68
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 124
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0bcade61af510449578a57b08ff1a2
+      internalID: 5696993501000217499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_69
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 124
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a984bfeef9918384a9d40db60888ed52
+      internalID: 7781796296685829393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_70
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 124
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3b37ae400f41f4587f8e6bccc5fa31
+      internalID: 5105445893848444719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_71
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 124
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3c8b86885857144835dfdb87aadd40
+      internalID: 6439668756596522625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f054acd7545964ea74bad6a4285e9c
+      internalID: -1083299525346557315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_73
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ce6e0f9bdea624abe7f55587a8a674
+      internalID: -2818979582044732854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_74
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 0
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b9e5b03e32ad54995c6e3ac5700f7b
+      internalID: -5049865131144249745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_75
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 0
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c5df59763c4ea4f83b2df05d82aead
+      internalID: 3118290927936745308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_76
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 0
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a389a549c12a041bc6d81feac25b2b
+      internalID: -5204173892120740868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_77
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 0
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578a7f068600b0945af03c7dc8657ef7
+      internalID: -3872786951670262929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golic_Smoke_Puff_107x124_78
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 0
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03bd8ecefd5d3b499c151aa8891b72e
+      internalID: 4677674367482402532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 55d2a3aaca9ed84489585fda87758886
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Golic_Smoke_Puff_107x124_0: 8827636581242794067
+      Golic_Smoke_Puff_107x124_1: 6866339165940284189
+      Golic_Smoke_Puff_107x124_10: 1899909283696233626
+      Golic_Smoke_Puff_107x124_11: 2670782545424834473
+      Golic_Smoke_Puff_107x124_12: 131805619235676069
+      Golic_Smoke_Puff_107x124_13: 3930382705453542850
+      Golic_Smoke_Puff_107x124_14: 3877249647115259521
+      Golic_Smoke_Puff_107x124_15: -313107937135158967
+      Golic_Smoke_Puff_107x124_16: -6634252420179884030
+      Golic_Smoke_Puff_107x124_17: -6284799559183158513
+      Golic_Smoke_Puff_107x124_18: 3491468556870673098
+      Golic_Smoke_Puff_107x124_19: -1554812263296067919
+      Golic_Smoke_Puff_107x124_2: -5274078716274830437
+      Golic_Smoke_Puff_107x124_20: -5756426461712784633
+      Golic_Smoke_Puff_107x124_21: -3353235625579150890
+      Golic_Smoke_Puff_107x124_22: 5936772633216963821
+      Golic_Smoke_Puff_107x124_23: 180850561425164412
+      Golic_Smoke_Puff_107x124_24: -6609862607087053148
+      Golic_Smoke_Puff_107x124_25: 3169212659388360388
+      Golic_Smoke_Puff_107x124_26: 3091845740237217453
+      Golic_Smoke_Puff_107x124_27: -1347803840117413603
+      Golic_Smoke_Puff_107x124_28: 3319473773465380864
+      Golic_Smoke_Puff_107x124_29: -6986730433951440420
+      Golic_Smoke_Puff_107x124_3: 3374477961821112745
+      Golic_Smoke_Puff_107x124_30: 6199416846314303517
+      Golic_Smoke_Puff_107x124_31: 753267946255261381
+      Golic_Smoke_Puff_107x124_32: 5409194396006333106
+      Golic_Smoke_Puff_107x124_33: 4592891316513835018
+      Golic_Smoke_Puff_107x124_34: -4973445948233602897
+      Golic_Smoke_Puff_107x124_35: 3889448033017106935
+      Golic_Smoke_Puff_107x124_36: -2427516318315208128
+      Golic_Smoke_Puff_107x124_37: 3309492869271925391
+      Golic_Smoke_Puff_107x124_38: 3791783637965368122
+      Golic_Smoke_Puff_107x124_39: -8118975450125003371
+      Golic_Smoke_Puff_107x124_4: -5809679926331356327
+      Golic_Smoke_Puff_107x124_40: -6595846713574956985
+      Golic_Smoke_Puff_107x124_41: 3859016003114371722
+      Golic_Smoke_Puff_107x124_42: 4063078588507887275
+      Golic_Smoke_Puff_107x124_43: 3538678873751463228
+      Golic_Smoke_Puff_107x124_44: 378565148502815430
+      Golic_Smoke_Puff_107x124_45: 519963349063629764
+      Golic_Smoke_Puff_107x124_46: 7409473497818389294
+      Golic_Smoke_Puff_107x124_47: 855265318048149289
+      Golic_Smoke_Puff_107x124_48: -1177307112139998676
+      Golic_Smoke_Puff_107x124_49: 2629711033125446193
+      Golic_Smoke_Puff_107x124_5: 5534957284198164807
+      Golic_Smoke_Puff_107x124_50: 1910830319400387496
+      Golic_Smoke_Puff_107x124_51: -5771122079887791054
+      Golic_Smoke_Puff_107x124_52: -5754438345738086754
+      Golic_Smoke_Puff_107x124_53: 5818717955380234474
+      Golic_Smoke_Puff_107x124_54: 267213803761314816
+      Golic_Smoke_Puff_107x124_55: 897895628917003736
+      Golic_Smoke_Puff_107x124_56: -5611094255976088654
+      Golic_Smoke_Puff_107x124_57: 1050819850334982763
+      Golic_Smoke_Puff_107x124_58: -2782388171424378472
+      Golic_Smoke_Puff_107x124_59: 9199537863939509353
+      Golic_Smoke_Puff_107x124_6: -4972915252508191236
+      Golic_Smoke_Puff_107x124_60: -2076628268924896235
+      Golic_Smoke_Puff_107x124_61: -2432038559262792981
+      Golic_Smoke_Puff_107x124_62: -1875886059480833121
+      Golic_Smoke_Puff_107x124_63: -8899772772596198073
+      Golic_Smoke_Puff_107x124_64: 2673439136195731129
+      Golic_Smoke_Puff_107x124_65: -1264841097451058137
+      Golic_Smoke_Puff_107x124_66: 3730889223963453615
+      Golic_Smoke_Puff_107x124_67: -1158356421614156675
+      Golic_Smoke_Puff_107x124_68: 5696993501000217499
+      Golic_Smoke_Puff_107x124_69: 7781796296685829393
+      Golic_Smoke_Puff_107x124_7: 3800209557484964349
+      Golic_Smoke_Puff_107x124_70: 5105445893848444719
+      Golic_Smoke_Puff_107x124_71: 6439668756596522625
+      Golic_Smoke_Puff_107x124_72: -1083299525346557315
+      Golic_Smoke_Puff_107x124_73: -2818979582044732854
+      Golic_Smoke_Puff_107x124_74: -5049865131144249745
+      Golic_Smoke_Puff_107x124_75: 3118290927936745308
+      Golic_Smoke_Puff_107x124_76: -5204173892120740868
+      Golic_Smoke_Puff_107x124_77: -3872786951670262929
+      Golic_Smoke_Puff_107x124_78: 4677674367482402532
+      Golic_Smoke_Puff_107x124_8: -8525061266504962421
+      Golic_Smoke_Puff_107x124_9: -8404784379853202817
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,8 +1,8 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using GoodVillageGames.Core.GameController;
 using GoodVillageGames.Core.Dialogue;
+using GoodVillageGames.Core.GameController;
 
 namespace GoodVillageGames.Player.Input
 {
@@ -14,7 +14,7 @@ namespace GoodVillageGames.Player.Input
     {
         public static UIManager Instance { get; private set; }
 
-        public static event Action OnToggleCharacterMenu;
+        public static event Action<bool> OnMenuToggled;
 
         private IS_PlayerActions _uiInputActions;
 
@@ -33,22 +33,22 @@ namespace GoodVillageGames.Player.Input
 
         private void OnEnable()
         {
-            // This listener is always active!!!
             _uiInputActions.UI.Enable();
             _uiInputActions.UI.Inventory.performed += OnToggleCharacterMenuInput;
-            //_uiInputActions.UI.Pause.performed += OnTogglePause;
         }
 
         private void OnDisable()
         {
             _uiInputActions.UI.Disable();
             _uiInputActions.UI.Inventory.performed -= OnToggleCharacterMenuInput;
-            //_uiInputActions.UI.Pause.performed -= OnTogglePause;
         }
 
+        /// <summary>
+        /// Handles context-sensitive input that should only occur during specific game states.
+        /// </summary>
         private void Update()
         {
-            // Check if the dialogue system is active and if the player has clicked
+            // Check if a dialogue is active and if the player has clicked
             if (DialogueManager.Instance.IsDialogueActive && UnityEngine.Input.GetMouseButtonDown(0))
             {
                 if (DialogueManager.Instance.IsCurrentLineFinished)
@@ -63,14 +63,13 @@ namespace GoodVillageGames.Player.Input
         }
 
         /// <summary>
-        /// Called when the player presses the key to open/close character menus.
+        /// Called when the player presses the key to open/close inventory&equipment.
         /// </summary>
         private void OnToggleCharacterMenuInput(InputAction.CallbackContext context)
         {
+            bool isMenuNowOpen = !GameManager.Instance.IsPaused;
             GameManager.Instance.TogglePauseState();
-
-            OnToggleCharacterMenu?.Invoke();
+            OnMenuToggled?.Invoke(isMenuNowOpen);
         }
     }
-
 }

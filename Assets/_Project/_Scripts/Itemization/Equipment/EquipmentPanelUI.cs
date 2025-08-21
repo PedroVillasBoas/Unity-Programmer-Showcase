@@ -25,7 +25,7 @@ namespace GoodVillageGames.Core.Itemization.Equipment
                 EquipmentManager.Instance.OnEquipmentChanged += UpdatePanel;
             }
 
-            UIManager.OnToggleCharacterMenu += TogglePanel;
+            UIManager.OnMenuToggled += TogglePanel;
 
             // --- Find and Initialize slots ---
             _equipmentSlotUIs = _slotsParent.GetComponentsInChildren<EquipmentSlotUI>().ToList();
@@ -40,7 +40,7 @@ namespace GoodVillageGames.Core.Itemization.Equipment
             {
                 EquipmentManager.Instance.OnEquipmentChanged -= UpdatePanel;
             }
-            UIManager.OnToggleCharacterMenu -= TogglePanel;
+            UIManager.OnMenuToggled -= TogglePanel;
         }
 
         /// <summary>
@@ -66,9 +66,9 @@ namespace GoodVillageGames.Core.Itemization.Equipment
         /// Since this method will probrably appear in most UI panels, I could make this a interface
         /// and take advantage of the contract.
         /// </remarks>
-        private void TogglePanel()
+        private void TogglePanel(bool isOpen)
         {
-            _equipmentPanel.SetActive(!_equipmentPanel.activeSelf);
+            _equipmentPanel.SetActive(isOpen);
         }
 
     }

@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5330892184170111288
 Transform:
   m_ObjectHideFlags: 0
@@ -147,7 +147,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0653736, y: -0.2309866}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -157,7 +157,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2, y: 1}
+  m_Size: {x: 0.98276174, y: 0.5380268}
   m_EdgeRadius: 0
 --- !u!114 &5434360786352901771
 MonoBehaviour:
@@ -171,15 +171,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1edd9b59cd06f4bb2fcc4d9dcd09dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lootTable: {fileID: 0}
-  numberOfItemsToDrop: 5
-  isLocked: 0
-  requiredKey: {fileID: 0}
-  itemDatabase: {fileID: 11400000, guid: 8fc9eef5bbf176e41ad95e6676945cc5, type: 2}
-  spawnForce: 5
-  spawnSpread: 2
-  delayBetweenSpawns: 0.2
-  openFeedback: {fileID: 8249490105638107208}
+  _lootTable: {fileID: 0}
+  _numberOfItemsToDrop: 1
+  _isLocked: 0
+  _requiredKey: {fileID: 0}
+  _itemDatabase: {fileID: 11400000, guid: 8fc9eef5bbf176e41ad95e6676945cc5, type: 2}
+  _spawnForce: 5
+  _spawnSpread: 2
+  _delayBetweenSpawns: 0.2
+  _openFeedback: {fileID: 8249490105638107208}
+  _openWithKeySound:
+    Guid:
+      Data1: -1538143895
+      Data2: 1079652320
+      Data3: 993809586
+      Data4: -1058552553
+    Path: event:/SFX/Interactable/Chest/Audio_SFX_Chest_OpenWithKey
+  _openWithoutKeySound:
+    Guid:
+      Data1: -1843119645
+      Data2: 1162752177
+      Data3: 1186191756
+      Data4: -230162666
+    Path: event:/SFX/Interactable/Chest/Audio_SFX_Chest_OpenWithoutKey
+  _itemDropSound:
+    Guid:
+      Data1: -1250817334
+      Data2: 1247773280
+      Data3: -1750845005
+      Data4: -1550819282
+    Path: event:/SFX/Interactable/Chest/Audio_SFX_Chest_ItemDrop
+  _openningSound:
+    Guid:
+      Data1: -1934246890
+      Data2: 1077135814
+      Data3: -2118861161
+      Data4: 892416768
+    Path: event:/SFX/Interactable/Chest/Audio_SFX_Chest_Openning
 --- !u!1 &8975777069441094000
 GameObject:
   m_ObjectHideFlags: 0

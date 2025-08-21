@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3843bd2d12f8584ba6bb335ba7a0f4b, type: 3}
+  m_Name: LootTable_Chest_Artemis
+  m_EditorClassIdentifier: 
+  GuaranteedDrops:
+  - ItemData: {fileID: 11400000, guid: 746f95bfbc6e98a4fac1d56924e6e775, type: 2}
+    Weight: 0
+    MinQuantity: 1
+    MaxQuantity: 1
+  - ItemData: {fileID: 11400000, guid: 4ef0100dc03ae914b956f108462049e5, type: 2}
+    Weight: 0
+    MinQuantity: 1
+    MaxQuantity: 1
+  RandomDrops:
+  - ItemData: {fileID: 11400000, guid: e06e549bf2dbf954c973073c9578ecd4, type: 2}
+    Weight: 5
+    MinQuantity: 2
+    MaxQuantity: 10

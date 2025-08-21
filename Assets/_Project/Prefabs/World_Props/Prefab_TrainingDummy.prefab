@@ -431,3 +431,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitFeedback: {fileID: 8824329753850942893}
+  _hitSound:
+    Guid:
+      Data1: -166103957
+      Data2: 1200416167
+      Data3: -165099871
+      Data4: 1662096549
+    Path: event:/SFX/Interactable/TrainningDummy/TrainingDummy_Hit

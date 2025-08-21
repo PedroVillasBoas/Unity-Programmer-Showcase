@@ -54,9 +54,10 @@ GameObject:
   - component: {fileID: 8669977187084109156}
   - component: {fileID: 2486531373931572810}
   - component: {fileID: 4696578396840194210}
+  - component: {fileID: 4788273897324284616}
   m_Layer: 7
   m_Name: Prefab_Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -319,9 +320,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffadc8ceba543c42a8e6bbe2f97b888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _infernumSkillPrefab: {fileID: 0}
+  _infernumSkillPrefab: {fileID: 7977056048916162052, guid: 05e4e4079d449154d9610b747cd0f783, type: 3}
   _spawnPoint: {fileID: 4368328608599542367}
   _cooldownDuration: 10
+--- !u!114 &4788273897324284616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3706068373860642666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f817340d1022aff40919023cbcb39029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jumper: {fileID: 7288285987371633196}
+  _attacker: {fileID: 215344867243678962}
+  _dasher: {fileID: 8039140722302483326}
+  _specialAttacker: {fileID: 4696578396840194210}
+  _groundChecker: {fileID: 8669977187084109156}
+  _rigidbody: {fileID: 3711563096099864876}
+  _doubleJumpSound:
+    Guid:
+      Data1: 1842591995
+      Data2: 1134887461
+      Data3: -645460560
+      Data4: -1079386387
+    Path: event:/SFX/Player/OneShot/Player_DoubleJump
+  _slashSound:
+    Guid:
+      Data1: 1626826681
+      Data2: 1245147906
+      Data3: 963976371
+      Data4: 1354880091
+    Path: event:/SFX/Player/OneShot/Player_SlashSkill
+  _dashStartSound:
+    Guid:
+      Data1: 764969517
+      Data2: 1282969666
+      Data3: -1667999859
+      Data4: 1905792621
+    Path: event:/SFX/Player/OneShot/Player_Dash_Begin
+  _itemPickupSound:
+    Guid:
+      Data1: -1293602907
+      Data2: 1288152638
+      Data3: 563591571
+      Data4: 1792809216
+    Path: event:/SFX/Items/Item_Pickup
+  _moveLoopSound:
+    Guid:
+      Data1: 83036463
+      Data2: 1239143611
+      Data3: 1796262533
+      Data4: 185753646
+    Path: event:/SFX/Player/Loop/Player_Move
+  _dashLoopSound:
+    Guid:
+      Data1: -1991070797
+      Data2: 1185389337
+      Data3: 40541335
+      Data4: 1341292720
+    Path: event:/SFX/Player/Loop/Player_Dash_Loop
 --- !u!1 &3871573035374935135
 GameObject:
   m_ObjectHideFlags: 0

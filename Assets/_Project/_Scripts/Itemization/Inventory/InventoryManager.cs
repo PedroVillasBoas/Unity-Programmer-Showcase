@@ -15,6 +15,8 @@ namespace GoodVillageGames.Core.Itemization
     {
         public static InventoryManager Instance { get; private set; }
 
+        public static event Action<ItemData> OnItemAdded;
+
         // The UI will subscribe to this!!
         public event Action OnInventoryChanged;
         public event Action<ItemData, int> OnCurrencyChanged;
@@ -55,21 +57,31 @@ namespace GoodVillageGames.Core.Itemization
         /// </summary>
         public bool AddItem(ItemData item)
         {
+            bool success;
             switch (item.Category)
             {
                 case ItemCategory.Currency:
                     AddCurrency(item, 1);
-                    return true;
+                    success = true;
+                    break;
 
                 case ItemCategory.Standard:
                 case ItemCategory.Consumable:
                 case ItemCategory.QuestItem:
-                    return AddItemToSlot(item);
+                    success = AddItemToSlot(item);
+                    break;
 
                 default:
                     Debug.LogWarning($"Unhandled item category: {item.Category}");
-                    return false;
+                    success = false;
+                    break;
             }
+
+            if (success)
+            {
+                OnItemAdded?.Invoke(item);
+            }
+            return success;
         }
 
         /// <summary>

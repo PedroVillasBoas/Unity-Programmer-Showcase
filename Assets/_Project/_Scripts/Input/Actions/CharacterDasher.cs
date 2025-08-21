@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections;
 using GoodVillageGames.Core.Character;
@@ -10,6 +11,8 @@ namespace GoodVillageGames.Core.Actions
     [RequireComponent(typeof(VisualsFlipper))]
     public class CharacterDasher : ActionHandler
     {
+        public event Action OnDashStarted; 
+
         [SerializeField] private PlayerAnimator _animator;
         [SerializeField] private VisualsFlipper _visuals;
 
@@ -67,9 +70,7 @@ namespace GoodVillageGames.Core.Actions
 
             Rb.linearVelocity = Vector2.zero;
 
-            // --- To-Do ---
-            // This is here because I know morgana has a small casting animation before the actual dash
-            // So later I'll have to add something to let the dasher know when it's finished ;)
+            OnDashStarted?.Invoke();
             yield return new WaitForSeconds(_dashCastLength);
 
             // No more Dash... Now she can Fly!

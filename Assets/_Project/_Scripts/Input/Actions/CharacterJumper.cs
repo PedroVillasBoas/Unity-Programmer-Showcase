@@ -9,6 +9,7 @@ namespace GoodVillageGames.Core.Actions
     [RequireComponent(typeof(GroundChecker))]
     public class CharacterJumper : ActionHandler
     {
+        public event Action OnJumpPerformed;
         public event Action OnDoubleJumpPerformed;
         
         [Title("Jump Configs")]
@@ -76,6 +77,7 @@ namespace GoodVillageGames.Core.Actions
             if (CanJump)
             {
                 Rb.linearVelocity = new(Rb.linearVelocityX, impulseForce);
+                OnJumpPerformed?.Invoke();
             }
             else if (CanDoubleJump)
             {

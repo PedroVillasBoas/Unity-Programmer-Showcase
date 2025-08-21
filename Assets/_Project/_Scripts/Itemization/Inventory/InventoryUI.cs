@@ -24,7 +24,7 @@ namespace GoodVillageGames.Core.Itemization
             InventoryManager.Instance.OnInventoryChanged += UpdateUI;
 
             // Presenter will tell the UI when the player asked for the UI
-            UIManager.OnToggleCharacterMenu += ToggleInventory;
+            UIManager.OnMenuToggled += ToggleInventory;
 
             _inventoryPanel.SetActive(false);
             InitializeInventory();
@@ -32,7 +32,7 @@ namespace GoodVillageGames.Core.Itemization
 
         private void OnDestroy()
         {
-            UIManager.OnToggleCharacterMenu -= ToggleInventory;
+            UIManager.OnMenuToggled -= ToggleInventory;
 
             if (InventoryManager.Instance != null)
             {
@@ -78,9 +78,10 @@ namespace GoodVillageGames.Core.Itemization
             }
         }
 
-        public void ToggleInventory()
+        public void ToggleInventory(bool isOpen)
         {
-            _inventoryPanel.SetActive(!_inventoryPanel.activeSelf);
+
+            _inventoryPanel.SetActive(isOpen);
         }
     }
 }

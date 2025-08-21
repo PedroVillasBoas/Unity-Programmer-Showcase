@@ -198,6 +198,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 560652c0a697fa245a136f8f02da0c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseDamagePerTick: 5
-  casterDamageScaling: 0.5
-  timeBetweenTicks: 0.5
+  _baseDamagePerTick: 5
+  _casterDamageScaling: 0.5
+  _timeBetweenTicks: 0.5
+  _skillTotalTime: 2
+  _infernumStartSound:
+    Guid:
+      Data1: -38933858
+      Data2: 1332225339
+      Data3: 1083541151
+      Data4: -1764686766
+    Path: event:/SFX/Player/OneShot/Player_InfernumSkill_Start
+  _infernumLoopSound:
+    Guid:
+      Data1: 28640307
+      Data2: 1176612033
+      Data3: 720547214
+      Data4: 769796171
+    Path: event:/SFX/Player/Loop/Player_InfernumSkill_Loop
+  _infernumEndSound:
+    Guid:
+      Data1: -1629462641
+      Data2: 1151062977
+      Data3: 1770620086
+      Data4: 893914832
+    Path: event:/SFX/Player/OneShot/Player_InfernumSkill_End

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a53a5c4795387fb46b7e87463175f192, type: 3}
+  m_Name: DT_Golic_Thanks
+  m_EditorClassIdentifier: 
+  Lines:
+  - NpcSpeakerData: {fileID: 11400000, guid: e8ab417798e10f74c88b97e1d2bffc93, type: 2}
+    LineText: Hey!
+  - NpcSpeakerData: {fileID: 11400000, guid: e8ab417798e10f74c88b97e1d2bffc93, type: 2}
+    LineText: I swear this was the last...
+  - NpcSpeakerData: {fileID: 11400000, guid: e8ab417798e10f74c88b97e1d2bffc93, type: 2}
+    LineText: I just wanted to say tank you for playing and I hoppe you had fun!
+  - NpcSpeakerData: {fileID: 11400000, guid: e8ab417798e10f74c88b97e1d2bffc93, type: 2}
+    LineText: 'There''s a little surprise from Pedro here in the chest. '
+  - NpcSpeakerData: {fileID: 11400000, guid: e8ab417798e10f74c88b97e1d2bffc93, type: 2}
+    LineText: Thanks again for playing! And he didn't pay me for saying this or anything
+      but, he's really loves games.
+  - NpcSpeakerData: {fileID: 11400000, guid: e8ab417798e10f74c88b97e1d2bffc93, type: 2}
+    LineText: 'Not only playing them, but also making them. '
+  - NpcSpeakerData: {fileID: 11400000, guid: e8ab417798e10f74c88b97e1d2bffc93, type: 2}
+    LineText: (Wait.. What? You're are not going to pay me anymore? WHAT?!)
+  - NpcSpeakerData: {fileID: 11400000, guid: e8ab417798e10f74c88b97e1d2bffc93, type: 2}
+    LineText: So... As I was saying... Pedro's......
+  itemReward: {fileID: 0}

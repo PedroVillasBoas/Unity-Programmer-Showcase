@@ -17,6 +17,10 @@ MonoBehaviour:
     Weight: 0
     MinQuantity: 1
     MaxQuantity: 1
+  - ItemData: {fileID: 11400000, guid: 0882e9475fcefbe41aeba1ae2662a5ee, type: 2}
+    Weight: 0
+    MinQuantity: 1
+    MaxQuantity: 1
   RandomDrops:
   - ItemData: {fileID: 11400000, guid: e06e549bf2dbf954c973073c9578ecd4, type: 2}
     Weight: 5

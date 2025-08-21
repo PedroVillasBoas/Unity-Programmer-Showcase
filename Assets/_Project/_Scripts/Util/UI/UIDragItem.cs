@@ -1,6 +1,7 @@
+using System;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 namespace GoodVillageGames.Core.Util.UI
 {
@@ -11,6 +12,8 @@ namespace GoodVillageGames.Core.Util.UI
     /// </summary>
     public class UIDragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
     {
+        public static event Action OnAnyItemDropped;
+
         public static UIDragItem draggedItem;
         public static bool dropSuccessful;
 
@@ -95,6 +98,10 @@ namespace GoodVillageGames.Core.Util.UI
                 {
                     _itemIcon.enabled = true;
                 }
+            }
+            else
+            {
+                OnAnyItemDropped?.Invoke();
             }
             draggedItem = null;
             _ghostIcon.gameObject.SetActive(false);

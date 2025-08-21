@@ -265,6 +265,7 @@ GameObject:
   - component: {fileID: 1116915187609621806}
   - component: {fileID: 6507020235622231453}
   - component: {fileID: 3829780670530298389}
+  - component: {fileID: 7665834584821992716}
   m_Layer: 5
   m_Name: Prefab_Dialogue-Panel
   m_TagString: Untagged
@@ -391,6 +392,25 @@ MonoBehaviour:
   _typewriter: {fileID: 2464453547843535603}
   _nextIcon: {fileID: 3556957303300435902}
   _endIcon: {fileID: 488347036109169646}
+--- !u!114 &7665834584821992716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8695101035570828141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e88edd232ece5147a49ced8b65d7394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundToPlay:
+    Guid:
+      Data1: 1199580
+      Data2: 1252277179
+      Data3: 1437515945
+      Data4: -1041695109
+    Path: event:/SFX/UI/Dialogue/UI_Dialogue_Typewriter
 --- !u!1001 &4857603164626838893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -788,14 +808,27 @@ MonoBehaviour:
       m_Calls: []
   onCharacterVisible:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7665834584821992716}
+        m_TargetAssemblyTypeName: GoodVillageGames.Core.Audio.Bridges.FMODUnityEventPlayer,
+          Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onMessage:
     m_PersistentCalls:
       m_Calls: []
-  waitForNormalChars: 0.03
+  waitForNormalChars: 0.05
   waitLong: 0.6
   waitMiddle: 0.2
-  avoidMultiplePunctuationWait: 0
+  avoidMultiplePunctuationWait: 1
   waitForNewLines: 1
   waitForLastCharacter: 1
   useTypewriterWaitForDisappearances: 1

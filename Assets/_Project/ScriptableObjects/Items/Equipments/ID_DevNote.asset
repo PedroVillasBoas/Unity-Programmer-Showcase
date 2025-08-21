@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c4b9b5f1fa4f94b951e6b8f1778e3f, type: 3}
+  m_Name: ID_DevNote
+  m_EditorClassIdentifier: 
+  ItemName: Developer's Note
+  ItemIcon: {fileID: 21300000, guid: 076ed5ba98b2dc24eabe016a51a09a47, type: 3}
+  ItemDescription: "Hey there!\nThanks a bunch for checking out the demo! I put this
+    together in just 48 hours to give you a little glimpse of what I can create.
+    I really hope you enjoyed the preview and most importantly, that you had fun!\nCheers,
+    \nPedro Vilas Boas"
+  Category: 0
+  IsStackable: 0
+  MaxStackSize: 1
+  EquipmentType: 0
+  StatUpgrades:
+  - _statType: 0
+    _operatorType: 1
+    _value: 100
+    _duration: -1
+  GrantedAbility: 0

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a53a5c4795387fb46b7e87463175f192, type: 3}
+  m_Name: DT_Golic_DoubleJump
+  m_EditorClassIdentifier: 
+  Lines:
+  - NpcSpeakerData: {fileID: 11400000, guid: e8ab417798e10f74c88b97e1d2bffc93, type: 2}
+    LineText: 'Hey! One more time... This is getting repetitive... '
+  - NpcSpeakerData: {fileID: 11400000, guid: e8ab417798e10f74c88b97e1d2bffc93, type: 2}
+    LineText: But I think you should equip the item on that chest. It will give you
+      a second jump!
+  - NpcSpeakerData: {fileID: 11400000, guid: e8ab417798e10f74c88b97e1d2bffc93, type: 2}
+    LineText: The chest needs a key to open. I hope you talked to the angry lady
+      back there...
+  itemReward: {fileID: 0}

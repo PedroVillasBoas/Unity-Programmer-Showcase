@@ -28,7 +28,7 @@ MonoBehaviour:
       isIconRecursive: 0
       isColorRecursive: 0
     - iconNameOrGuid: RawImage Icon
-      colorIndex: 9
+      colorIndex: 0
       isIconRecursive: 0
       isColorRecursive: 0
     - iconNameOrGuid: Settings Icon
@@ -36,11 +36,11 @@ MonoBehaviour:
       isIconRecursive: 0
       isColorRecursive: 0
     - iconNameOrGuid: Prefab Icon
-      colorIndex: 2
+      colorIndex: 3
       isIconRecursive: 0
       isColorRecursive: 0
     - iconNameOrGuid: AudioSource Icon
-      colorIndex: 0
+      colorIndex: 4
       isIconRecursive: 0
       isColorRecursive: 0
     - iconNameOrGuid: 
@@ -48,7 +48,7 @@ MonoBehaviour:
       isIconRecursive: 0
       isColorRecursive: 0
     - iconNameOrGuid: ScriptableObject Icon
-      colorIndex: 4
+      colorIndex: 0
       isIconRecursive: 0
       isColorRecursive: 0
     - iconNameOrGuid: AnimationClip Icon
