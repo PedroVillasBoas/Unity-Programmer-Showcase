@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Good Village Games
   productName: PEDROVILASBOAS_TASK
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -105,7 +105,7 @@ PlayerSettings:
   xboxEnableKinectAutoTracking: 0
   xboxEnableFitness: 0
   visibleInBackground: 1
-  allowFullscreenSwitch: 1
+  allowFullscreenSwitch: 0
   fullscreenMode: 1
   xboxSpeechDB: 0
   xboxEnableHeadOrientation: 0
@@ -143,6 +143,20 @@ PlayerSettings:
   bundleVersion: 1.0
   preloadedAssets:
   - {fileID: 11400000, guid: 0cdd521f306427747b7c89cadf225f86, type: 2}
+  - {fileID: 9100000, guid: 5866b7ed185894044b85c005faad51d4, type: 2}
+  - {fileID: 9100000, guid: 6c2c134cfa16c3d48855fefb9bc21c39, type: 2}
+  - {fileID: 9100000, guid: 7d0b01242872bbb4293476b25a4f6a4c, type: 2}
+  - {fileID: 9100000, guid: c70f6ae94479a22488bfa016c4c44795, type: 2}
+  - {fileID: 9100000, guid: 512293baa885ede47a3109bd967d2a28, type: 2}
+  - {fileID: 9100000, guid: a9392bee5f7c2ab408d9626be3e1e01f, type: 2}
+  - {fileID: 9100000, guid: b7c255b09a7d84948988e09e6acf3b19, type: 2}
+  - {fileID: 9100000, guid: c64aaf20ead31c34db1d954357747d5a, type: 2}
+  - {fileID: 9100000, guid: 875b6789fc6a7e4428475ed73a44912d, type: 2}
+  - {fileID: 9100000, guid: fef3e7e15ecc7264e8f466b86ead3024, type: 2}
+  - {fileID: 9100000, guid: 79f5163a8e83366499173101cc6e91ca, type: 2}
+  - {fileID: 9100000, guid: aba63c0b4c2a81944ae80bc2eddba3a3, type: 2}
+  - {fileID: 9100000, guid: a228f437be0b4af4c8afe7539a3383d9, type: 2}
+  - {fileID: 9100000, guid: a05110e367dcedb4c972929f5cbccd05, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -287,7 +301,14 @@ PlayerSettings:
   AndroidAppBundleSizeToValidate: 150
   AndroidReportGooglePlayAppDependencies: 1
   androidSymbolsSizeThreshold: 800
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: eabfef618a4ba924baf779ec7ec027bd, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetPlatformIcons: []
   m_BuildTargetBatching: []
   m_BuildTargetShaderSettings: []

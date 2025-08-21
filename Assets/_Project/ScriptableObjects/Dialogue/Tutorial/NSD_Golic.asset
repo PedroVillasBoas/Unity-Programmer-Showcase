@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NpcName: Tutorial Golic
   NpcPortrait: {fileID: -1039405983, guid: 1bae08ccf2697b7428d1bdabde4fd337, type: 3}
-  NpcNameColor: {r: 0.2901961, g: 0.35686275, b: 0.67058825, a: 1}
+  NpcNameColor: {r: 1, g: 0.75686276, b: 0.6313726, a: 1}
