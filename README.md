@@ -27,7 +27,7 @@ Below is my Project's Technical and Performance Assessment Document. Click Morga
 
 <div align="center">
 
-[![Document](https://github.com/PedroVillasBoas/Unity-Programmer-Showcase/blob/master/Assets/_Project/Art/UI/Dialogue/NPC/Morgana.png)](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/PedroVillasBoas/Unity-Programmer-Showcase/main/PEDROVILASBOAS_Task-Document.pdf)
+[![Document](https://github.com/PedroVillasBoas/Unity-Programmer-Showcase/blob/master/Assets/_Project/Art/UI/Dialogue/NPC/Morgana.png)](https://github.com/PedroVillasBoas/Unity-Programmer-Showcase/blob/master/PEDROVILASBOAS_TASK-Document.pdf)
 
 </div>
 
