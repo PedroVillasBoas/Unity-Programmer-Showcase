@@ -1,9 +1,9 @@
 using UnityEngine;
+using UnityEngine.Rendering; // Required for Volume
+using UnityEngine.Rendering.Universal; // Required for Vignette
+using System.Collections; // Required for Coroutines
 using TriInspector;
-using System.Collections;
-using UnityEngine.Rendering; 
 using GoodVillageGames.Core.Audio;
-using UnityEngine.Rendering.Universal;
 
 namespace GoodVillageGames.Core.MainMenu
 {
@@ -18,7 +18,9 @@ namespace GoodVillageGames.Core.MainMenu
         [SerializeField] private GameObject morganaPlayerPrefab;
 
         [Title("Transition Settings")]
+        [Tooltip("The Post-Processing Volume that contains the Vignette effect.")]
         [SerializeField] private Volume postProcessVolume;
+        [Tooltip("How long the fade-to-black transition should take.")]
         [SerializeField] private float fadeDuration = 0.5f;
 
         private Vignette _vignette;
@@ -26,8 +28,10 @@ namespace GoodVillageGames.Core.MainMenu
 
         private void Awake()
         {
+            // Try to find the Vignette component on the assigned Volume Profile.
             if (postProcessVolume != null && postProcessVolume.profile.TryGet(out _vignette))
             {
+                // Ensure the vignette is off at the start.
                 _vignette.intensity.value = 0f;
             }
             else
@@ -41,6 +45,7 @@ namespace GoodVillageGames.Core.MainMenu
         /// </summary>
         public void StartGame()
         {
+            // Prevent the button from being clicked multiple times during the transition.
             if (_isTransitioning) return;
 
             StartCoroutine(StartGameTransition());
@@ -54,13 +59,14 @@ namespace GoodVillageGames.Core.MainMenu
             _isTransitioning = true;
 
             yield return StartCoroutine(FadeVignette(1f));
-
-            if (mainMenuPanel != null) mainMenuPanel.SetActive(false);
+            // --- 2. Perform Actions While Screen is Black ---
             if (morganaProp != null) morganaProp.SetActive(false);
-            if (morganaPlayerPrefab != null) morganaPlayerPrefab.SetActive(true);
             if (MusicManager.Instance != null) MusicManager.Instance.SetArea(MusicArea.JeanneArea);
 
+            // --- 3. Fade Out from Black ---
             yield return StartCoroutine(FadeVignette(0f));
+            if (morganaPlayerPrefab != null) morganaPlayerPrefab.SetActive(true);
+            if (mainMenuPanel != null) mainMenuPanel.SetActive(false);
 
             _isTransitioning = false;
         }

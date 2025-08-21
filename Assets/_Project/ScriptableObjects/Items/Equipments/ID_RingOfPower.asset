@@ -24,6 +24,6 @@ MonoBehaviour:
   StatUpgrades:
   - _statType: 4
     _operatorType: 0
-    _value: 5
+    _value: 1
     _duration: -1
   GrantedAbility: 1

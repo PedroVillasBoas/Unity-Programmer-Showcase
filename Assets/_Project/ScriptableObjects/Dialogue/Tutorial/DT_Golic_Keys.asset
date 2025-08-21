@@ -16,7 +16,7 @@ MonoBehaviour:
   - NpcSpeakerData: {fileID: 11400000, guid: e8ab417798e10f74c88b97e1d2bffc93, type: 2}
     LineText: Ahoy Captain! Nah... That's from another game.
   - NpcSpeakerData: {fileID: 11400000, guid: e8ab417798e10f74c88b97e1d2bffc93, type: 2}
-    LineText: Anyway, did you tak with the angry lady back there?
+    LineText: Anyway, did you talk with the angry lady back there?
   - NpcSpeakerData: {fileID: 11400000, guid: e8ab417798e10f74c88b97e1d2bffc93, type: 2}
     LineText: I know she seems a little off, but trust me, she has something really
       cool to give you!

@@ -23,5 +23,5 @@ MonoBehaviour:
   - _statType: 4
     _operatorType: 0
     _value: 2
-    _duration: -1
+    _duration: 10
   GrantedAbility: 0

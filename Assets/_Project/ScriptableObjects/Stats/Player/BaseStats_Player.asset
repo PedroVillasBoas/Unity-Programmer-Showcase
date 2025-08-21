@@ -23,6 +23,6 @@ MonoBehaviour:
   DoubleJumpCooldown: 5
   Damage: 10
   AttackSpeed: 1
-  DashTime: 0.5
+  DashTime: 2
   DashSpeed: 40
   DashRechargeRate: 0.5
