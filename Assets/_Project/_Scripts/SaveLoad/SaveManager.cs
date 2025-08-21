@@ -1,5 +1,6 @@
 using System.IO;
 using UnityEngine;
+using UnityEngine.InputSystem; // Required for the new Input System
 
 namespace GoodVillageGames.Core.Itemization.Equipment
 {
@@ -14,6 +15,7 @@ namespace GoodVillageGames.Core.Itemization.Equipment
 
         private float _autoSaveTimer;
         private string _saveFilePath;
+        private IS_PlayerActions _inputActions;
 
         private void Awake()
         {
@@ -26,13 +28,28 @@ namespace GoodVillageGames.Core.Itemization.Equipment
                 Instance = this;
                 _saveFilePath = Path.Combine(Application.persistentDataPath, "PedroVilasBoas-GameShowcase-savedata.json");
                 _autoSaveTimer = _autoSaveInterval;
+                _inputActions = new IS_PlayerActions();
             }
+        }
+
+        // --- THE FIX: Subscribe to the Input System events ---
+        private void OnEnable()
+        {
+            _inputActions.Player.Enable();
+            _inputActions.Player.Save.performed += OnSaveInput;
+            _inputActions.Player.Load.performed += OnLoadInput;
+        }
+
+        private void OnDisable()
+        {
+            _inputActions.Player.Disable();
+            _inputActions.Player.Save.performed -= OnSaveInput;
+            _inputActions.Player.Load.performed -= OnLoadInput;
         }
 
         private void Update()
         {
             _autoSaveTimer -= Time.unscaledDeltaTime;
-
             AutoSave();
         }
 
@@ -52,13 +69,16 @@ namespace GoodVillageGames.Core.Itemization.Equipment
             SaveGame();
         }
 
+        // --- New Input Handlers ---
+        private void OnSaveInput(InputAction.CallbackContext context) => SaveGame();
+        private void OnLoadInput(InputAction.CallbackContext context) => LoadGame();
+
         public void SaveGame()
         {
             Debug.Log("Saving game...");
 
             SaveData saveData = new()
             {
-                // Ask the managers for their current state
                 inventoryData = InventoryManager.Instance.GetSaveData(),
                 equipmentData = EquipmentManager.Instance.GetSaveData()
             };
